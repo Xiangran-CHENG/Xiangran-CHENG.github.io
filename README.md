@@ -4,15 +4,18 @@ This project is a static personal homepage and can be published directly with Gi
 
 ## Materials Builders research group
 
-The bilingual group page lives at `group/index.html` and is linked from the personal homepage navigation and introduction. After publishing to this repository's existing GitHub Pages site, it is available at `https://xiangran-cheng.github.io/group/`.
+The English-language group homepage lives at `group/index.html` and is linked from the personal homepage. The published URL is `https://xiangran-cheng.github.io/group/`.
 
-- Edit the research text, mentor information, team roster, and recruitment content in `group/index.html`. Chinese and English text use `data-lang="zh"` and `data-lang="en"` respectively.
-- Group-specific styling and language switching live in `group/group.css` and `group/group.js`; the original personal homepage stylesheet and script are unchanged.
-- The group uses the most recently supplied recruitment email, `chengxiangran6@bza.edu.cn`. The original personal-page contact details are preserved.
-- `assets/materials-builders-hero.webp` is an AI-generated conceptual reaction-path illustration, not experimental data or an atomic trajectory. `assets/materials-builders-recruitment.png` is the approved recruitment poster based on its first design. `assets/materials-builders-mentor.webp` is a web-optimized copy of the existing personal-page photograph.
-- Member categories reflect the supplied roster only. Existing publications are linked as the mentor's publications, not presented as new group results.
-- No framework, package installation, or build step is required. Keep `.nojekyll` and publish the repository root as before. Serve the repository root with any static HTTP server to preview `/group/` locally.
-- The layout follows the user's academic-lab reference: a wide research banner, an About Us introduction, research cards, a separate mentor profile, grouped member cards, and recruitment/contact information. The mobile navigation opens with a menu button. The original lab's photos, text, publications, and branding are not reused.
+- Edit research, biography, member and recruitment text in `group/index.html`. The page is entirely English and does not read the personal homepage's saved language preference.
+- Group styling and the accessible mobile navigation live in `group/group.css` and `group/group.js`.
+- The confirmed contact email is `chengxiangran6@bza.edu.cn`.
+- The research narrative and biography incorporate the user-supplied `Self-introduction_XiangranCHENG.pptx`, including speaker notes. Milestone years are not treated as graduation dates. Autonomous laboratory development is described as a research goal.
+- `assets/xiangran-cheng-introduction.webp` comes from the supplied presentation's slide 1 portrait. `assets/materials-electrolytes.webp` and `assets/materials-autonomous-lab.webp` are web-optimized conceptual illustrations from slide 2. The reaction-path image is also conceptual, not experimental evidence.
+- English member names use Mandarin Pinyin in given-name/family-name order: Chen Liang (梁晨), Jiayuan Sun (孙佳源), Qianyou Zhong (钟千有), Xintong Guan (关心桐), Anyi Li (李安亿), and Wenya Xu (许文雅). Roles follow the supplied roster.
+- Publications link to the mentor's existing personal page. Papers shown as background references in the presentation are not republished as group achievements.
+- The approved recruitment poster remains downloadable in its original Chinese version.
+- The layout draws on the user's academic group website references. No reference group's text, images, affiliations or achievements are reused.
+- No framework, installation or build step is required. Keep `.nojekyll` and publish the repository root. Serve the repository root with any static HTTP server to preview `/group/` locally.
 
 ## Files
 

@@ -1,364 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xiangran Cheng is a Research Scientist at Beijing Zhongguancun Academy, studying materials synthesis, AI, polymer electrolytes and battery interfaces.">
+  <meta name="theme-color" content="#ffffff">
   <title>Xiangran Cheng | 程翔然</title>
-  <meta
-    name="description"
-    content="Xiangran Cheng (程翔然) 的个人主页，展示研究方向、教育背景、科研经历、完整论文列表与联系方式。"
-  >
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="group/favicon.svg?v=4" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="script.js?v=3" defer></script>
 </head>
 <body data-language="en">
+  <a class="skip-link" href="#main"><span data-lang="en">Skip to content</span><span data-lang="zh">跳转到正文</span></a>
   <div class="page-shell">
-    <header class="hero">
-      <nav class="topbar">
-        <div class="brand">XIANGRAN CHENG / 程翔然</div>
-        <div class="topbar-actions">
-          <div class="nav-links">
-            <a href="group/"><span data-lang="zh">课题组</span><span data-lang="en">Research Group</span></a>
-            <a href="#experience"><span data-lang="zh">经历</span><span data-lang="en">Experience</span></a>
-            <a href="#education"><span data-lang="zh">教育</span><span data-lang="en">Education</span></a>
-            <a href="group/publications.html"><span data-lang="zh">论文</span><span data-lang="en">Publications</span></a>
-            <a href="#skills"><span data-lang="zh">技能</span><span data-lang="en">Skills</span></a>
-            <a href="#contact"><span data-lang="zh">联系</span><span data-lang="en">Contact</span></a>
-          </div>
-          <div class="language-switch" aria-label="Language switch">
-            <button class="lang-button is-active" type="button" data-set-language="en">EN</button>
-            <button class="lang-button" type="button" data-set-language="zh">中文</button>
-          </div>
-        </div>
-      </nav>
-
-      <div class="hero-resume reveal">
-        <div class="hero-main">
-          <p class="eyebrow">Research Scientist / AI for Materials / Autonomous Laboratory</p>
-          <h1>Xiangran Cheng / 程翔然</h1>
-          <p class="hero-title">
-            <span data-lang="zh">研究科学家</span>
-            <span data-lang="en">Research Scientist</span>
-          </p>
-          <p class="intro">
-            <span data-lang="zh">
-              我是北京中关村学院研究科学家。我的研究位于材料科学、AI 与自动化的交叉点，
-              重点关注硫化物固态电解质、聚合物电解质与界面电化学，并致力于建立从文献先验、
-              原位多模态表征到路径感知预测与闭环验证的材料可合成性研究框架。
-            </span>
-            <span data-lang="en">
-              I am a Research Scientist at Beijing Zhongguancun Academy. My work sits at the intersection
-              of materials science, AI, and automation, with emphasis on sulfide solid electrolytes,
-              polymer electrolytes, and interfacial electrochemistry. I am particularly interested in building
-              a path-aware synthesizability framework that connects literature priors, in-situ multimodal characterization,
-              predictive modeling, and closed-loop experimental validation.
-            </span>
-          </p>
-          <div class="hero-highlights">
-            <span>AI for Materials</span>
-            <span>Autonomous Laboratory</span>
-            <span>Solid-state Battery</span>
-            <span>Polymer Electrolyte</span>
-            <span>Synthesizability</span>
-          </div>
-          <div class="hero-actions">
-            <a class="button button-secondary" href="group/">
-              <span data-lang="zh">Cheng Research Group 课题组</span>
-              <span data-lang="en">Cheng Research Group</span>
-            </a>
-            <a class="button button-primary" href="assets/Xiangran-Cheng-CV.docx" download>
-              <span data-lang="zh">下载 CV</span>
-              <span data-lang="en">Download CV</span>
-            </a>
-            <a class="button button-secondary" href="group/publications.html">
-              <span data-lang="zh">查看论文</span>
-              <span data-lang="en">View Publications</span>
-            </a>
-          </div>
-          <div class="hero-meta">
-            <span>Beijing Zhongguancun Academy</span>
-            <span><a href="mailto:chengxiangran@bza.edu.cn">chengxiangran@bza.edu.cn</a></span>
-            <span><a href="tel:+8619821235601">+86 198-2123-5601</a></span>
-            <span><span data-lang="zh">北京，中国</span><span data-lang="en">Beijing, China</span></span>
-            <span><a href="https://scholar.google.com/citations?user=Cs_oFCwAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a></span>
-          </div>
-        </div>
+    <nav class="topbar" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="#research"><span data-lang="en">Research</span><span data-lang="zh">研究</span></a>
+        <a href="#experience"><span data-lang="en">Background</span><span data-lang="zh">经历</span></a>
+        <a href="group/publications.html"><span data-lang="en">Publications</span><span data-lang="zh">发表</span></a>
+        <a href="group/">Cheng Research Group <span aria-hidden="true">↗</span></a>
       </div>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-set-language="en" aria-pressed="true" lang="en">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-set-language="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      </div>
+    </nav>
+
+    <main id="main">
+    <header class="intro" id="about">
+      <h1>Xiangran Cheng <span class="chinese-name" lang="zh-CN">程翔然</span></h1>
+      <p class="tagline"><span data-lang="en">I study how materials form, and how AI can help us make them.</span><span data-lang="zh">我研究材料如何形成，以及 AI 如何帮助我们合成材料。</span></p>
+      <div class="profile-links">
+        <a href="mailto:chengxiangran6@bza.edu.cn"><span data-lang="en">Email</span><span data-lang="zh">邮箱</span></a>
+        <a href="https://scholar.google.com/citations?user=Cs_oFCwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/Xiangran-CHENG" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="assets/Xiangran-Cheng-CV.docx" download>CV</a>
+        <a href="group/gallery.html"><span data-lang="en">Portfolio &amp; photos</span><span data-lang="zh">作品与照片</span></a>
+      </div>
+      <div class="bio">
+        <p><span data-lang="en">I am a Research Scientist at <strong>Beijing Zhongguancun Academy</strong>, working at the intersection of materials science, AI and automation. My research connects reaction pathways and synthesizability with polymer electrolytes and battery interfaces.</span><span data-lang="zh">我是<strong>北京中关村学院</strong>研究科学家，研究材料科学、AI 与自动化的交叉问题。我关注反应路径与材料可合成性，以及聚合物电解质和电池界面。</span></p>
+        <p><span data-lang="en">A question that drives my work: <em>can we predict how a synthesis reaction will unfold, and use that prediction to choose the next experiment?</em> In the <a href="group/">Cheng Research Group</a>, we are exploring world models for materials synthesis and working toward autonomous laboratories that learn from experimental feedback.</span><span data-lang="zh">我最关心的问题是：<em>能否预测合成反应如何演化，并据此选择下一步实验？</em>在 <a href="group/">Cheng Research Group</a>，我们正在探索材料合成的世界模型，并致力于建设能够从实验反馈中学习的自主实验室。</span></p>
+      </div>
+      <p class="join-note"><span data-lang="en">Interested in a PhD or research internship? <a href="group/join.html">Come build with us →</a></span><span data-lang="zh">欢迎对博士研究或科研实习感兴趣的同学，<a href="group/join.html">了解加入我们的机会 →</a></span></p>
     </header>
 
-    <main class="content-grid">
-      <section class="section main-column" id="experience">
-        <div class="section-heading reveal">
-          <p class="section-kicker"><span data-lang="zh">科研经历</span><span data-lang="en">Experience</span></p>
-          <h2><span data-lang="zh">围绕材料发现、电池体系与自动化平台展开的研究实践。</span><span data-lang="en">Research experience spanning materials discovery, battery systems, and laboratory automation.</span></h2>
-        </div>
+      <section class="section" id="experience" aria-labelledby="background-title">
+        <h2 id="background-title"><span data-lang="en">Background</span><span data-lang="zh">经历</span></h2>
+        <ol class="timeline">
+          <li><time datetime="2025">2025–</time><div><p><span data-lang="en">I joined <strong>Beijing Zhongguancun Academy</strong> as a Research Scientist, focusing on AI for materials synthesis and autonomous experimentation.</span><span data-lang="zh">加入<strong>北京中关村学院</strong>，担任研究科学家，关注 AI 驱动的材料合成与自主实验。</span></p></div></li>
+          <li><time datetime="2023">2023</time><div><p><span data-lang="en">I worked at <strong>Tesla’s Shanghai Gigafactory</strong>, gaining experience in battery manufacturing.</span><span data-lang="zh">在<strong>特斯拉上海超级工厂</strong>工作，积累电池制造相关经验。</span></p></div></li>
+          <li><time datetime="2022">2022</time><div><p><span data-lang="en">I founded a materials technology startup to help translate research into applications.</span><span data-lang="zh">创立<strong>上海晟纤创科技有限公司</strong>，参与科研成果产业化。</span></p></div></li>
+          <li id="education"><time datetime="2019">2019</time><div><p><span data-lang="en">I began doctoral research at <strong>Fudan University</strong>, studying polymer electrolytes and batteries.</span><span data-lang="zh">进入<strong>复旦大学</strong>开展博士研究，研究聚合物电解质与电池。</span></p></div></li>
+          <li><time datetime="2018">2018</time><div><p><span data-lang="en">I was an exchange student at the <strong>National University of Singapore</strong>.</span><span data-lang="zh">赴<strong>新加坡国立大学</strong>交换学习。</span></p></div></li>
+          <li><time datetime="2015">2015</time><div><p><span data-lang="en">I began undergraduate studies at <strong>Dalian University of Technology</strong>.</span><span data-lang="zh">进入<strong>大连理工大学</strong>学习本科课程。</span></p></div></li>
+        </ol>
+      </section>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-meta">
-              <span>2025.07 - <span data-lang="zh">至今</span><span data-lang="en">Present</span></span>
-              <span>Beijing Zhongguancun Academy</span>
-            </div>
-            <div class="timeline-content">
-              <h3><span data-lang="zh">研究科学家</span><span data-lang="en">Research Scientist</span></h3>
-              <ul class="detail-list">
-                <li><span data-lang="zh">开发硫化物固态电解质高通量机器学习工作流，离子电导率提高 22%，空气稳定性提高 60%。</span><span data-lang="en">Developed a high-throughput machine learning workflow for sulfide solid-state electrolytes, improving ionic conductivity by 22% and air stability by 60%.</span></li>
-                <li><span data-lang="zh">构建集成原位 XRD/Raman、自动合成机器人与闭环主动学习的自主实验室系统。</span><span data-lang="en">Built an autonomous laboratory integrating in-situ XRD/Raman characterization, synthesis robotics, and closed-loop active learning.</span></li>
-                <li><span data-lang="zh">通过 Python/SQL 与 NLP 文献挖掘建立 10,000+ 合成路径数据库。</span><span data-lang="en">Built a 10,000+ pathway reaction database through Python/SQL pipelines and NLP-based literature mining.</span></li>
-              </ul>
-            </div>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <h2 id="research-title"><span data-lang="en">Research</span><span data-lang="zh">研究</span></h2>
+        <p class="section-intro"><span data-lang="en">From understanding the path of a reaction to building tools that help us steer it.</span><span data-lang="zh">从理解反应路径，到构建能够指导合成的工具。</span></p>
+        <div class="research-list">
+          <article class="research-row">
+            <img src="assets/materials-builders-hero.webp" width="1672" height="941" alt="Conceptual illustration of materials synthesis pathways" loading="lazy" decoding="async">
+            <div><h3><a href="group/research.html#synthesis"><span data-lang="en">World models for materials synthesis</span><span data-lang="zh">材料合成的世界模型</span></a></h3><p><span data-lang="en">We aim to learn how precursors, processing conditions and intermediate phases shape reaction outcomes. Time-resolved observations and models can help us test competing pathways and choose informative experiments.</span><span data-lang="zh">我们希望理解前驱体、工艺条件与中间相如何共同决定反应结果，通过时间分辨观测与模型检验竞争路径，并选择更有信息量的实验。</span></p></div>
           </article>
-
-          <article class="timeline-item reveal reveal-delay">
-            <div class="timeline-meta">
-              <span>2019.06 - 2025.06</span>
-              <span>Fudan University</span>
-            </div>
-            <div class="timeline-content">
-              <h3><span data-lang="zh">研究生研究助理</span><span data-lang="en">Graduate Research Assistant</span></h3>
-              <ul class="detail-list">
-                <li><span data-lang="zh">开发 PEGDMA 基凝胶电解质与 PFPN 阻燃体系，实现 1000 次循环后 87.7% 容量保持。</span><span data-lang="en">Developed PEGDMA-based gel electrolytes and PFPN-integrated fire-retardant systems, achieving 87.7% retention after 1,000 cycles.</span></li>
-                <li><span data-lang="zh">结合拉曼、润湿性分析与 DFT 计算研究电池界面和阻燃机制。</span><span data-lang="en">Combined Raman spectroscopy, wettability analysis, and DFT calculations to study interfacial behavior and flame-retardant mechanisms.</span></li>
-                <li><span data-lang="zh">设计生物兼容铋空气电池和耐变形钠金属负极体系。</span><span data-lang="en">Designed biocompatible bismuth-air batteries and deformation-tolerant sodium-metal anodes.</span></li>
-              </ul>
-            </div>
+          <article class="research-row">
+            <img src="assets/materials-electrolytes.webp" width="900" height="900" alt="Conceptual illustration of polymer electrolytes and battery interfaces" loading="lazy" decoding="async">
+            <div><h3><a href="group/research.html#energy-materials"><span data-lang="en">Electrolytes and battery interfaces</span><span data-lang="zh">电解质与电池界面</span></a></h3><p><span data-lang="en">My work on polymer gel electrolytes and fiber batteries asks how molecular design, ion transport and interfacial stability influence device performance. These questions also motivate my interest in solid-state electrolytes.</span><span data-lang="zh">我在聚合物凝胶电解质与纤维电池方面的研究，关注分子设计、离子传输和界面稳定性如何影响器件性能。这些问题也推动我进一步研究固态电解质。</span></p></div>
           </article>
-
-          <article class="timeline-item reveal reveal-delay-2">
-            <div class="timeline-meta">
-              <span>2023.09 - 2023.12</span>
-              <span>Tesla Shanghai Gigafactory</span>
-            </div>
-            <div class="timeline-content">
-              <h3><span data-lang="zh">电池工程师实习生</span><span data-lang="en">Cell Engineer Intern</span></h3>
-              <ul class="detail-list">
-                <li><span data-lang="zh">编写 Arbin 和 Neware 电池测试 SOP，提升生产测试一致性。</span><span data-lang="en">Authored Arbin and Neware battery testing SOPs to improve production-line testing consistency.</span></li>
-                <li><span data-lang="zh">参与 SQL/Python 电池生命周期数据管道建设，优化数据检索效率。</span><span data-lang="en">Co-managed SQL/Python battery lifecycle data pipelines and improved retrieval speed for engineers.</span></li>
-                <li><span data-lang="zh">完成 CATL、LG Energy Solution、Sunwoda 等供应商电芯验证。</span><span data-lang="en">Executed supplier validation and performance review for CATL, LG Energy Solution, and Sunwoda.</span></li>
-              </ul>
-            </div>
+          <article class="research-row">
+            <img src="assets/materials-autonomous-lab.webp" width="900" height="900" alt="Conceptual illustration of an autonomous materials laboratory" loading="lazy" decoding="async">
+            <div><h3><a href="group/research.html#autonomous-lab"><span data-lang="en">Autonomous materials laboratories</span><span data-lang="zh">自主材料实验室</span></a></h3><p><span data-lang="en">Our long-term goal is to connect synthesis planning, robotic experiments, characterization and model updates in a closed loop. The focus is on learning from experimental outcomes, including unsuccessful reactions.</span><span data-lang="zh">我们的长期目标是将合成规划、机器人实验、表征与模型更新连接成闭环，从实验结果中学习，也包括未成功的反应。</span></p></div>
           </article>
         </div>
+        <p class="figure-note"><span data-lang="en">Research illustrations are conceptual.</span><span data-lang="zh">以上图片为研究概念示意。</span></p>
       </section>
 
-      <section class="section">
-        <div class="section-heading reveal">
-          <p class="section-kicker"><span data-lang="zh">研究主线</span><span data-lang="en">Research Agenda</span></p>
-          <h2>
-            <span data-lang="zh">我最关心的问题，是反应路径如何决定材料是否真正“可合成”。</span>
-            <span data-lang="en">A central question in my work is how reaction pathways determine whether a material is truly synthesizable.</span>
-          </h2>
-        </div>
-        <div class="stack-list">
-          <div class="compact-block reveal">
-            <h3><span data-lang="zh">核心科学问题</span><span data-lang="en">Core Question</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                当前很多材料可以被理论设计出来，却难以在实验中稳定制备。我尤其关注硫化物固态电解质中
-                “可设计”到“可制备”之间的落差，也就是 materials synthesizability gap。
-              </span>
-              <span data-lang="en">
-                Many materials can be computationally proposed, but cannot be reliably synthesized in experiment.
-                I am particularly interested in the synthesizability gap in sulfide solid electrolytes and other complex inorganic systems.
-              </span>
-            </p>
-          </div>
-          <div class="compact-block reveal reveal-delay">
-            <h3><span data-lang="zh">研究方法</span><span data-lang="en">Approach</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                我结合文献工艺先验挖掘、原位 XRD/Raman、多模态时序数据分析和机器学习建模，
-                去描述“前驱体—工艺条件—中间相演化—最终物相”之间的定量关系。
-              </span>
-              <span data-lang="en">
-                I combine literature mining, in-situ XRD/Raman, multimodal time-series analysis,
-                and machine learning to quantify the relationship between precursors, process conditions,
-                intermediate-phase evolution, and final phases.
-              </span>
-            </p>
-          </div>
-          <div class="compact-block reveal reveal-delay-2">
-            <h3><span data-lang="zh">长期目标</span><span data-lang="en">Long-term Goal</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                我希望推动材料设计判据从“终点态判断”转向“路径感知判断”，并最终构建
-                AI-native autonomous materials lab，让材料发现、合成与验证形成真正的闭环。
-              </span>
-              <span data-lang="en">
-                My long-term goal is to shift materials design from end-state judgment to path-aware judgment,
-                and ultimately build an AI-native autonomous materials lab for closed-loop discovery, synthesis, and validation.
-              </span>
-            </p>
-          </div>
-        </div>
+      <section class="section" id="selected-publications" aria-labelledby="papers-title">
+        <span id="publications" class="anchor-alias" aria-hidden="true"></span>
+        <h2 id="papers-title"><span data-lang="en">Selected publications</span><span data-lang="zh">代表论文</span></h2>
+        <p class="section-intro"><a href="group/publications.html"><span data-lang="en">All publications →</span><span data-lang="zh">完整论文列表 →</span></a><span class="link-divider" aria-hidden="true">/</span><a href="https://scholar.google.com/citations?user=Cs_oFCwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
+        <ol class="papers">
+          <li><div class="paper-year">2026</div><div><h3><a href="https://doi.org/10.1002/adma.202513158" target="_blank" rel="noopener noreferrer">Ivy-inspired design of polymer gel electrolytes for fiber lithium-ion batteries with high stability</a></h3><p class="authors">C. Lu<sup>#</sup>, <strong>X. Cheng<sup>#</sup></strong>, H. Jiang<sup>#</sup>, et al.</p><p class="venue"><em>Advanced Materials</em> 38(5), e13158</p></div></li>
+          <li><div class="paper-year">2025</div><div><h3><a href="https://doi.org/10.1002/anie.202423419" target="_blank" rel="noopener noreferrer">Quasi-solid fiber-shaped lithium-ion batteries with fire resistance</a></h3><p class="authors"><strong>X. Cheng</strong>, C. Lu, X. Gong, et al.</p><p class="venue"><em>Angewandte Chemie International Edition</em> 64(16), e202423419</p></div></li>
+          <li><div class="paper-year">2024</div><div><h3><a href="https://doi.org/10.1038/s41586-024-07343-x" target="_blank" rel="noopener noreferrer">High-performance fibre battery with polymer gel electrolyte</a></h3><p class="authors">C. Lu<sup>#</sup>, H. Jiang<sup>#</sup>, <strong>X. Cheng<sup>#</sup></strong>, et al.</p><p class="venue"><em>Nature</em> 629, 86–91</p></div></li>
+          <li><div class="paper-year">2024</div><div><h3><a href="https://doi.org/10.1016/j.scib.2024.09.037" target="_blank" rel="noopener noreferrer">Fiber lithium-ion battery from a view of application</a></h3><p class="authors"><strong>X. Cheng</strong>, C. Lu, J. Li, et al.</p><p class="venue"><em>Science Bulletin</em> 69, 3796–3799</p></div></li>
+          <li><div class="paper-year">2023</div><div><h3><a href="https://doi.org/10.1007/s40843-023-2630-1" target="_blank" rel="noopener noreferrer">A novel rechargeable aqueous bismuth-air battery</a></h3><p class="authors"><strong>X. Cheng</strong>, Y. Jiang, J. Qu, et al.</p><p class="venue"><em>Science China Materials</em> 66, 4615–4621</p></div></li>
+        </ol>
+        <p class="figure-note"><span data-lang="en"><sup>#</sup> Equal contribution. Author lists are abbreviated.</span><span data-lang="zh"><sup>#</sup> 表示共同贡献，作者列表已缩写。</span></p>
       </section>
 
-      <section class="section">
-        <div class="section-heading reveal">
-          <p class="section-kicker"><span data-lang="zh">当前项目</span><span data-lang="en">Current Projects</span></p>
-          <h2>
-            <span data-lang="zh">围绕硫化物固态电解质与自主实验展开的几个方向。</span>
-            <span data-lang="en">Selected directions in sulfide solid electrolytes and autonomous experimentation.</span>
-          </h2>
-        </div>
-        <div class="stack-list">
-          <div class="compact-block reveal">
-            <h3><span data-lang="zh">路径感知可合成性</span><span data-lang="en">Path-aware Synthesizability</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                构建包含成功与失败样本的反应路径数据集，提取中间相出现顺序、持续区间、
-                消失速率与竞争相演化等描述符，建立可解释的可合成性预测模型。
-              </span>
-              <span data-lang="en">
-                Building reaction-pathway datasets with both success and failure cases, and extracting descriptors such as
-                intermediate-phase order, duration, disappearance rate, and competing-phase evolution for interpretable synthesizability prediction.
-              </span>
-            </p>
-          </div>
-          <div class="compact-block reveal reveal-delay">
-            <h3><span data-lang="zh">原位多模态动力学表征</span><span data-lang="en">In-situ Multimodal Kinetics</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                通过原位 XRD 和原位 Raman 连续跟踪固相反应过程，理解前驱体分解、
-                中间相竞争与目标相生长之间的动力学联系。
-              </span>
-              <span data-lang="en">
-                Using in-situ XRD and Raman to continuously monitor solid-state reactions and understand
-                the kinetic relationships among precursor decomposition, competing intermediates, and target-phase growth.
-              </span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="education">
-        <div class="section-heading reveal">
-          <p class="section-kicker"><span data-lang="zh">教育背景与技能</span><span data-lang="en">Education and Skills</span></p>
-        </div>
-        <div class="stack-list">
-        <div class="compact-block reveal">
-          <p class="section-kicker"><span data-lang="zh">教育背景</span><span data-lang="en">Education</span></p>
-          <div class="mini-entry">
-            <h3><span data-lang="zh">博士，高分子化学与物理</span><span data-lang="en">Ph.D., Polymer Chemistry and Physics</span></h3>
-            <p>Fudan University</p>
-            <p>2019.06 - 2025.06</p>
-          </div>
-          <div class="mini-entry">
-            <h3><span data-lang="zh">学士，化学工程</span><span data-lang="en">B.S., Chemical Engineering</span></h3>
-            <p>Dalian University of Technology</p>
-            <p>2015.09 - 2019.06</p>
-          </div>
-        </div>
-
-        <div class="compact-block reveal reveal-delay" id="skills">
-          <p class="section-kicker"><span data-lang="zh">技能</span><span data-lang="en">Skills</span></p>
-          <div class="tag-group">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>PyTorch</span>
-            <span>NLP</span>
-            <span>Active Learning</span>
-            <span>DFT</span>
-            <span>COMSOL</span>
-            <span>In-situ Raman/XRD</span>
-            <span>XPS</span>
-            <span>SEM-EDS</span>
-            <span>Arbin</span>
-            <span>Neware</span>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="compact-block reveal reveal-delay-2">
-          <p class="section-kicker"><span data-lang="zh">荣誉</span><span data-lang="en">Awards</span></p>
-          <ul class="compact-list">
-            <li><span data-lang="zh">国家奖学金，2024</span><span data-lang="en">China National Scholarship, 2024</span></li>
-            <li><span data-lang="zh">复旦大学优秀学业奖学金，2023</span><span data-lang="en">Fudan University Outstanding Academic Scholarship, 2023</span></li>
-            <li><span data-lang="zh">互联网+ 大赛金奖，2022</span><span data-lang="en">Internet+ Competition Golden Award, 2022</span></li>
-            <li><span data-lang="zh">挑战杯银奖，2021</span><span data-lang="en">Challenge Cup Silver Award, 2021</span></li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section publications-section" id="publications">
-        <div class="section-heading reveal">
-          <p class="section-kicker"><span data-lang="zh">论文发表</span><span data-lang="en">Publications</span></p>
-          <h2><span data-lang="zh">按研究主线组织的代表性论文。</span><span data-lang="en">Selected papers organized by research themes.</span></h2>
-          <p><a class="button button-secondary" href="https://scholar.google.com/citations?user=Cs_oFCwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><span data-lang="zh">谷歌学术主页 ↗</span><span data-lang="en">Google Scholar Profile ↗</span></a></p>
-        </div>
-        <div class="publication-toolbar reveal">
-          <p class="publication-summary"><span data-lang="zh">总计 20+ 篇论文，发表于 Nature、Angewandte Chemie、Advanced Materials、Science Bulletin 等期刊。我的研究主要分布在高性能电池材料、聚合物电解质、界面动态表征，以及 AI 驱动的材料发现与可合成性分析。</span><span data-lang="en">20+ publications including Nature, Angewandte Chemie, Advanced Materials, and Science Bulletin. My work spans high-performance battery materials, polymer electrolytes, interfacial dynamics, and AI-driven materials discovery and synthesizability analysis.</span></p>
-          <a class="button button-secondary" href="assets/Xiangran-Cheng-CV.docx" download><span data-lang="zh">下载完整 CV</span><span data-lang="en">Download Full CV</span></a>
-        </div>
-        <div class="publication-groups">
-          <section class="publication-group reveal">
-            <h3><span data-lang="zh">高性能电池材料与器件</span><span data-lang="en">High-performance Battery Materials and Devices</span></h3>
-            <ol class="publication-entries">
-              <li class="publication-entry">C. Lu#, H. Jiang#, X. Cheng#, et al. High-performance fibre battery with polymer gel electrolyte. <em>Nature</em>, 2024, 629, 86.</li>
-              <li class="publication-entry">X. Cheng, C. Lu, J. Li, et al. Fiber lithium-ion battery from a view of application. <em>Science Bulletin</em>, 2024, 69, 3796–3799.</li>
-              <li class="publication-entry">X. Cheng, Y. Jiang, J. Qu, et al. A novel rechargeable aqueous bismuth-air battery. <em>Science China Materials</em>, 2023, 66, 4615.</li>
-              <li class="publication-entry">L. Ye#, X. Cheng#, M. Liao, et al. Deformation-tolerant metal anodes for flexible sodium-air fiber batteries. <em>eScience</em>, 2022, 2, 606.</li>
-              <li class="publication-entry">L. Ye#, M. Liao#, K. Zhang#, et al. A rechargeable calcium-oxygen battery that operates at room temperature. <em>Nature</em>, 2024, 626, 313.</li>
-            </ol>
-          </section>
-
-          <section class="publication-group reveal reveal-delay">
-            <h3><span data-lang="zh">聚合物电解质与界面调控</span><span data-lang="en">Polymer Electrolytes and Interfacial Engineering</span></h3>
-            <ol class="publication-entries">
-              <li class="publication-entry">C. Lu#, X. Cheng#, H. Jiang#, et al. Ivy-inspired design of polymer gel electrolytes for fiber lithium-ion batteries with high stability. <em>Advanced Materials</em>, 2026, 38(5), e13158.</li>
-              <li class="publication-entry">X. Cheng, C. Lu, X. Gong, et al. Quasi-solid fiber-shaped lithium-ion batteries with fire resistance. <em>Angewandte Chemie International Edition</em>, 2025, 64, e202423419.</li>
-              <li class="publication-entry">X. Cheng#, Y. Jiang#, C. Lu, et al. In situ synthesis of gel polymer electrolytes for lithium batteries. <em>Batteries &amp; Supercaps</em>, 2023, 6, e202300057.</li>
-              <li class="publication-entry">C. Li, K. Zhang, X. Cheng, et al. Polymers for flexible energy storage devices. <em>Progress in Polymer Science</em>, 2023, 143, 101714.</li>
-            </ol>
-          </section>
-
-          <section class="publication-group reveal reveal-delay-2">
-            <h3><span data-lang="zh">AI 驱动材料发现与可合成性</span><span data-lang="en">AI-driven Materials Discovery and Synthesizability</span></h3>
-            <p class="research-text">
-              <span data-lang="zh">
-                这一方向目前更多体现为正在推进的研究主线与数据、方法体系建设，
-                包括硫化物固态电解质的高通量筛选、反应路径描述符提取，以及面向可合成性的路径感知建模。
-              </span>
-              <span data-lang="en">
-                This theme currently appears more strongly in my ongoing research agenda,
-                including high-throughput screening of sulfide solid electrolytes, reaction-pathway descriptors,
-                and path-aware modeling for synthesizability.
-              </span>
-            </p>
-          </section>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="stack-list">
-        <div class="compact-block reveal">
-          <p class="section-kicker"><span data-lang="zh">指导与教学</span><span data-lang="en">Mentoring</span></p>
-          <ul class="compact-list">
-            <li><span data-lang="zh">本科生研究导师，复旦大学，2022 - 2023</span><span data-lang="en">Undergraduate Research Mentor, Fudan University, 2022 - 2023</span></li>
-            <li><span data-lang="zh">教学助理，合成化学实验，复旦大学，2021 - 2022</span><span data-lang="en">Teaching Assistant, Synthetic Chemistry Experiment, Fudan University, 2021 - 2022</span></li>
-          </ul>
-        </div>
-        <div class="compact-block reveal reveal-delay" id="contact">
-          <p class="section-kicker"><span data-lang="zh">联系</span><span data-lang="en">Contact</span></p>
-          <div class="contact-links">
-            <a href="mailto:chengxiangran@bza.edu.cn">chengxiangran@bza.edu.cn</a>
-            <a href="tel:+8619821235601">+86 198-2123-5601</a>
-            <a href="https://scholar.google.com/citations?user=Cs_oFCwAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-            <a href="assets/Xiangran-Cheng-CV.docx" download><span data-lang="zh">下载简历</span><span data-lang="en">Download CV</span></a>
-          </div>
-        </div>
-        </div>
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title"><span data-lang="en">Get in touch</span><span data-lang="zh">联系我</span></h2>
+        <p><span data-lang="en">I welcome conversations about materials synthesis, AI for science and research collaborations. For opportunities to join the group, please see our <a href="group/join.html">Join us</a> page.</span><span data-lang="zh">欢迎交流材料合成、AI for Science 与科研合作。博士研究与科研实习机会请见<a href="group/join.html">加入我们</a>页面。</span></p>
+        <p><a class="email" href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a><br><span class="location"><span data-lang="en">Beijing Zhongguancun Academy · Beijing, China</span><span data-lang="zh">北京中关村学院 · 中国北京</span></span></p>
       </section>
     </main>
+    <footer><span>Xiangran Cheng <span lang="zh-CN">· 程翔然</span></span><a href="#about"><span data-lang="en">Back to top ↑</span><span data-lang="zh">返回顶部 ↑</span></a></footer>
   </div>
-
-  <script src="script.js?v=2"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-// Keep existing links to the former publications section working.
+// Preserve links to the former complete publications section.
 const openPublicationsPage = () => {
   if (window.location.hash === "#publications") {
     window.location.replace(new URL("group/publications.html", window.location.href));
@@ -7,47 +7,30 @@ const openPublicationsPage = () => {
 openPublicationsPage();
 window.addEventListener("hashchange", openPublicationsPage);
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.18,
-  }
-);
-
-document.querySelectorAll(".reveal").forEach((element) => {
-  observer.observe(element);
-});
-
 const languageButtons = document.querySelectorAll("[data-set-language]");
-const pageBody = document.body;
-const pageRoot = document.documentElement;
 const languageStorageKey = "homepage-language";
 
 const setLanguage = (language) => {
-  pageBody.dataset.language = language;
-  pageRoot.lang = language === "zh" ? "zh-CN" : "en";
-
+  if (language !== "en" && language !== "zh") return;
+  document.body.dataset.language = language;
+  document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
   languageButtons.forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.setLanguage === language);
+    button.setAttribute("aria-pressed", String(button.dataset.setLanguage === language));
   });
-
-  window.localStorage.setItem(languageStorageKey, language);
+  try {
+    window.localStorage.setItem(languageStorageKey, language);
+  } catch {
+    // Language switching remains available when browser storage is disabled.
+  }
 };
 
 languageButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    setLanguage(button.dataset.setLanguage);
-  });
+  button.addEventListener("click", () => setLanguage(button.dataset.setLanguage));
 });
 
-const savedLanguage = window.localStorage.getItem(languageStorageKey);
-if (savedLanguage === "zh" || savedLanguage === "en") {
-  setLanguage(savedLanguage);
+try {
+  const savedLanguage = window.localStorage.getItem(languageStorageKey);
+  if (savedLanguage) setLanguage(savedLanguage);
+} catch {
+  // English is the default when no saved preference is available.
 }

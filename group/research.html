@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#191f32">
-  <meta name="description" content="Research on materials synthesis pathways, battery materials and autonomous experimentation in the Cheng Research Group.">
+  <meta name="description" content="Research on materials synthesizability, battery interfaces, multiphysics and spatiotemporal prediction, and autonomous scientific research in the Cheng Research Group.">
   <title>Research | Cheng Research Group</title>
   <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml">
   <link rel="stylesheet" href="group.css?v=6">
+  <link rel="stylesheet" href="research.css?v=1">
   <script src="group.js?v=6" defer></script>
 </head>
 <body class="group-page research-page" data-page="research">
@@ -26,24 +27,83 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="research-section" id="research" aria-labelledby="research-title">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">RESEARCH</p><h1 id="research-title">Materials, synthesis and autonomous experimentation</h1><p>Our research connects the formation of materials with the tools needed to study and control it.</p></div>
-        <article class="research-row" id="synthesis">
-          <figure><img src="../assets/materials-builders-hero.webp" width="1672" height="941" alt="Conceptual pathway from precursor particles through intermediates to a target crystal, with a competing-phase branch" loading="lazy"><figcaption>Precursors, intermediates and competing phases · Conceptual illustration</figcaption></figure>
-          <div class="research-copy"><h2>Reaction pathways and synthesizability</h2><p>Which phases appear during synthesis, and how can a process be steered toward a desired material? We study precursor conversion, transient intermediates and competing pathways, combining reaction data with thermodynamic and kinetic constraints.</p><p>We aim to connect literature mining, in-situ characterization and models of phase evolution to predict the effects of changes in temperature, time and precursor choice. Experimental validation is central to this effort.</p><p class="research-topics">Synthesis planning · Phase evolution · Physical constraints</p></div>
-        </article>
-        <article class="research-row reverse" id="energy-materials">
-          <figure class="square-figure"><img src="../assets/materials-electrolytes.webp" width="900" height="900" alt="Conceptual illustration of polymer electrolytes and the electrode-electrolyte interface in a battery" loading="lazy"><figcaption>Battery materials and interfaces · Conceptual illustration</figcaption></figure>
-          <div class="research-copy"><h2>Battery materials and interfaces</h2><p>Our materials research builds on Xiangran Cheng's experience with polymer electrolytes, electrode–electrolyte interfaces and flexible batteries. These systems connect questions about chemistry and transport to the performance of working devices.</p><p>Experience in battery manufacturing also informs our approach: a material must be considered together with its processing route, integration into a device and reproducibility.</p><p class="research-topics">Polymer electrolytes · Interfacial chemistry · Flexible batteries</p></div>
-        </article>
-        <article class="research-row" id="autonomous-lab">
-          <figure class="square-figure"><img src="../assets/materials-autonomous-lab.webp" width="900" height="900" alt="Conceptual illustration of a robot, AI and battery experiments" loading="lazy"><figcaption>Autonomous experimentation · Conceptual illustration</figcaption></figure>
-          <div class="research-copy"><h2>Autonomous experimentation</h2><p>We are working toward an autonomous materials laboratory that connects synthesis planning with robotic experiments and multimodal analysis. The aim is to make each experiment useful for both evaluating a material and improving our understanding of its formation.</p><p>Our long-term vision links materials-space exploration, synthesis-route generation and experimental feedback, using active learning to decide which experiment will be most informative next.</p><p class="research-topics">Robotics · Multimodal observations · Active learning</p></div>
-        </article>
+  <main id="main" class="container research-main">
+    <header class="research-intro" id="research">
+      <h1>Research</h1>
+      <p>We study how materials form, how their structures and interfaces govern performance, and how their states evolve over time. Across these questions, we connect physical models, experimental evidence and AI to guide synthesis and develop increasingly autonomous research workflows.</p>
+    </header>
+    <nav class="research-index" aria-label="Research directions">
+      <a href="#synthesis"><span class="area-index">01</span>Synthesizability</a>
+      <a href="#energy-materials"><span class="area-index">02</span>Battery materials</a>
+      <a href="#multiphysics"><span class="area-index">03</span>Modeling &amp; prediction</a>
+      <a href="#autonomous-lab"><span class="area-index">04</span>Autonomous research</a>
+    </nav>
+    <section class="research-area" id="synthesis" aria-labelledby="synthesis-title">
+      <div class="area-summary">
+        <p class="area-number">RESEARCH 01</p>
+        <h2 id="synthesis-title">Materials Synthesizability and Reaction Mechanisms</h2>
+        <p class="research-question">What makes a material accessible through a particular synthesis route?</p>
+        <p>We study how thermodynamics, kinetics and interfacial reactions govern the path from precursors through intermediates to target materials. Literature mining, AI prediction and process characterization help us identify competing pathways and design experiments that distinguish between mechanistic explanations.</p>
+      </div>
+      <div class="ongoing-projects">
+        <h3>Ongoing Projects</h3>
+        <ul class="project-list">
+          <li><h4>Metal Nanocluster Design and Synthesis Agents</h4><p>Developing agents that connect literature evidence, nanocluster design and synthesis planning. Candidate structures and routes are assessed against chemical constraints and refined through experimental feedback.</p></li>
+          <li><h4>Mesoporous Materials: Synthesis Recommendation and Formation Mechanisms</h4><p>Learning from synthesis records to recommend preparation conditions and investigate how they influence mesoporous structure formation. Recommendations guide experiments that test competing formation mechanisms.</p></li>
+          <li><h4>In-Situ Reaction and Phase-Evolution Modeling</h4><p>Combining time-resolved observations with thermodynamic and kinetic models to infer intermediate states and predict phase evolution. Complementary measurements and controlled experiments constrain mechanistic explanations, including those involving interfacial reactions.</p></li>
+        </ul>
       </div>
     </section>
+    <section class="research-area" id="energy-materials" aria-labelledby="energy-materials-title">
+      <div class="area-summary">
+        <p class="area-number">RESEARCH 02</p>
+        <h2 id="energy-materials-title">Battery Materials and Interfaces</h2>
+        <p class="research-question">How do material chemistry and evolving interfaces determine battery behavior?</p>
+        <p>Our work connects polymer and solid electrolytes, cathode materials and electrode–electrolyte interfaces. We combine computation, high-throughput screening, synthesis validation and in-situ characterization to relate material structure and transport to stability and performance.</p>
+      </div>
+      <div class="ongoing-projects">
+        <h3>Ongoing Projects</h3>
+        <ul class="project-list">
+          <li><h4>Electrolyte Discovery: From Atomistic Screening to Synthesis</h4><p>Developing high-throughput workflows for polymer and solid electrolytes using density functional theory (DFT), machine-learning interatomic potentials (MLIPs) and property models. We assess structure, stability and ion transport, then test selected candidates through synthesis and characterization.</p></li>
+          <li><h4>Multiscale Modeling of Cathode Materials</h4><p>Connecting atomistic material behavior with particle- and electrode-scale models of transport, deformation and fracture. We investigate how composition and microstructure shape coupled electrochemical and mechanical responses.</p></li>
+          <li><h4>In-Situ Characterization of Dynamic Battery Interfaces</h4><p>Tracking interfacial reactions and structural changes in polymer-electrolyte and solid-state battery systems. In-situ measurements and complementary evidence help test how interface evolution affects transport and stability.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="research-area" id="multiphysics" aria-labelledby="multiphysics-title">
+      <div class="area-summary">
+        <p class="area-number">RESEARCH 03</p>
+        <h2 id="multiphysics-title">Multiphysics Modeling and Spatiotemporal Prediction</h2>
+        <p class="research-question">How can physical models and time-resolved data predict evolving states?</p>
+        <p>We develop models of coupled physical fields, spatial structures and time-dependent signals across materials, devices and processing equipment. Physics-based simulation and data-driven prediction connect observed behavior with forecasts that can be tested under changing conditions.</p>
+      </div>
+      <div class="ongoing-projects">
+        <h3>Ongoing Projects</h3>
+        <ul class="project-list">
+          <li><h4>Semiconductor Equipment Digital Twins and Thermal Fields</h4><p>Developing thermal-field models and integrating them with equipment operating data toward digital twins of semiconductor processing systems. We aim to track equipment states and evaluate the effects of changes in operating conditions.</p></li>
+          <li><h4>Optical Emission Spectroscopy Forecasting</h4><p>Developing time-series models to predict the evolution of optical emission spectroscopy (OES) signals in semiconductor processing. We examine how operating conditions affect spectral dynamics and forecast reliability.</p></li>
+          <li><h4>Battery Degradation and Lifetime Prediction</h4><p>Learning from battery cycling histories to forecast degradation trajectories and lifetime. We investigate how operating conditions influence prediction accuracy and transfer across different test conditions.</p></li>
+          <li><h4>Three-Dimensional Domain-Structure Prediction</h4><p>Developing physics-based and data-driven models of three-dimensional domain structures. Predictions are evaluated against physical constraints and available observations.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="research-area" id="autonomous-lab" aria-labelledby="autonomous-lab-title">
+      <div class="area-summary">
+        <p class="area-number">RESEARCH 04</p>
+        <h2 id="autonomous-lab-title">Autonomous Laboratories and Scientific Research</h2>
+        <p class="research-question">How can a research system choose, execute and learn from its next experiment?</p>
+        <p>We are working toward systems that connect laboratory execution, experimental decision-making and scientific reasoning. The goal is to make experiments useful for both improving materials and refining explanations, with researchers able to inspect the evidence behind each decision.</p>
+      </div>
+      <div class="ongoing-projects">
+        <h3>Ongoing Projects</h3>
+        <ul class="project-list">
+          <li><h4>Integrated Autonomous Laboratory Workflows</h4><p>Developing workflows that connect synthesis equipment, characterization, data capture and analysis. Traceable links between experimental conditions and outcomes provide the basis for closed-loop operation.</p></li>
+          <li><h4>Closed-Loop Experimental Planning</h4><p>Using experimental feedback and active learning to select the next synthesis or characterization step. We study how to balance materials optimization with experiments that resolve uncertainty about reaction mechanisms.</p></li>
+          <li><h4>Research Agents for Hypothesis Testing</h4><p>Developing agents that connect literature retrieval, hypothesis formulation, experimental planning and evidence analysis. The aim is to compare alternative explanations and revise research plans as new results become available.</p></li>
+        </ul>
+      </div>
+    </section>
+    <p class="research-connection">Our projects connect across scales: reaction models inform synthesis decisions, interface studies test materials behavior, and predictive models help autonomous systems choose their next experiment.</p>
   </main>
   <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a></div><div class="footer-links"><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
 </body>

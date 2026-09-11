@@ -25,7 +25,7 @@
     ["#research", document.querySelector("#research")],
     ["#people", document.querySelector("#people")],
     ["#join", document.querySelector("#join")]
-  ];
+  ].filter(([, section]) => section);
   const sectionLinks = navigation.querySelectorAll('a[href^="#"]');
   let scheduled = false;
   function updateCurrentSection() {
@@ -47,7 +47,7 @@
     }
   }, { passive: true });
   window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 821px)").matches) setMenu(false);
+    if (window.matchMedia("(min-width: 961px)").matches) setMenu(false);
     updateCurrentSection();
   });
   updateCurrentSection();

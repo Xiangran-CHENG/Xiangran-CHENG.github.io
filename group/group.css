@@ -12,3 +12,4 @@
 @media print{.site-header{position:static}.primary-nav,.skip-link{display:none!important}.hero{min-height:220px}.hero h1{font-size:2.5rem}.introduction,.research-section,.section-space,.join-section{padding-block:25px}.research-section,.site-footer{background:white;color:var(--ink)}.research-copy>p,.research-section .section-heading>p:not(.eyebrow){color:var(--ink)}.research-row{margin-top:25px;padding-top:25px}.research-row figure{max-width:220px}.research-row,article,figure,.member-list li{break-inside:avoid}.footer-inner strong{color:var(--ink)}}
 
 .group-page{min-height:100vh;display:flex;flex-direction:column}.group-page>main{flex:1}.join-page>main{display:flex;flex-direction:column}.join-page .join-section{flex:1}
+.people-page .mentor{display:block;max-width:940px}

@@ -1,38 +1,26 @@
 (() => {
   "use strict";
 
-  const header = document.querySelector(".site-header");
-  const navigation = document.querySelector(".primary-nav");
-
-  const sections = [
-    ["#main", document.querySelector(".hero")],
-    ["#research", document.querySelector("#research")],
-    ["#people", document.querySelector("#people")],
-    ["#join", document.querySelector("#join")]
-  ].filter(([, section]) => section);
-  const sectionLinks = navigation.querySelectorAll('a[href^="#"]');
-  let scheduled = false;
-  function updateCurrentSection() {
-    const boundary = header.getBoundingClientRect().height + 120;
-    let current = "#main";
-    sections.forEach(([href, section]) => {
-      if (section.getBoundingClientRect().top <= boundary) current = href;
-    });
-    sectionLinks.forEach((link) => {
-      if (link.getAttribute("href") === current) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
-    });
-    scheduled = false;
+  const legacySections = {
+    "#research": "research.html",
+    "#people": "people.html",
+    "#join": "join.html",
+    "#synthesis": "research.html#synthesis",
+    "#energy-materials": "research.html#energy-materials",
+    "#autonomous-lab": "research.html#autonomous-lab"
+  };
+  function openLegacySection() {
+    const target = document.body.dataset.page === "home" && legacySections[window.location.hash];
+    if (!target) return false;
+    window.location.replace(new URL(target, window.location.href));
+    return true;
   }
-  window.addEventListener("scroll", () => {
-    if (!scheduled) {
-      scheduled = true;
-      requestAnimationFrame(updateCurrentSection);
-    }
-  }, { passive: true });
+  if (openLegacySection()) return;
+  window.addEventListener("hashchange", openLegacySection);
+
+  const header = document.querySelector(".site-header");
   function updateHeader() {
     document.documentElement.style.setProperty("--header-offset", `${Math.ceil(header.getBoundingClientRect().height) + 18}px`);
-    updateCurrentSection();
   }
   window.addEventListener("resize", updateHeader);
   if ("ResizeObserver" in window) new ResizeObserver(updateHeader).observe(header);

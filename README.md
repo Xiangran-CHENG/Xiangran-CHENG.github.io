@@ -6,7 +6,8 @@ This project is a static personal homepage and can be published directly with Gi
 
 The English-language group homepage lives at `group/index.html` and is linked from the personal homepage. The published URL is `https://xiangran-cheng.github.io/group/`.
 
-- Edit research, biography, member and recruitment text in `group/index.html`. The page is entirely English and does not read the personal homepage's saved language preference.
+- Home (`group/index.html`) contains the research vision and introduction. Research (`group/research.html`), People (`group/people.html`) and Join us (`group/join.html`) are separate pages; edit their corresponding content there. All group pages are in English and do not read the personal homepage's saved language preference.
+- All six pages share file-based navigation with a current-page indicator. Previous Home links ending in `#research`, `#people` or `#join` redirect to their new pages; old research-topic anchors also retain their destinations.
 - Group styling and navigation live in `group/group.css` and `group/group.js`. All six navigation links remain visible on every screen size and wrap on narrow screens. The sticky header height determines anchor scroll offsets so section headings remain visible.
 - The separate Portfolio & Gallery page lives at `group/gallery.html`, with styling in `group/gallery.css` and the keyboard-accessible image viewer in `group/gallery.js`. Its published URL is `https://xiangran-cheng.github.io/group/gallery.html`.
 - To add an entry, copy an existing gallery figure, update the image link and thumbnail, and supply accurate `data-title`, `data-caption` and image `alt` text. Keep `data-gallery` on the link to include it in the image viewer. Images retain working original-file links without JavaScript.

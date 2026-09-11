@@ -7,7 +7,7 @@ This project is a static personal homepage and can be published directly with Gi
 The English-language group homepage lives at `group/index.html` and is linked from the personal homepage. The published URL is `https://xiangran-cheng.github.io/group/`.
 
 - Edit research, biography, member and recruitment text in `group/index.html`. The page is entirely English and does not read the personal homepage's saved language preference.
-- Group styling and the accessible mobile navigation live in `group/group.css` and `group/group.js`.
+- Group styling and navigation live in `group/group.css` and `group/group.js`. All six navigation links remain visible on every screen size and wrap on narrow screens. The sticky header height determines anchor scroll offsets so section headings remain visible.
 - The separate Portfolio & Gallery page lives at `group/gallery.html`, with styling in `group/gallery.css` and the keyboard-accessible image viewer in `group/gallery.js`. Its published URL is `https://xiangran-cheng.github.io/group/gallery.html`.
 - To add an entry, copy an existing gallery figure, update the image link and thumbnail, and supply accurate `data-title`, `data-caption` and image `alt` text. Keep `data-gallery` on the link to include it in the image viewer. Images retain working original-file links without JavaScript.
 - The gallery contains four conceptual visuals/designs and two personal photographs. The photographs come from the supplied presentation and existing personal website; they are not presented as group photographs. The original recruitment poster retains the earlier Materials Builders name.

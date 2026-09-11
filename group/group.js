@@ -2,23 +2,7 @@
   "use strict";
 
   const header = document.querySelector(".site-header");
-  const menu = document.querySelector(".menu-toggle");
   const navigation = document.querySelector(".primary-nav");
-  function setMenu(open) {
-    header.classList.toggle("nav-open", open);
-    menu.setAttribute("aria-expanded", String(open));
-  }
-  menu.addEventListener("click", () => setMenu(menu.getAttribute("aria-expanded") !== "true"));
-  navigation.addEventListener("click", (event) => {
-    if (event.target.closest("a")) setMenu(false);
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && menu.getAttribute("aria-expanded") === "true") {
-      setMenu(false);
-      menu.focus();
-    }
-  });
-  document.documentElement.classList.add("js-ready");
 
   const sections = [
     ["#main", document.querySelector(".hero")],
@@ -46,9 +30,11 @@
       requestAnimationFrame(updateCurrentSection);
     }
   }, { passive: true });
-  window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 961px)").matches) setMenu(false);
+  function updateHeader() {
+    document.documentElement.style.setProperty("--header-offset", `${Math.ceil(header.getBoundingClientRect().height) + 18}px`);
     updateCurrentSection();
-  });
-  updateCurrentSection();
+  }
+  window.addEventListener("resize", updateHeader);
+  if ("ResizeObserver" in window) new ResizeObserver(updateHeader).observe(header);
+  updateHeader();
 })();

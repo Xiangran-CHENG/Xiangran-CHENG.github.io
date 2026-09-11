@@ -2,7 +2,7 @@
 
 This project is a static personal homepage and can be published directly with GitHub Pages.
 
-## Cheng Group
+## Cheng Research Group
 
 The English-language group homepage lives at `group/index.html` and is linked from the personal homepage. The published URL is `https://xiangran-cheng.github.io/group/`.
 

@@ -1,3 +1,12 @@
+// Keep existing links to the former publications section working.
+const openPublicationsPage = () => {
+  if (window.location.hash === "#publications") {
+    window.location.replace(new URL("group/publications.html", window.location.href));
+  }
+};
+openPublicationsPage();
+window.addEventListener("hashchange", openPublicationsPage);
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

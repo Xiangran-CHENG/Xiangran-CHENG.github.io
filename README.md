@@ -2,12 +2,15 @@
 
 This project is a static personal homepage and can be published directly with GitHub Pages.
 
-## Materials Builders research group
+## Cheng Group
 
 The English-language group homepage lives at `group/index.html` and is linked from the personal homepage. The published URL is `https://xiangran-cheng.github.io/group/`.
 
 - Edit research, biography, member and recruitment text in `group/index.html`. The page is entirely English and does not read the personal homepage's saved language preference.
 - Group styling and the accessible mobile navigation live in `group/group.css` and `group/group.js`.
+- The separate Portfolio & Gallery page lives at `group/gallery.html`, with styling in `group/gallery.css` and the keyboard-accessible image viewer in `group/gallery.js`. Its published URL is `https://xiangran-cheng.github.io/group/gallery.html`.
+- To add an entry, copy an existing gallery figure, update the image link and thumbnail, and supply accurate `data-title`, `data-caption` and image `alt` text. Keep `data-gallery` on the link to include it in the image viewer. Images retain working original-file links without JavaScript.
+- The gallery contains four conceptual visuals/designs and two personal photographs. The photographs come from the supplied presentation and existing personal website; they are not presented as group photographs. The original recruitment poster retains the earlier Materials Builders name.
 - The confirmed contact email is `chengxiangran6@bza.edu.cn`.
 - The research narrative and biography incorporate the user-supplied `Self-introduction_XiangranCHENG.pptx`, including speaker notes. Milestone years are not treated as graduation dates. Autonomous laboratory development is described as a research goal.
 - `assets/xiangran-cheng-introduction.webp` comes from the supplied presentation's slide 1 portrait. `assets/materials-electrolytes.webp` and `assets/materials-autonomous-lab.webp` are web-optimized conceptual illustrations from slide 2. The reaction-path image is also conceptual, not experimental evidence.

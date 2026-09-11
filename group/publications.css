@@ -1,13 +1,9 @@
 .publications-main{padding-bottom:72px}
-.publications-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:40px;padding:55px 0 44px}
-.publications-intro .eyebrow{font-size:.8125rem;letter-spacing:.12em;margin-bottom:14px}
+.publications-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:32px;padding:38px 0 32px}
 .publications-intro h1{font-size:clamp(2.8rem,5.2vw,4.5rem);font-weight:500;letter-spacing:-.045em;line-height:1.1}
-.publications-lead{font-size:1.2rem;line-height:1.65;margin-top:22px;color:#414b58}
-.publications-byline{color:var(--muted);font-size:.9375rem;margin-top:9px}
-.scholar-entry{padding-bottom:4px;text-align:right}
+.scholar-entry{text-align:right}
 .scholar-button{display:inline-flex;gap:35px;align-items:center;background:var(--navy);color:white;border:1px solid var(--navy);padding:11px 21px;font-size:1rem;line-height:1.7;transition:background .15s,border-color .15s}
 .scholar-button:hover{background:var(--blue);border-color:var(--blue);color:white}
-.scholar-entry p{font-size:.875rem;color:var(--muted);margin-top:12px}
 .publication-years{display:flex;align-items:center;flex-wrap:wrap;gap:14px 30px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.9375rem}
 .publication-years>span{color:var(--muted);margin-right:auto}
 .publication-years a{color:var(--blue);padding:3px 1px;font-variant-numeric:tabular-nums;border-bottom:1px solid transparent}
@@ -30,8 +26,8 @@
 .paper-citation span{color:var(--muted);font-size:.875rem}
 .publication-note{margin:29px 0 0 158px;font-size:.875rem;color:var(--muted);line-height:1.8;max-width:65em}
 .publication-note a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
-@media(max-width:960px){.publications-intro{gap:25px}.scholar-entry p{max-width:16em}.publication-year{grid-template-columns:85px minmax(0,1fr);column-gap:25px}.publication-note{margin-left:110px}}
-@media(max-width:650px){.publications-main{padding-bottom:44px}.publications-intro{grid-template-columns:1fr;gap:24px;padding:35px 0 30px}.publications-intro h1{font-size:2.9rem}.publications-intro .eyebrow{font-size:.75rem}.publications-lead{font-size:1.06rem;margin-top:18px}.desktop-break{display:none}.scholar-entry{text-align:left;padding:0}.scholar-entry p{max-width:none;margin-top:8px}.scholar-button{padding:9px 17px;gap:28px}.publication-years{gap:8px 23px;padding:15px 0}.publication-years>span{width:100%;font-size:.875rem}.publication-year{grid-template-columns:1fr;padding-top:29px;gap:20px}.publication-year>h2{font-size:1.6rem}.paper h3{font-size:1.18rem}.paper{padding-bottom:23px}.paper+.paper{padding-top:23px}.paper-citation{gap:3px 12px}.publication-note{margin:26px 0 0}}
+@media(max-width:960px){.publications-intro{gap:25px}.publication-year{grid-template-columns:85px minmax(0,1fr);column-gap:25px}.publication-note{margin-left:110px}}
+@media(max-width:650px){.publications-main{padding-bottom:44px}.publications-intro{grid-template-columns:1fr;gap:18px;padding:28px 0 26px}.publications-intro h1{font-size:2.9rem}.scholar-entry{text-align:left}.scholar-button{padding:9px 17px;gap:28px}.publication-years{gap:8px 23px;padding:15px 0}.publication-years>span{width:100%;font-size:.875rem}.publication-year{grid-template-columns:1fr;padding-top:29px;gap:20px}.publication-year>h2{font-size:1.6rem}.paper h3{font-size:1.18rem}.paper{padding-bottom:23px}.paper+.paper{padding-top:23px}.paper-citation{gap:3px 12px}.publication-note{margin:26px 0 0}}
 @media(max-width:360px){.publication-years{column-gap:20px}.publications-intro h1{font-size:2.6rem}}
 @media(prefers-reduced-motion:reduce){.scholar-button{transition:none}}
 @media print{.publication-years,.scholar-entry,.site-footer{display:none}.publications-intro{padding-block:20px}.publications-intro h1{font-size:2.8rem}.publication-year{padding-top:22px;grid-template-columns:80px minmax(0,1fr);gap:20px;break-inside:auto}.publication-year>h2{break-after:avoid}.paper{break-inside:avoid;padding-bottom:16px}.paper+.paper{padding-top:16px}.paper h3{font-size:1.05rem}.publication-note{margin-left:100px}}

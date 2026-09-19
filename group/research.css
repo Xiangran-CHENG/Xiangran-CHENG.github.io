@@ -12,7 +12,7 @@
 .area-summary > p.research-question { color: var(--ink); font-size: var(--font-lead); line-height: 1.6; }
 .area-summary .research-systems { padding-top: 20px; border-top: 1px solid var(--line); }
 .research-systems strong { display: block; font-size: var(--font-small); color: var(--ink); font-weight: 600; margin-bottom: 8px; }
-.ongoing-projects h3 { font-size: var(--font-card); font-weight: 500; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.ongoing-projects h3 { font-size: var(--font-card); font-weight: 600; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
 .ongoing-projects .supporting-projects-title { margin-top: 32px; }
 .supporting-projects-note { font-size: var(--font-small); color: var(--muted); margin-top: 16px; }
 .project-list { list-style: none; margin: 0; padding: 0; }

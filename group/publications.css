@@ -12,7 +12,7 @@
 .authorship-legend strong{color:var(--ink);font-weight:600}
 .authorship-legend sup{font-size:.85em;color:var(--ink)}
 .publication-year{display:grid;grid-template-columns:120px minmax(0,1fr);column-gap:38px;padding-top:36px}
-.publication-year>h2{font-size:var(--font-section);line-height:1.25;font-weight:400;letter-spacing:-.025em;color:var(--accent);padding-top:1px;font-variant-numeric:tabular-nums}
+.publication-year>h2{font-size:var(--font-section);line-height:1.25;font-weight:600;letter-spacing:-.025em;color:var(--accent);padding-top:1px;font-variant-numeric:tabular-nums}
 .publication-year>.record-type{font-size:1.15rem;line-height:1.5;letter-spacing:0}
 .paper-list{list-style:none;padding:0;margin:0;min-width:0}
 .paper{padding:0 0 28px;border-bottom:1px solid var(--line)}

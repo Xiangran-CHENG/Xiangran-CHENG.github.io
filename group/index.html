@@ -4,10 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="The Cheng Research Group studies materials synthesis pathways and reactivity at solid–liquid and solid–solid interfaces through characterization, computation, machine learning and kinetic modeling.">
+  <meta name="description" content="Our vision is to make materials synthesis predictable. Cheng Research Group develops physically grounded AI to understand material formation, predict reaction pathways and guide experiments.">
   <title>Cheng Research Group | AI for Materials Synthesis</title>
+  <link rel="canonical" href="https://xiangran-cheng.github.io/group/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cheng Research Group | AI for Materials Synthesis">
+  <meta property="og:description" content="Make materials synthesis predictable. We connect reaction mechanisms, physically grounded AI and experimental feedback to understand formation and guide synthesis.">
+  <meta property="og:url" content="https://xiangran-cheng.github.io/group/">
+  <meta property="og:image" content="https://xiangran-cheng.github.io/assets/materials-builders-hero.webp">
+  <meta property="og:image:alt" content="Conceptual illustration of precursors evolving through competing reaction pathways">
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
   <link rel="stylesheet" href="group.css?v=8">
+  <link rel="stylesheet" href="home.css?v=1">
   <script src="group.js?v=6" defer></script>
 </head>
 <body class="group-page home-page" data-page="home">
@@ -27,20 +35,128 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-background" src="../assets/materials-builders-hero.webp" width="1672" height="941" alt="" fetchpriority="high">
-      <div class="container hero-copy">
-        <p class="eyebrow">REACTION MECHANISMS AND PATHWAYS</p>
-        <h1 id="hero-title">AI for Materials<br>Synthesis</h1>
+    <section class="home-hero" id="vision" aria-labelledby="vision-title">
+      <div class="container vision-layout">
+        <div class="vision-copy">
+          <p class="home-kicker">AI FOR MATERIALS SYNTHESIS</p>
+          <p class="vision-label">Our vision</p>
+          <h1 id="vision-title">Make materials synthesis predictable.</h1>
+          <p class="vision-statement">We envision a future in which understanding how materials form helps us anticipate competing phases and choose conditions that reliably produce the intended material.</p>
+          <div class="home-actions">
+            <a class="home-button" href="#mission">Our mission <span aria-hidden="true">↓</span></a>
+            <a class="home-text-link" href="research.html">Explore our research <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="vision-figure">
+          <img src="../assets/materials-builders-hero.webp" width="1672" height="941" alt="Conceptual illustration of precursors passing through intermediates toward a target material or a competing phase." fetchpriority="high" decoding="async">
+          <figcaption>From precursors to competing pathways.<br><span>Conceptual illustration.</span></figcaption>
+        </figure>
       </div>
-      <p class="hero-caption">Conceptual illustration of competing reaction pathways</p>
     </section>
 
-    <section class="introduction reading-width" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Our mission</h2>
-      <p>Our mission is to understand how materials form and to establish principles for predicting and controlling their synthesis. We study how thermodynamic driving forces, reaction kinetics and the transport of energy and atoms across scales shape the pathways from precursors through intermediate phases to target materials, with particular emphasis on reactions at solid–liquid and solid–solid interfaces.</p>
-      <p>We develop AI methods that learn from synthesis processes to predict reaction pathways and guide experiments, grounded in physical principles and experimental evidence. We integrate in situ and ex situ characterization with physics-based computation and reaction-network modeling to identify rate-limiting processes, test competing mechanistic hypotheses and understand phase selection under nonequilibrium conditions. We are also developing autonomous experimentation methods to select informative experiments and refine predictions through feedback. Ultimately, we aim to guide the precise synthesis of materials with targeted compositions, structures and phases.</p>
-      <div class="research-principle"><span>Our approach</span><p>Observe transformations. Test mechanisms. Predict synthesis.</p></div>
+    <section class="home-section container" id="mission" aria-labelledby="mission-title">
+      <div class="home-section-intro" id="about">
+        <p class="home-kicker">OUR MISSION</p>
+        <div>
+          <h2 id="mission-title">Understand formation.<br>Guide synthesis.</h2>
+          <p class="home-lead">We develop physically grounded AI models that connect precursors and processing conditions to evolving material states and reaction pathways.</p>
+          <p class="home-description">By combining in situ and ex situ characterization, computation and targeted experiments, we aim to explain phase selection, predict how synthesis changes with conditions, and identify informative next experiments. Our long-term goal is to turn this understanding into reliable control over material composition, structure and phase.</p>
+        </div>
+      </div>
+
+      <div class="synthesis-question">
+        <p class="home-kicker">THE QUESTION THAT CONNECTS OUR WORK</p>
+        <h3>Which synthesis conditions lead to which material—and why?</h3>
+        <ol class="pathway-strip" aria-label="The synthesis process we seek to understand">
+          <li><strong>Precursors &amp; conditions</strong><span>What we start with and control</span></li>
+          <li><strong>Evolving reaction pathways</strong><span>Intermediates, interfaces and transport</span></li>
+          <li><strong>Target &amp; competing phases</strong><span>What forms, when and why</span></li>
+        </ol>
+      </div>
+
+      <div class="focus-heading"><h3>Our scientific focus</h3><span>Three commitments to the same question</span></div>
+      <div class="focus-grid">
+        <article class="focus-item">
+          <span class="focus-number" aria-hidden="true">01</span>
+          <h4>Follow materials as they form.</h4>
+          <p>Track how precursors transform into intermediates, target phases and competing products. We focus on how reactions at solid–solid and solid–liquid interfaces shape the path to a target material.</p>
+          <a class="home-inline-link" href="research.html#synthesis">Reaction mechanisms <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="focus-item">
+          <span class="focus-number" aria-hidden="true">02</span>
+          <h4>Connect AI with reaction physics.</h4>
+          <p>Use thermodynamic driving forces, kinetics and transport across scales to inform AI models, constrain predictions and test explanations for why particular pathways emerge.</p>
+          <a class="home-inline-link" href="research.html#multiphysics">Physical modeling <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="focus-item">
+          <span class="focus-number" aria-hidden="true">03</span>
+          <h4>Make predictions testable.</h4>
+          <p>Design experiments that distinguish competing explanations and test predictions under changed synthesis conditions. We are developing autonomous workflows to refine models through experimental feedback.</p>
+          <a class="home-inline-link" href="research.html#autonomous-lab">Experimental feedback <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="research-context">Battery materials and interfaces provide an important setting for this work, alongside our broader projects in material formation, physical modeling and autonomous research. <a class="home-inline-link" href="research.html">View all research directions <span aria-hidden="true">↗</span></a></p>
+    </section>
+
+    <section class="home-publications" id="selected-publications" aria-labelledby="selected-title">
+      <div class="container home-section">
+        <div class="home-section-intro">
+          <p class="home-kicker">RESEARCH FOUNDATIONS</p>
+          <div>
+            <h2 id="selected-title">Selected publications</h2>
+            <p class="home-description">Work by Xiangran Cheng and collaborators, spanning electrolyte design and coupled physical modeling.</p>
+          </div>
+        </div>
+        <ol class="selected-paper-list">
+          <li>
+            <div class="selected-paper-meta"><span>Nature</span><span>2024</span></div>
+            <div class="selected-paper-copy">
+              <h3><a href="https://doi.org/10.1038/s41586-024-07343-x" target="_blank" rel="noopener noreferrer">High-performance fibre battery with polymer gel electrolyte <span aria-hidden="true">↗</span></a></h3>
+              <p>Xiangran Cheng · Co-first author</p>
+              <a class="home-inline-link" href="publications.html#paper-fibre">Full author list &amp; citation <span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="selected-paper-meta"><span>Angewandte Chemie International Edition</span><span>2025</span></div>
+            <div class="selected-paper-copy">
+              <h3><a href="https://doi.org/10.1002/anie.202423419" target="_blank" rel="noopener noreferrer">Quasi-solid fiber-shaped lithium-ion batteries with fire resistance <span aria-hidden="true">↗</span></a></h3>
+              <p>Xiangran Cheng · First author</p>
+              <a class="home-inline-link" href="publications.html#paper-fire">Full author list &amp; citation <span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+          <li>
+            <div class="selected-paper-meta"><span>Journal of Energy Storage</span><span>2026</span></div>
+            <div class="selected-paper-copy">
+              <h3><a href="https://doi.org/10.1016/j.est.2026.124040" target="_blank" rel="noopener noreferrer">3D electro-chemo-mechanical modeling of interfacial cracking in all-solid-state battery composite cathodes for durable energy storage <span aria-hidden="true">↗</span></a></h3>
+              <p>Xiangran Cheng · Lead corresponding author</p>
+              <a class="home-inline-link" href="publications.html#paper-interfacial-cracking">Full author list &amp; citation <span aria-hidden="true">→</span></a>
+            </div>
+          </li>
+        </ol>
+        <a class="home-inline-link publication-index-link" href="publications.html">Explore all publications <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="home-section container home-team" aria-labelledby="home-team-title">
+      <div>
+        <p class="home-kicker">OUR TEAM</p>
+        <h2 id="home-team-title">A shared question.<br>Connected ways of working.</h2>
+        <p class="home-description">We are building a team around the connection between synthesis science, physical modeling, AI and experimental validation. Our aim is to make each model, measurement and experiment contribute to a clearer understanding of how materials form.</p>
+        <div class="home-actions">
+          <a class="home-button" href="people.html">Meet the group <span aria-hidden="true">→</span></a>
+          <a class="home-text-link" href="join.html">Work with us <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="team-details">
+        <p class="home-kicker">GROUP MENTOR</p>
+        <h3><a href="people.html">Xiangran Cheng</a></h3>
+        <p>Research Scientist<br>Beijing Zhongguancun Academy</p>
+        <a class="home-inline-link" href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a>
+        <dl class="home-roster">
+          <dt>Team members</dt><dd>Chen Liang · Jiayuan Sun · Qianyou Zhong</dd>
+          <dt>Interns</dt><dd>Xintong Guan · Anyi Li · Wenya Xu</dd>
+        </dl>
+      </div>
     </section>
   </main>
   <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a></div><div class="footer-links"><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>

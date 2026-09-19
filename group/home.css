@@ -25,6 +25,7 @@
 .home-lead { font-size: var(--font-lead); line-height: 1.65; max-width: 66ch; margin-top: 24px; }
 .big-picture { background: var(--picture-background); --line: #d9d4c8; border-bottom: 1px solid var(--line); }
 .mission-section { background: var(--mission-background); --line: #cbd8de; }
+.mission-section .home-lead { max-width: none; font-size: var(--font-body); }
 .philosophy-image { position: relative; display: block; background: transparent; cursor: zoom-in; }
 .philosophy-image img { width: 100%; height: auto; }
 .vision-figure .philosophy-image img { max-height: 480px; object-fit: contain; }

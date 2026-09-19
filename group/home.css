@@ -81,7 +81,10 @@
 .gap-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; gap: var(--home-column-gap); margin-top: 28px; }
 .gap-copy { min-width: 0; max-width: 76ch; }
 .gap-question { font-size: var(--font-lead); color: var(--ink); line-height: 1.65; }
-.gap-copy > p + p { margin-top: 20px; color: var(--muted); line-height: var(--leading-body); }
+.gap-levels { margin: 24px 0 0; }
+.gap-levels > div + div { margin-top: 20px; }
+.gap-levels dt { color: var(--ink); font-size: var(--font-body); font-weight: 600; line-height: 1.5; }
+.gap-levels dd { margin: 6px 0 0; color: var(--muted); font-size: var(--font-body); line-height: 1.65; }
 .synthesis-framework { min-width: 0; }
 .synthesis-framework > a { display: block; background: transparent; }
 .synthesis-framework img { width: 100%; height: auto; }

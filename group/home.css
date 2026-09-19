@@ -28,6 +28,40 @@
 .home-lead { font-size: 1.25rem; line-height: 1.65; max-width: 66ch; margin-top: 24px; }
 .home-description { font-size: 1rem; color: #555; line-height: 1.85; max-width: 78ch; margin-top: 18px; }
 .big-picture { background: #f5f5f3; border-bottom: 1px solid var(--line); }
+.philosophy-figure { margin-top: 38px; background: #fff; border: 1px solid #deded9; border-radius: 8px; overflow: hidden; box-shadow: 0 12px 32px #1425360b; }
+.philosophy-image { display: block; background: #061421; cursor: zoom-in; }
+.philosophy-image img { width: 100%; height: auto; }
+.philosophy-image:focus-visible { outline: 3px solid #fff; outline-offset: -7px; }
+.philosophy-figure figcaption { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; padding: 25px 28px; }
+.philosophy-figure h3 { font-size: 1.1875rem; font-weight: 500; letter-spacing: -.015em; }
+.philosophy-figure figcaption p { max-width: 78ch; font-size: .9375rem; line-height: 1.75; color: #555; margin-top: 9px; }
+.philosophy-figure small { display: block; font-size: .75rem; line-height: 1.65; color: #777; margin-top: 10px; }
+.philosophy-actions { display: flex; flex-direction: column; gap: 9px; align-items: flex-start; }
+.philosophy-actions a { display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 42px; padding: 7px 14px; font-size: .8125rem; white-space: nowrap; }
+.philosophy-actions a:first-child { border: 1px solid #aaa; }
+.philosophy-actions a:first-child:hover { background: #202020; color: #fff; }
+.philosophy-actions a:last-child:hover { text-decoration: underline; text-underline-offset: 4px; }
+.materials-context { margin-top: 25px; border-block: 1px solid #d5d5d2; }
+.materials-context > summary { cursor: pointer; padding: 18px 0; font-size: .9375rem; font-weight: 500; }
+.materials-context > summary::marker { color: #666; }
+.materials-context > summary:focus-visible { outline: 3px solid #858585; outline-offset: 4px; }
+.materials-context .materials-map { border: 0; margin-top: 0; padding: 4px 0 24px; background: transparent; }
+.artwork-viewer { width: min(1720px, calc(100% - 40px)); max-height: 94dvh; border: 0; padding: 0; background: #fff; color: #202020; box-shadow: 0 20px 80px #0006; }
+.artwork-viewer:not([open]) { display: none; }
+.artwork-viewer::backdrop { background: #000d; }
+.artwork-viewer-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 16px 22px; }
+.artwork-viewer-header h2 { font-size: 1.125rem; font-weight: 500; }
+.artwork-viewer-header > div { display: flex; gap: 10px; flex-shrink: 0; }
+.artwork-viewer button { border: 1px solid #ccc; background: #fff; color: #202020; padding: 8px 13px; min-height: 42px; font-size: .8125rem; cursor: pointer; }
+.artwork-viewer button:hover { border-color: #666; background: #f4f4f2; }
+.artwork-stage { overflow: auto; max-height: 68dvh; background: #061421; overscroll-behavior: contain; }
+.artwork-stage img { display: block; width: 100%; height: auto; max-height: 68dvh; object-fit: contain; }
+.artwork-stage.is-zoomed img { width: max(1672px, 150%); max-width: none; max-height: none; }
+.artwork-stage:focus-visible { outline: 3px solid #ccc; outline-offset: -4px; }
+.artwork-viewer-footer { display: flex; justify-content: space-between; align-items: baseline; gap: 14px 28px; padding: 15px 22px 20px; font-size: .8125rem; line-height: 1.7; }
+.artwork-viewer-footer p { color: #606060; }
+.artwork-viewer-footer a { white-space: nowrap; text-decoration: underline; text-underline-offset: 4px; }
+.artwork-open { overflow: hidden; }
 .materials-map { margin-top: 38px; padding: 30px; background: #fff; border: 1px solid #deded9; }
 .materials-map > h3 { font-size: 1.125rem; font-weight: 600; }
 .map-direction { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-top: 22px; padding-bottom: 14px; font-size: .8125rem; line-height: 1.65; color: #606060; }
@@ -109,6 +143,12 @@
   .team-details { padding-left: 30px; }
 }
 @media (max-width: 760px) {
+  .philosophy-figure figcaption { grid-template-columns: 1fr; gap: 16px; padding: 22px; }
+  .philosophy-actions { flex-direction: row; flex-wrap: wrap; gap: 8px 14px; }
+  .artwork-viewer-header { align-items: flex-start; flex-wrap: wrap; gap: 12px; padding: 14px 16px; }
+  .artwork-viewer-header h2 { font-size: 1rem; }
+  .artwork-viewer-footer { flex-wrap: wrap; padding: 13px 16px 17px; }
+  .artwork-stage, .artwork-stage img { max-height: 57dvh; }
   .vision-layout { grid-template-columns: 1fr; gap: 38px; padding-block: 40px; }
   .vision-copy .home-kicker { margin-bottom: 24px; }
   .vision-copy h1 { max-width: 18ch; font-size: clamp(2.5rem, 7.5vw, 3.4rem); }
@@ -137,6 +177,9 @@
   .team-details { padding: 30px 0 0; border-left: 0; border-top: 1px solid var(--line); }
 }
 @media (max-width: 540px) {
+  .philosophy-figure { margin-top: 28px; border-radius: 5px; }
+  .philosophy-figure figcaption { padding: 19px; }
+  .artwork-viewer { width: calc(100% - 16px); }
   .vision-copy h1 { max-width: 12ch; }
   .vision-statement { font-size: 1rem; }
   .home-actions { gap: 12px 22px; }
@@ -151,6 +194,8 @@
   .focus-heading > span { display: block; margin-top: 5px; }
 }
 @media print {
+  .philosophy-figure { box-shadow: none; break-inside: avoid; }
+  .philosophy-actions, .artwork-viewer { display: none !important; }
   .home-hero { background: white; color: #202020; }
   .home-hero p, .vision-figure figcaption, .vision-figure figcaption span { color: #444 !important; }
   .vision-layout { padding-block: 24px; }

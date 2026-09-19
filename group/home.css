@@ -63,22 +63,22 @@
 .artwork-viewer-footer p { color: #606060; }
 .artwork-viewer-footer a { white-space: nowrap; text-decoration: underline; text-underline-offset: 4px; }
 .artwork-open { overflow: hidden; }
-.materials-map { margin-top: clamp(32px, 3vw, 56px); padding: clamp(24px, 2.2vw, 40px); background: transparent; border: 1px solid var(--line); }
-.materials-map .narrative-step { color: var(--muted); margin-bottom: 12px; }
-.map-direction { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; margin-top: 22px; padding-bottom: 14px; font-size: var(--font-small); line-height: 1.65; color: #606060; }
-.map-direction > strong { color: #202020; font-weight: 600; }
+.materials-map { --chain-gap: clamp(24px, 2vw, 36px); margin-top: clamp(28px, 2.5vw, 44px); padding: clamp(24px, 2vw, 36px); background: transparent; border: 1px solid var(--line); }
+.materials-map .narrative-step { color: #47545b; font-size: .875rem; letter-spacing: .08em; }
+.map-direction { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; margin-top: 20px; padding-bottom: 14px; font-size: var(--font-caption); line-height: 1.6; color: var(--muted); }
+.map-direction > strong { color: var(--ink); font-size: 1rem; font-weight: 600; }
 .map-direction > span { text-align: right; }
-.materials-chain { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 25px; }
-.materials-chain li { position: relative; min-width: 0; padding: clamp(20px, 1.8vw, 32px); background: transparent; border: 1px solid var(--line); }
-.materials-chain li + li::before { content: "→"; position: absolute; left: -23px; top: 50%; transform: translateY(-50%); color: #666; font-size: 1rem; }
-.map-tag { font-size: var(--font-label); font-weight: 600; letter-spacing: .07em; line-height: 1.6; color: #666; display: block; }
-.materials-chain h4 { font-size: var(--font-card); line-height: 1.35; letter-spacing: -.015em; font-weight: 600; margin-top: 13px; }
-.materials-chain p { font-size: var(--font-body); line-height: 1.65; color: var(--muted); margin-top: 12px; }
-.materials-chain .map-focus { border-color: #52616a; color: var(--ink); }
+.materials-chain { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--chain-gap); }
+.materials-chain li { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: clamp(20px, 1.5vw, 28px); background: #fff; border: 1px solid var(--line); }
+.materials-chain li + li::before { content: "→"; position: absolute; left: calc(-1 * var(--chain-gap)); width: var(--chain-gap); top: 50%; transform: translateY(-50%); text-align: center; color: #667a84; font-size: 1.25rem; line-height: 1; }
+.map-tag { font-size: var(--font-label); font-weight: 600; letter-spacing: .06em; line-height: 1.5; color: #666; display: block; }
+.materials-chain h4 { font-size: clamp(1.25rem, 1rem + .4vw, 1.5rem); line-height: 1.35; letter-spacing: -.015em; font-weight: 600; margin-top: 12px; }
+.materials-chain p { font-size: var(--font-body); line-height: 1.65; color: var(--muted); margin-top: 10px; }
+.materials-chain .map-focus { background: #f4f7f8; border-color: #91a2ab; color: var(--ink); }
 .map-focus .map-tag { color: #344854; }
 .map-focus p { color: var(--muted); }
-.map-focus a { display: inline-block; color: var(--ink); margin-top: 16px; font-size: var(--font-small); text-decoration: underline; text-underline-offset: 4px; }
-.map-inverse { margin-top: 0; padding-block: 15px; }
+.map-focus a { display: inline-block; color: var(--ink); margin-top: 20px; font-size: var(--font-small); text-decoration: underline; text-underline-offset: 4px; }
+.map-inverse { margin-top: 0; padding: 16px 0 0; }
 .synthesis-question { margin-top: clamp(40px, 4vw, 64px); padding-top: clamp(28px, 2.5vw, 40px); background: transparent; border-top: 1px solid var(--line); }
 .synthesis-question > .home-kicker { color: #606060; font-size: var(--font-label); }
 .synthesis-question h3 { font-size: var(--font-subsection); font-weight: 600; letter-spacing: -.02em; margin-top: 14px; }
@@ -119,6 +119,20 @@
 @media (max-width: 1120px) {
   .home-page .primary-nav { font-size: .875rem; }
 }
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .materials-chain h4 { min-height: 2.7em; }
+}
+@media (max-width: 1100px) {
+  .materials-map { --chain-gap: 32px; }
+  .materials-chain { grid-template-columns: minmax(0, 1fr); }
+  .materials-chain li { padding: 22px 24px; }
+  .materials-chain li + li::before { content: "↓"; left: 50%; top: calc(-1 * var(--chain-gap)); width: auto; height: var(--chain-gap); line-height: var(--chain-gap); transform: translateX(-50%); }
+  .map-direction { display: block; }
+  .map-direction > span { display: block; text-align: left; margin-top: 4px; }
+  .map-direction > span > span { display: none; }
+  .map-direction > strong::after { content: " ↓"; }
+  .map-inverse > strong::after { content: " ↑"; }
+}
 @media (max-width: 1000px) {
   .vision-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .vision-text { max-width: 760px; }
@@ -126,11 +140,6 @@
   .strategy-layout, .gap-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .strategy-copy, .gap-copy { max-width: 68ch; }
   .research-relationships { width: min(100%, 520px); }
-  .materials-map { padding: 24px; }
-  .materials-chain { gap: 22px; }
-  .materials-chain li { padding: 17px 13px; }
-  .materials-chain li + li::before { left: -21px; }
-  .materials-chain h4 { font-size: var(--font-body); }
 }
 @media (max-width: 760px) {
   .home-page { --home-space: 48px; }
@@ -144,16 +153,6 @@
   .vision-heading h1 { font-size: clamp(2.25rem, 5.5vw, 2.75rem); }
   .vision-copy { margin-top: 24px; }
   .vision-statement { max-width: 60ch; }
-  .materials-chain { grid-template-columns: 1fr; gap: 26px; }
-  .materials-chain li { padding: 19px 21px; }
-  .materials-chain li + li::before { content: "↓"; left: 50%; top: -25px; transform: translateX(-50%); }
-  .materials-chain h4 { font-size: var(--font-card); margin-top: 7px; }
-  .materials-chain p { margin-top: 7px; }
-  .map-direction { display: block; }
-  .map-direction > span { display: block; text-align: left; margin-top: 4px; }
-  .map-direction > span > span { display: none; }
-  .map-direction > strong::after { content: " ↓"; }
-  .map-inverse > strong::after { content: " ↑"; }
 }
 @media (max-width: 540px) {
   .artwork-viewer { width: calc(100% - 16px); }

@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="Build the materials we need. Cheng Research Group combines AI, synthesis science and experimental feedback to turn promising material designs into reliably synthesized, functionally validated materials.">
+  <meta name="description" content="Build the materials we need. Cheng Research Group develops AI for predictive synthesis science, connecting material design with formation pathways, reliable synthesis and experimentally verified function.">
   <title>Cheng Research Group | AI for Materials Synthesis</title>
   <link rel="canonical" href="https://xiangran-cheng.github.io/group/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cheng Research Group | AI for Materials Synthesis">
-  <meta property="og:description" content="Build the materials we need. AI, synthesis science and experimental feedback to connect material design with reliable synthesis and verified function.">
+  <meta property="og:description" content="Our place in materials science: connecting design with physical realization through AI, formation mechanisms and experimental feedback.">
   <meta property="og:url" content="https://xiangran-cheng.github.io/group/">
   <meta property="og:image" content="https://xiangran-cheng.github.io/assets/materials-builders-hero.webp">
   <meta property="og:image:alt" content="Conceptual illustration of precursors evolving through competing reaction pathways">
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
   <link rel="stylesheet" href="group.css?v=8">
-  <link rel="stylesheet" href="home.css?v=3">
+  <link rel="stylesheet" href="home.css?v=4">
   <script src="group.js?v=6" defer></script>
 </head>
 <body class="group-page home-page" data-page="home">
@@ -44,7 +44,7 @@
           <p class="vision-tagline">Advancing materials synthesis to address critical societal needs.</p>
           <p class="vision-statement">We envision a future in which materials with the properties we need can be designed, reliably synthesized and validated in use.</p>
           <div class="home-actions">
-            <a class="home-button" href="#mission">Our mission <span aria-hidden="true">↓</span></a>
+            <a class="home-button" href="#big-picture">Our place in science <span aria-hidden="true">↓</span></a>
             <a class="home-text-link" href="research.html">Explore our research <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -55,31 +55,62 @@
       </div>
     </section>
 
+    <section class="big-picture" id="big-picture" aria-labelledby="big-picture-title">
+      <div class="container home-section">
+        <div class="home-section-intro">
+          <p class="home-kicker">THE BIG PICTURE</p>
+          <div>
+            <h2 id="big-picture-title">From understanding matter<br>to making useful materials.</h2>
+            <p class="home-lead">Science connects observation, explanation and prediction. Materials research adds a practical question: how can we create the structures and functions that society needs?</p>
+            <p class="home-description">Materials science links synthesis and processing with composition and structure, material properties, and performance in use. Application needs guide the inverse question: what material should we make, and how can we make it?</p>
+          </div>
+        </div>
+
+        <figure class="materials-map" aria-labelledby="materials-map-title" aria-describedby="materials-map-caption">
+          <h3 id="materials-map-title">The materials science loop</h3>
+          <div class="map-direction"><strong>Forward prediction</strong><span>From processing choices to material behavior <span aria-hidden="true">→</span></span></div>
+          <ol class="materials-chain" aria-label="Processing, structure, properties and performance relationships">
+            <li class="map-focus"><span class="map-tag">OUR CORE FOCUS</span><h4>Synthesis &amp; processing</h4><p>Precursors, reaction routes and conditions</p><a href="#mission">How do we make it? <span aria-hidden="true">↓</span></a></li>
+            <li><span class="map-tag">MATERIAL STATE</span><h4>Composition &amp; structure</h4><p>Phases, defects, interfaces and microstructure</p></li>
+            <li><span class="map-tag">MATERIAL RESPONSE</span><h4>Properties</h4><p>Transport, stability and response to fields</p></li>
+            <li><span class="map-tag">SOCIETAL NEEDS</span><h4>Performance in use</h4><p>Function, efficiency and reliability in an application</p></li>
+          </ol>
+          <div class="map-direction map-inverse"><strong>Inverse design</strong><span><span aria-hidden="true">←</span> From performance requirements to material targets and viable routes</span></div>
+          <figcaption id="materials-map-caption">Experiments connect both directions: what we observe changes our models, designs and synthesis choices. Multiple structures and routes may meet a target; their feasibility and performance require experimental checks.</figcaption>
+        </figure>
+
+        <div class="positioning-statement">
+          <p class="home-kicker">OUR POSITION</p>
+          <div><h3>AI for predictive synthesis science.</h3><p>We focus on the connection between a desired material and the pathway that makes it form. At the intersection of AI, reaction science and experiments, we study how to make this connection predictable and useful for synthesis decisions.</p><a class="home-inline-link" href="#mission">Our mission and strategy <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="home-section container" id="mission" aria-labelledby="mission-title">
       <div class="home-section-intro" id="about">
         <p class="home-kicker">OUR MISSION</p>
         <div>
           <h2 id="mission-title">Understand formation.<br>Guide synthesis.</h2>
-          <p class="home-lead">We combine AI, physical mechanisms and experimental feedback to understand how materials form and guide their reliable synthesis.</p>
-          <p class="home-description">Our focus is the path from precursors through evolving intermediates to target and competing phases. We develop models that connect processing conditions to these pathways, test their predictions through characterization and experiments, and use the evidence to refine the next synthesis decision. The goal is to make materials with the intended structure and experimentally verified function.</p>
+          <p class="home-lead">We aim to predict and guide material formation through models that can be tested and improved experimentally.</p>
+          <p class="home-description">Our focus is the path from precursors through evolving intermediates to target and competing phases. We combine AI with thermodynamics, kinetics and transport to model these transformations, then use experiments to test predictions and guide the next synthesis decision.</p>
         </div>
       </div>
 
       <div class="synthesis-question">
-        <p class="home-kicker">THE QUESTION THAT CONNECTS OUR WORK</p>
-        <h3>How do we turn a promising design into a material that works?</h3>
-        <ol class="pathway-strip" aria-label="From material needs to synthesis and validation">
-          <li><strong>Define the need</strong><span>Application requirements and target properties</span></li>
-          <li><strong>Find a realizable path</strong><span>Candidate structures, precursors and formation pathways</span></li>
-          <li><strong>Make it. Test it.</strong><span>Controlled synthesis and functional validation</span></li>
+        <p class="home-kicker">OUR RESEARCH STRATEGY</p>
+        <h3>Observe formation. Test mechanisms. Guide synthesis.</h3>
+        <ol class="pathway-strip" aria-label="Our strategy for predictive synthesis science">
+          <li><strong>Observe formation</strong><span>Infer evolving material states from synthesis records and time-resolved, multimodal measurements.</span></li>
+          <li><strong>Test mechanisms</strong><span>Compare competing pathways using physical models and experiments that distinguish their predictions.</span></li>
+          <li><strong>Guide synthesis</strong><span>Select routes and conditions, test the resulting material, and learn from the outcome.</span></li>
         </ol>
-        <p class="pathway-feedback">Experimental evidence feeds back into material targets, synthesis choices and predictive models.</p>
+        <p class="pathway-feedback"><strong>What progress means:</strong> predictive accuracy under new conditions, reproducible target formation, and experimentally verified function.</p>
       </div>
 
       <div class="gap-intro">
         <p class="home-kicker">THE SYNTHESIS GAP</p>
-        <h3>A candidate structure is the beginning.</h3>
-        <p>Computational design can suggest promising materials. Making a chosen target requires more: suitable precursors, selective reaction pathways and conditions that favor its formation. Thermodynamic stability alone does not establish synthesizability; the properties of the material we actually make must then be tested.</p>
+        <h3>Our chosen challenge: reliable material formation.</h3>
+        <p>Many established materials already have reliable recipes. We focus on targets and conditions for which the formation pathway remains uncertain: which intermediates appear, which products compete, and which controls favor the intended outcome. Thermodynamic stability is one constraint; kinetics, transport and processing history also shape what forms.</p>
       </div>
       <figure class="synthesis-framework">
         <a href="gallery.html#synthesis-framework" aria-label="Explore the materials synthesis framework in the gallery"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Three questions connect computational design with synthesis: is the target thermodynamically competitive, is there a viable reaction route, and will it form under the chosen processing conditions?" loading="lazy" decoding="async"></a>
@@ -111,7 +142,7 @@
           <a class="home-inline-link" href="research.html#autonomous-lab">Scientific agents <span aria-hidden="true">↗</span></a>
         </article>
       </div>
-      <p class="research-context">These directions connect application needs, formation pathways, material function and the evidence needed for better research decisions. <a class="home-inline-link" href="research.html">View ongoing projects <span aria-hidden="true">↗</span></a></p>
+      <p class="research-context"><strong>How the directions fit together.</strong> Synthesizability is our core question; structure evolution connects formation with function; energy applications define needs and test outcomes. We develop scientific agents to connect evidence, hypothesis testing and study planning throughout this cycle. <a class="home-inline-link" href="research.html">View ongoing projects <span aria-hidden="true">↗</span></a></p>
     </section>
 
     <section class="home-section container home-team" aria-labelledby="home-team-title">

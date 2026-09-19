@@ -61,7 +61,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .group-page:not(.home-page) .primary-nav { font-size: 1rem; }
 .group-page:not(.home-page) .page-heading { padding-bottom: clamp(32px, 3vw, 48px); }
 .group-page:not(.home-page) .page-heading > p { max-width: 70ch; }
-.group-page:not(.home-page) .site-footer { padding-block: clamp(40px, 4vw, 72px); }
 .skip-link { position: fixed; left: 12px; top: 10px; z-index: 40; transform: translateY(-180%); padding: 10px 18px; background: #fff; }
 .skip-link:focus { transform: none; }
 
@@ -109,11 +108,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .member-list p { font-size: var(--font-small); color: var(--muted); margin-top: 4px; }
 
 /* Footer */
-.site-footer { padding-block: 40px; background: var(--dark); color: #bdbdbd; font-size: var(--font-small); line-height: 1.65; }
-.footer-inner { display: flex; justify-content: space-between; gap: 28px 40px; }
-.footer-inner > div { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
-.footer-inner strong { color: #fff; font-size: 1.125rem; font-weight: 600; }
-.footer-inner a { overflow-wrap: anywhere; }
+.site-footer { padding-block: clamp(20px, 1.4vw, 24px); background: var(--dark); color: #c5c5c5; font-size: .875rem; line-height: 1.6; }
+.footer-inner { display: flex; justify-content: space-between; gap: 18px 40px; }
+.footer-inner > div { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; }
+.footer-inner strong { color: #fff; font-size: 1.0625rem; font-weight: 600; line-height: 1.45; }
+.footer-inner a { min-height: 24px; overflow-wrap: anywhere; }
 .footer-inner a:hover { color: #fff; }
 
 /* Both image viewers use the same controls and keep the image area scrollable. */
@@ -161,7 +160,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .page-heading { padding-bottom: 28px; }
   .mentor { margin-top: 28px; }
   .team-heading { margin-top: 36px; }
-  .footer-inner { flex-direction: column; gap: 28px; }
+  .footer-inner { flex-direction: column; gap: 18px; }
   .group-page :is(.artwork-viewer-header, .viewer-header) { padding: 12px 14px; gap: 12px; }
   .group-page :is(.artwork-viewer-header, .viewer-header) h2 { font-size: var(--font-body); }
   .group-page :is(.artwork-viewer-footer, .viewer-footer) { padding: 12px 14px; }

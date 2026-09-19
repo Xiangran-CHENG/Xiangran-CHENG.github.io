@@ -43,6 +43,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .reading-width { width: min(940px, calc(100% - var(--page-gutter) * 2)); margin-inline: auto; }
 .group-page { min-height: 100vh; display: flex; flex-direction: column; }
 .group-page > main { flex: 1; min-width: 0; }
+/* Interior pages share the homepage's generous edges, with readable text columns. */
+.group-page:not(.home-page) {
+  --font-title: clamp(2.25rem, 1.5rem + 2vw, 3.75rem);
+  --font-section: clamp(1.875rem, 1.25rem + 1.2vw, 2.625rem);
+  --font-card: clamp(1.25rem, 1rem + .4vw, 1.5rem);
+  --font-lead: clamp(1.125rem, 1rem + .35vw, 1.375rem);
+  --font-body: clamp(1rem, .875rem + .25vw, 1.125rem);
+  --font-small: .9375rem; --font-caption: .875rem; --font-label: .8125rem;
+  --space-section: clamp(48px, 5vw, 88px);
+  --space-heading: clamp(48px, 5vw, 88px);
+  --page-gutter: clamp(20px, 3vw, 80px);
+}
+.group-page:not(.home-page) .container { width: min(1600px, calc(100% - var(--page-gutter) * 2)); }
+.group-page:not(.home-page) :is(.site-header, .site-footer) .container { width: min(1760px, calc(100% - var(--page-gutter) * 2)); }
+.group-page:not(.home-page) .wordmark { font-size: clamp(1.5rem, 1.5vw, 1.75rem); }
+.group-page:not(.home-page) .primary-nav { font-size: 1rem; }
+.group-page:not(.home-page) .page-heading { padding-bottom: clamp(32px, 3vw, 48px); }
+.group-page:not(.home-page) .page-heading > p { max-width: 70ch; }
+.group-page:not(.home-page) .site-footer { padding-block: clamp(40px, 4vw, 72px); }
 .skip-link { position: fixed; left: 12px; top: 10px; z-index: 40; transform: translateY(-180%); padding: 10px 18px; background: #fff; }
 .skip-link:focus { transform: none; }
 
@@ -70,19 +89,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 /* People */
 .people-section { padding-top: 0; }
 .people-section .page-heading { border-bottom: 1px solid var(--line); }
-.mentor { margin-top: 36px; }
-.people-page .mentor { max-width: 78ch; }
+.mentor { margin-top: clamp(36px, 4vw, 64px); }
+.people-page .mentor-copy { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr); gap: clamp(32px, 5vw, 88px); }
+.mentor-bio { min-width: 0; max-width: 72ch; border-left: 1px solid var(--line); padding-left: clamp(28px, 3vw, 48px); }
+.mentor-bio > p { color: var(--muted); }
+.mentor-bio > p + p { margin-top: 20px; }
 .mentor .eyebrow { margin-bottom: 12px; }
 .mentor h2 { font-size: var(--font-section); }
 .affiliation { color: var(--ink); margin-top: 16px; line-height: 1.6; }
 .mentor-copy > p:not(.eyebrow):not(.affiliation) { color: var(--muted); margin-top: 20px; }
 .mentor-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 24px; }
 .mentor-links a { overflow-wrap: anywhere; padding-block: 4px; }
-.team-heading { margin-top: 48px; }
+.team-heading { margin-top: clamp(48px, 5vw, 80px); }
 .team-heading h2 { font-size: var(--font-section); }
-.member-list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; }
-.member-list li { display: flex; align-items: center; gap: 16px; min-width: 0; padding: 24px 0; border-top: 1px solid var(--line); }
-.member-initial { width: 48px; height: 48px; flex-shrink: 0; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); font-size: var(--font-small); font-weight: 600; }
+.member-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(24px, 3vw, 48px); }
+.member-list li { display: flex; align-items: center; gap: 20px; min-width: 0; padding: 28px 0; border-top: 1px solid var(--line); }
+.member-initial { width: 60px; height: 60px; flex-shrink: 0; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); font-size: 1rem; font-weight: 600; }
 .member-list h3 { font-size: var(--font-card); }
 .member-list p { font-size: var(--font-small); color: var(--muted); margin-top: 4px; }
 
@@ -113,12 +135,19 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .group-page .viewer-footer > p { font-size: var(--font-small); }
 .group-page .viewer-original { text-decoration: underline; text-underline-offset: 4px; }
 
+@media (min-width: 1121px) {
+  .group-page:not(.home-page) .header-inner { min-height: 92px; }
+}
 @media (max-width: 1120px) {
+  .group-page:not(.home-page) .primary-nav { font-size: .875rem; }
   :root { --page-gutter: 24px; }
   .header-inner { flex-wrap: wrap; gap: 12px; padding-block: 16px 12px; }
   .primary-nav { flex: 1 0 100%; justify-content: space-between; flex-wrap: wrap; gap: 4px 20px; margin: 0; padding-top: 6px; border-top: 1px solid var(--line); }
 }
 @media (max-width: 760px) {
+  .group-page:not(.home-page) .wordmark { font-size: 1.25rem; }
+  .people-page .mentor-copy { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .mentor-bio { border-left: 0; padding-left: 0; }
   .member-list { grid-template-columns: 1fr; gap: 0; }
   .member-list li { padding-block: 20px; }
   .footer-inner { flex-wrap: wrap; }
@@ -150,4 +179,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .site-footer { background: #fff; color: var(--ink); border-top: 1px solid var(--line); }
   .footer-inner strong { color: var(--ink); }
   .mentor, .member-list li { break-inside: avoid; }
+  .people-page .mentor-copy { display: block; }
+  .mentor-bio { padding-left: 0; border-left: 0; margin-top: 24px; }
 }

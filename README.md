@@ -85,4 +85,4 @@ Then the URL will be:
 
 `https://yourname.github.io/`
 
-Home uses a fluid content width across its header, sections and footer, with 20-64px responsive gutters instead of the shared 1160px cap. The synthesis-gap explanation and framework image share a row on desktop; narrow screens stack them. Repeated visible figure titles, download controls, mission detail and end-of-page summaries are omitted; accessible figure descriptions, schematic-data labels, research directions and image viewers are preserved. Other group pages keep their shared layout.
+Home uses a centered content width capped at 1280px across its header, sections and footer, with 20-64px responsive gutters. Section backgrounds remain full width. Its image-and-text columns share a responsive gap capped at 56px. The synthesis-gap explanation and framework image share a row on desktop; narrow screens stack them. Repeated visible figure titles, download controls, mission detail and end-of-page summaries are omitted; accessible figure descriptions, schematic-data labels, research directions and image viewers are preserved. Other group pages keep their shared 1160px layout.

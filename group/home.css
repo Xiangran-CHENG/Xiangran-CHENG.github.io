@@ -97,10 +97,6 @@
 .research-map-preview picture { display: block; }
 .research-map-preview img { width: 100%; height: auto; }
 .research-map-preview:hover .diagram-enlarge { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
-.research-map-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
-.research-map-links a { min-width: 0; min-height: 44px; padding-block: 4px; font-size: var(--font-small); font-weight: 600; }
-.research-map-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.research-link-number { display: block; margin-bottom: 7px; color: var(--muted); font-size: var(--font-label); font-weight: 400; }
 @media (max-width: 1000px) {
   .vision-layout { gap: 32px; }
   .strategy-layout, .gap-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
@@ -128,7 +124,6 @@
   .map-direction > strong::after { content: " ↓"; }
   .map-inverse > strong::after { content: " ↑"; }
   .home-lead { font-size: var(--font-lead); }
-  .research-map-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 20px; }
 }
 @media (max-width: 540px) {
   .artwork-viewer { width: calc(100% - 16px); }

@@ -8,11 +8,8 @@
 .research-overview a { display: block; width: min(100%, 1440px); margin-inline: auto; cursor: zoom-in; }
 .research-overview a:focus-visible { outline-color: #147d96; }
 .research-overview picture, .research-overview img { display: block; width: 100%; height: auto; }
-.research-index { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px 32px; padding: 24px 0; border-block: 1px solid var(--line); font-size: var(--font-small); }
-.research-index a { padding-block: 4px; line-height: 1.6; }
-.research-index a:hover { text-decoration: underline; text-underline-offset: 5px; }
-.area-index { display: block; color: var(--muted); font-size: var(--font-label); margin-bottom: 6px; font-variant-numeric: tabular-nums; }
 .research-area { display: grid; grid-template-columns: minmax(0,.95fr) minmax(0,1.05fr); gap: clamp(40px, 5vw, 88px); padding: var(--space-section) 0; }
+.research-intro + .research-area { padding-top: 0; }
 .research-area + .research-area { border-top: 1px solid var(--line); }
 .area-summary, .ongoing-projects { min-width: 0; }
 .area-number { font-size: var(--font-label); color: var(--muted); letter-spacing: .1em; font-weight: 600; line-height: 1.6; margin-bottom: 16px; }
@@ -48,8 +45,7 @@
 }
 @media (max-width: 760px) {
   .research-area { gap: 32px; }
-  .research-index { grid-template-columns: 1fr 1fr; gap: 20px 24px; }
   .area-summary > p:not(.area-number) { margin-top: 20px; }
   .project-list li { padding-block: 24px; }
 }
-@media print { .research-index { display: none; } .research-intro, .research-area { display: block; } .research-intro > p { margin-top: 16px; } .research-area { padding: 24px 0; } .area-summary { margin-bottom: 24px; } .ongoing-projects { border-left: 0; padding-left: 0; } .project-list li { break-inside: avoid; } }
+@media print { .research-intro, .research-area { display: block; } .research-intro > p { margin-top: 16px; } .research-area { padding: 24px 0; } .area-summary { margin-bottom: 24px; } .ongoing-projects { border-left: 0; padding-left: 0; } .project-list li { break-inside: avoid; } }

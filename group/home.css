@@ -93,7 +93,7 @@
 .gap-question { font-size: var(--font-lead); color: var(--ink); line-height: 1.65; }
 .gap-copy > p + p { margin-top: 20px; color: var(--muted); line-height: var(--leading-body); }
 .synthesis-framework { min-width: 0; }
-.synthesis-framework > a { display: block; background: #080808; padding: 24px; }
+.synthesis-framework > a { display: block; background: transparent; }
 .synthesis-framework img { width: 100%; height: auto; }
 .synthesis-framework figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; margin-top: 14px; font-size: var(--font-small); line-height: 1.7; color: var(--muted); }
 .synthesis-framework figcaption small { font-size: var(--font-label); color: #666; }
@@ -154,7 +154,6 @@
   .home-actions { gap: 12px 22px; }
   .home-section h2 { font-size: var(--font-section); }
   .synthesis-question { padding: 25px 22px; margin-top: 30px; }
-  .synthesis-framework > a { padding: 10px; }
   .materials-map { padding: 22px 18px; margin-top: 28px; }
   .focus-heading { display: block; margin-top: 35px; }
   .focus-heading > span { display: block; margin-top: 5px; }

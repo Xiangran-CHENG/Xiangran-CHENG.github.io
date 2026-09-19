@@ -90,18 +90,16 @@
 .pathway-strip span { display: block; color: #606060; font-size: var(--font-body); line-height: 1.65; margin-top: 5px; }
 .pathway-feedback { font-size: var(--font-small); line-height: 1.65; color: #606060; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
 .gap-intro { margin-top: clamp(40px, 4vw, 72px); }
-.gap-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: var(--home-column-gap); }
-.gap-copy { min-width: 0; max-width: 62ch; }
+.gap-layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); align-items: center; gap: clamp(28px, 4vw, 64px); }
+.gap-copy { min-width: 0; max-width: 64ch; }
 .gap-question { font-size: var(--font-lead); color: var(--ink); line-height: 1.6; }
-.gap-levels { margin: 28px 0 0; }
-.gap-levels > div + div { margin-top: 24px; }
+.gap-levels { margin: 24px 0 0; }
+.gap-levels > div + div { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
 .gap-levels dt { color: var(--ink); font-size: var(--font-lead); font-weight: 600; line-height: 1.5; }
-.gap-levels dd { margin: 6px 0 0; color: var(--muted); font-size: var(--font-body); line-height: 1.65; }
-.synthesis-framework { min-width: 0; width: min(100%, 840px); justify-self: center; }
+.gap-levels dd { margin: 8px 0 0; color: var(--muted); font-size: var(--font-body); line-height: 1.65; }
+.synthesis-framework { min-width: 0; width: min(100%, 880px); justify-self: center; }
 .synthesis-framework > a { display: block; background: transparent; }
 .synthesis-framework img { width: 100%; height: auto; }
-.synthesis-framework figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; margin-top: 14px; font-size: var(--font-small); line-height: 1.7; color: var(--muted); }
-.synthesis-framework figcaption small { font-size: var(--font-caption); color: #606060; }
 .focus-heading { display: flex; justify-content: space-between; gap: 16px; margin-top: clamp(48px, 5vw, 80px); align-items: baseline; }
 .focus-heading h3 { font-size: var(--font-subsection); font-weight: 600; }
 .focus-heading > span { font-size: var(--font-caption); color: #666; }

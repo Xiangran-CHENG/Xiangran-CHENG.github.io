@@ -6,3 +6,5 @@
 @media print{.gallery-intro{padding-block:20px}.collection{padding-top:20px}.gallery-image-link::after,.gallery-sections,.image-viewer{display:none!important}.gallery-card{break-inside:avoid}.work-grid,.photo-grid{grid-template-columns:1fr 1fr}.gallery-main{padding-bottom:20px}}
 
 .viewer-close:hover,.viewer-controls button:not(:disabled):hover{background:#f0f0f0;border-color:#999999}
+.framework-card{grid-column:1/-1}.gallery-image-link.framework-image{aspect-ratio:1534/1025;padding:20px}.framework-card figcaption>p:not(.work-type){max-width:80ch}
+@media(max-width:650px){.gallery-image-link.framework-image{padding:8px}}

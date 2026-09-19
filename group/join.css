@@ -1,0 +1,10 @@
+.join-topics { margin-top: 36px; padding-top: 27px; border-top: 1px solid #d5d5d5; }
+.join-topics h2 { font-size: 1.2rem; letter-spacing: 0; font-weight: 600; }
+.join-topics ul { padding-left: 20px; margin-block: 18px; color: var(--muted); }
+.join-topics li { margin-top: 10px; }
+.join-topics > a { font-size: .9375rem; border-bottom: 1px solid #999; padding-bottom: 4px; }
+.join-note { margin-top: 0; }
+.join-poster { margin-block: 24px 20px; }
+.join-poster img { width: 100%; height: auto; }
+.join-poster figcaption { font-size: .75rem; line-height: 1.6; color: var(--muted); margin-top: 10px; }
+@media (max-width: 650px) { .join-poster { max-width: 390px; } }

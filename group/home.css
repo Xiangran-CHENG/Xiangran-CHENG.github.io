@@ -5,7 +5,8 @@
 .vision-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 56px; padding-block: 64px 70px; }
 .vision-copy .home-kicker { color: #d8d8d8; margin-bottom: 34px; }
 .vision-label { color: #b7b7b7; font-size: .875rem; margin-bottom: 12px; }
-.vision-copy h1 { max-width: 12ch; font-size: clamp(2.75rem, 4.3vw, 3.8rem); font-weight: 500; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
+.vision-copy h1 { max-width: 14ch; font-size: clamp(2.75rem, 4.3vw, 3.8rem); font-weight: 500; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
+.vision-tagline { font-size: 1.125rem; color: #f0f0f0; line-height: 1.65; margin-top: 25px; max-width: 40ch; }
 .vision-statement { color: #d0d0d0; margin-top: 26px; max-width: 49ch; font-size: 1.0625rem; line-height: 1.75; }
 .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 30px; font-size: .875rem; }
 .home-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; padding: 11px 18px; border: 1px solid currentColor; min-height: 46px; font-weight: 500; }
@@ -34,6 +35,16 @@
 .pathway-strip li + li::before { content: "→"; position: absolute; left: -30px; top: 17px; color: #686868; }
 .pathway-strip strong { display: block; font-size: .9375rem; font-weight: 600; line-height: 1.6; }
 .pathway-strip span { display: block; color: #606060; font-size: .8125rem; line-height: 1.65; margin-top: 5px; }
+.pathway-feedback { font-size: .8125rem; line-height: 1.7; color: #606060; margin-top: 23px; padding-top: 17px; border-top: 1px solid #d5d5d2; }
+.gap-intro { margin-top: 48px; max-width: 82ch; }
+.gap-intro .home-kicker { color: #606060; }
+.gap-intro h3 { margin-top: 12px; font-size: clamp(1.5rem, 2.4vw, 2rem); font-weight: 500; letter-spacing: -.025em; }
+.gap-intro > p:last-child { margin-top: 17px; color: #555; line-height: 1.85; }
+.synthesis-framework { margin-top: 28px; }
+.synthesis-framework > a { display: block; background: #080808; padding: 24px; }
+.synthesis-framework img { width: 100%; height: auto; }
+.synthesis-framework figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 24px; margin-top: 14px; font-size: .875rem; line-height: 1.7; color: #555; }
+.synthesis-framework figcaption small { flex-basis: 100%; font-size: .75rem; color: #666; }
 .focus-heading { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; align-items: baseline; }
 .focus-heading h3 { font-size: 1.125rem; font-weight: 600; }
 .focus-heading > span { font-size: .8125rem; color: #666; }
@@ -44,6 +55,10 @@
 .focus-item p { color: #555; font-size: .9375rem; line-height: 1.8; margin-block: 15px 20px; }
 .home-inline-link { font-size: .875rem; font-weight: 500; line-height: 1.65; display: inline-block; padding-block: 5px; }
 .focus-item .home-inline-link { margin-top: auto; }
+.focus-core { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr); gap: 48px; margin-top: 24px; padding: 25px 28px; background: #f5f5f3; border-top: 2px solid #202020; }
+.focus-core h4 { font-size: 1.5rem; }
+.focus-core p { margin-top: 0; }
+.focus-core .focus-systems { font-size: .8125rem; color: #666; }
 .research-context { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 23px; color: #606060; font-size: .9375rem; max-width: 100%; }
 .research-context a { color: #202020; margin-left: 5px; }
 .home-publications { background: #f5f5f3; }
@@ -87,6 +102,7 @@
   .home-section-intro > .home-kicker { padding-top: 0; }
   .home-lead { font-size: 1.125rem; }
   .focus-grid { grid-template-columns: 1fr; gap: 24px; }
+  .focus-core { grid-template-columns: 1fr; gap: 14px; padding: 24px; }
   .focus-item h4 { max-width: none; margin-top: 7px; }
   .focus-item p { max-width: 70ch; margin-block: 10px; }
   .home-team { grid-template-columns: 1fr; gap: 38px; }
@@ -98,6 +114,7 @@
   .home-actions { gap: 12px 22px; }
   .home-section h2 { font-size: 2rem; }
   .synthesis-question { padding: 25px 22px; margin-top: 30px; }
+  .synthesis-framework > a { padding: 10px; }
   .pathway-strip { grid-template-columns: 1fr; gap: 28px; margin-top: 20px; padding-top: 19px; }
   .pathway-strip li { padding-top: 0; }
   .pathway-strip li + li::before { content: "↓"; left: 0; top: -27px; }

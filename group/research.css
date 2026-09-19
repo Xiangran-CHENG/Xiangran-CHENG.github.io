@@ -2,6 +2,7 @@
 .research-intro{padding:38px 0 32px}
 .research-intro h1{font-size:clamp(2.8rem,5.2vw,4.5rem);font-weight:500;letter-spacing:-.045em;line-height:1.1}
 .research-intro p{max-width:57em;color:var(--muted);margin-top:23px;font-size:1.0625rem;line-height:1.85}
+.research-intro .research-lead{max-width:36em;color:var(--ink);font-size:clamp(1.25rem,2.2vw,1.65rem);line-height:1.5;letter-spacing:-.02em}
 .research-index{display:flex;flex-wrap:wrap;gap:12px 30px;padding:19px 0;border-block:1px solid var(--line);font-size:.9375rem;color:var(--accent)}
 .research-index a{padding-block:3px}
 .research-index a:hover{text-decoration:underline;text-underline-offset:5px}
@@ -12,7 +13,11 @@
 .area-summary h2{font-size:1.85rem;font-weight:500;line-height:1.35;letter-spacing:-.025em}
 .area-summary>p:not(.area-number){color:var(--muted);font-size:.9375rem;line-height:1.85;margin-top:20px}
 .area-summary .research-question{color:var(--ink);font-size:1.03rem;font-style:italic;line-height:1.7}
+.area-summary .research-systems{padding-top:18px;border-top:1px solid var(--line)}
+.research-systems strong{display:block;font-size:.8125rem;color:var(--ink);font-weight:600;margin-bottom:7px}
 .ongoing-projects h3{font-size:.875rem;letter-spacing:.035em;color:var(--muted);font-weight:500;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.ongoing-projects .supporting-projects-title{margin-top:30px}
+.supporting-projects-note{font-size:.875rem;color:var(--muted);line-height:1.7;margin-top:13px}
 .project-list{list-style:none;margin:0;padding:0}
 .project-list li{padding:20px 0}
 .project-list li+li{border-top:1px solid var(--line)}

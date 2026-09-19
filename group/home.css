@@ -1,15 +1,15 @@
 /* Home: vision, strategic position, mission and research focus. */
 .home-page { --home-space: var(--space-section); }
 .home-hero { background: #080808; color: #fff; }
-.vision-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 56px 64px; }
-.vision-heading { grid-column: 1 / -1; }
+.vision-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); align-items: center; gap: 48px; padding-block: 56px 64px; }
+.vision-text { min-width: 0; }
 .vision-heading .home-kicker { color: #d8d8d8; margin-bottom: 34px; }
 .vision-label { color: #b7b7b7; font-size: var(--font-small); margin-bottom: 12px; }
 .vision-heading h1 { font-size: var(--font-title); font-weight: 500; line-height: 1.12; letter-spacing: -.04em; }
-.vision-copy { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 32px 48px; }
+.vision-copy { margin-top: 26px; }
 .vision-statement { color: #d0d3d6; max-width: 66ch; font-size: var(--font-lead); line-height: 1.75; }
 .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 30px; font-size: var(--font-small); }
-.vision-copy .home-actions { margin-top: 0; }
+.vision-copy .home-actions { margin-top: 28px; }
 
 .home-button:hover { background: #202020; color: white; }
 .home-text-link { padding-block: 10px; }
@@ -47,10 +47,15 @@
 .philosophy-actions a:first-child { border: 1px solid #aaa; }
 .philosophy-actions a:first-child:hover { background: #202020; color: #fff; }
 .philosophy-actions a:last-child:hover { text-decoration: underline; text-underline-offset: 4px; }
-.vision-figure.philosophy-figure { min-width: 0; margin-top: 0; background: #0e141b; border-color: #29313a; color: #f3f5f7; }
-.vision-figure.philosophy-figure figcaption p { color: #c5cdd5; }
-.vision-figure.philosophy-figure small { color: #a4aeb8; }
-.vision-figure .philosophy-actions a:first-child:hover { background: #fff; color: #080808; }
+.vision-figure.philosophy-figure { min-width: 0; margin-top: 0; background: transparent; border: 0; border-radius: 0; color: #f3f5f7; }
+.vision-figure .philosophy-image { background: transparent; }
+.vision-figure.philosophy-figure figcaption { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 20px; padding: 0; margin-top: 14px; }
+.vision-caption-description { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.vision-figure.philosophy-figure small { color: #a4aeb8; margin-top: 0; }
+.vision-figure .philosophy-actions { flex-direction: row; flex-wrap: wrap; gap: 8px 18px; }
+.vision-figure .philosophy-actions a { min-height: 32px; padding: 5px 0; gap: 8px; }
+.vision-figure .philosophy-actions a:first-child { border: 0; }
+.vision-figure .philosophy-actions a:hover { background: transparent; color: #fff; text-decoration: underline; text-underline-offset: 4px; }
 .artwork-viewer { width: min(1720px, calc(100% - 40px)); max-height: 94dvh; border: 0; padding: 0; background: #fff; color: #202020; box-shadow: 0 20px 80px #0006; }
 .artwork-viewer:not([open]) { display: none; }
 .artwork-viewer::backdrop { background: #000d; }
@@ -127,7 +132,8 @@
 .research-context { border-top: 1px solid var(--line); margin-top: 32px; padding-top: 23px; color: #606060; font-size: var(--font-body); max-width: 100%; }
 .research-context a { color: #202020; margin-left: 5px; }
 @media (max-width: 1000px) {
-  .vision-copy { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .vision-layout { gap: 32px; }
+  .vision-figure.philosophy-figure figcaption { grid-template-columns: minmax(0, 1fr); }
   .strategy-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .strategy-figure { width: 100%; max-width: 680px; margin-inline: auto; }
   .materials-map { padding: 24px; }
@@ -147,7 +153,7 @@
   .artwork-viewer-header h2 { font-size: 1rem; }
   .artwork-viewer-footer { flex-wrap: wrap; padding: 13px 16px 17px; }
   .artwork-stage, .artwork-stage img { max-height: 57dvh; }
-  .vision-layout { gap: 28px; padding-block: 40px; }
+  .vision-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-block: 40px; }
   .vision-heading .home-kicker { margin-bottom: 24px; }
   .vision-statement { max-width: 60ch; }
   .materials-chain { grid-template-columns: 1fr; gap: 26px; }

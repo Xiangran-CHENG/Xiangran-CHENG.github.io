@@ -97,7 +97,6 @@
 .gap-levels > div + div { margin-top: 24px; }
 .gap-levels dt { color: var(--ink); font-size: var(--font-lead); font-weight: 600; line-height: 1.5; }
 .gap-levels dd { margin: 6px 0 0; color: var(--muted); font-size: var(--font-body); line-height: 1.65; }
-.gap-levels .gap-context { margin-top: 8px; font-size: var(--font-small); line-height: 1.8; }
 .synthesis-framework { min-width: 0; width: min(100%, 840px); justify-self: center; }
 .synthesis-framework > a { display: block; background: transparent; }
 .synthesis-framework img { width: 100%; height: auto; }

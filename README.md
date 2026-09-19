@@ -47,6 +47,12 @@ The English-language group homepage lives at `group/index.html` and is linked fr
 - Prompts and visual-verification notes are retained in the local `output/site-update-20260919` handoff folder outside this public repository. No third-party presentation figure is republished as a group result.
 - Home, Research and the bilingual personal-page research summaries reflect the owner-confirmed four-direction framework. Original ongoing project titles and publication records are retained.
 
+## Shared group-page styling
+
+All six group pages use `group/group.css` for the font family, responsive title scale, body text, page gutters, spacing, navigation, footer and image-viewer controls. Page titles use `.page-heading`; Home retains its dark vision hero while using the same typography tokens. Use the existing `--font-*`, `--space-*`, `--line` and `--surface` variables when adding content instead of introducing page-specific type scales. Body copy is 16px with a 1.75 line height; metadata and captions use smaller shared sizes. Publication author lists and contribution markers remain complete.
+
+Page-specific CSS should contain layouts and genuinely local components. Keep the six navigation menus and footers consistent, preserve the current-page indicator, and keep navigation visible on small screens. Preview both desktop and mobile widths, including narrow screens and short landscape viewports when changing image dialogs. Group styling does not affect the personal homepage.
+
 ## Files
 
 - `index.html`

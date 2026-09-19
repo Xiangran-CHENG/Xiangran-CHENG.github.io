@@ -31,7 +31,7 @@
       image.alt = source.alt;
       image.width = source.naturalWidth || source.width;
       image.height = source.naturalHeight || source.height;
-      stage.classList.toggle("is-light", figure.classList.contains("strategy-figure"));
+      stage.classList.toggle("is-light", figure.dataset.artworkTheme === "light");
       stage.style.setProperty("--artwork-zoom-width", `${Math.max(image.width, 1100)}px`);
       title.textContent = figure.dataset.artworkTitle;
       caption.textContent = figure.dataset.artworkCaption;

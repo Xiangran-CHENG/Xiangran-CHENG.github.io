@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+  <title id="title">One core question and three connected directions</title>
+  <desc id="desc">Synthesizability and Synthesis Design is the core scientific question. It connects to Structure Evolution and Functional Design through structural targets and material states, and to Materials for Energy Storage and Conversion through performance requirements and candidate materials. Scientific Agents and Autonomous Research is an enabling direction developing tools that support all three areas. Dotted connections show shared support, not physical causality or an already demonstrated autonomous pipeline.</desc>
+  <defs>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#147d96" stroke-width="1.5"/></marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#93630d" stroke-width="1.5"/></marker>
+    <style>
+      text{font-family:"Segoe UI",Arial,sans-serif;fill:#20333f;font-size:26px}
+      .title{font-size:30px;font-weight:600}.core-title{font-size:34px;font-weight:600}
+      .muted{fill:#4b606b}.meta{font-size:22px}.small{font-size:24px}.number{font-size:28px;font-weight:600;fill:#147d96}
+      .node{fill:none;stroke:#9baeb8;stroke-width:1.5}.core{fill:none;stroke:#147d96;stroke-width:2.5}
+      .support{fill:none;stroke:#8ba9b5;stroke-width:1.5}
+      .outward{fill:none;stroke:#147d96;stroke-width:2.5;stroke-linecap:round;marker-end:url(#arrow-teal)}
+      .inward{fill:none;stroke:#93630d;stroke-width:2.5;stroke-linecap:round;marker-end:url(#arrow-gold)}
+      .shared{fill:none;stroke:#7698a7;stroke-width:2;stroke-dasharray:5 7;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <!-- Transparent canvas: the host page supplies the background. -->
+  <rect x="495" y="34" width="450" height="548" rx="14" class="core"/>
+  <text x="523" y="79" class="number">01</text>
+  <text x="573" y="78" class="meta" style="fill:#147d96;font-weight:600">CORE SCIENTIFIC QUESTION</text>
+  <text x="523" y="137" class="core-title">Synthesizability and</text>
+  <text x="523" y="180" class="core-title">Synthesis Design</text>
+  <text x="523" y="240">Which pathways form the target</text>
+  <text x="523" y="275">under specified conditions?</text>
+  <text x="523" y="333" class="muted">Model formation pathways to</text>
+  <text x="523" y="368" class="muted">predict and guide synthesis.</text>
+  <path d="M523 400H917" stroke="#aac6d0" stroke-width="1.5"/>
+  <text x="523" y="448" class="small muted">Metal nanoclusters</text>
+  <text x="523" y="493" class="small muted">Sulfide solid electrolytes</text>
+  <text x="523" y="538" class="small muted">Mesoporous materials</text>
+
+  <rect x="24" y="161" width="325" height="384" rx="12" class="node"/>
+  <text x="50" y="208" class="number">02</text>
+  <text x="50" y="256" class="title">Structure Evolution</text>
+  <text x="50" y="294" class="title">and Functional</text>
+  <text x="50" y="332" class="title">Design</text>
+  <text x="50" y="386" class="muted">Connect material states</text>
+  <text x="50" y="421" class="muted">with desired properties</text>
+  <text x="50" y="478" class="small muted">Ferroelectric domains</text>
+  <text x="50" y="513" class="small muted">Magnetic storage</text>
+
+  <!-- Each connection is a separate, explicitly labelled direction. -->
+  <text x="422" y="194" text-anchor="middle" class="meta" style="fill:#147d96">Material</text>
+  <text x="422" y="222" text-anchor="middle" class="meta" style="fill:#147d96">states</text>
+  <path d="M481 250H364" class="outward"/>
+  <text x="422" y="372" text-anchor="middle" class="meta" style="fill:#93630d">Structural</text>
+  <text x="422" y="400" text-anchor="middle" class="meta" style="fill:#93630d">targets</text>
+  <path d="M363 428H480" class="inward"/>
+
+  <rect x="1091" y="161" width="325" height="384" rx="12" class="node"/>
+  <text x="1117" y="208" class="number">03</text>
+  <text x="1117" y="256" class="title">Materials for</text>
+  <text x="1117" y="294" class="title">Energy Storage</text>
+  <text x="1117" y="332" class="title">and Conversion</text>
+  <text x="1117" y="386" class="muted">Define targets and</text>
+  <text x="1117" y="421" class="muted">validate performance</text>
+  <text x="1117" y="478" class="small muted">Electrolytes · Cathodes</text>
+  <text x="1117" y="513" class="small muted">Battery interfaces</text>
+
+  <text x="1018" y="194" text-anchor="middle" class="meta" style="fill:#147d96">Candidate</text>
+  <text x="1018" y="222" text-anchor="middle" class="meta" style="fill:#147d96">materials</text>
+  <path d="M959 250H1076" class="outward"/>
+  <text x="1018" y="372" text-anchor="middle" class="meta" style="fill:#93630d">Performance</text>
+  <text x="1018" y="400" text-anchor="middle" class="meta" style="fill:#93630d">requirements</text>
+  <path d="M1077 428H960" class="inward"/>
+
+  <!-- A shared dotted bus denotes enabling tools, with no causal arrows. -->
+  <path d="M186.5 556V613H1253.5V556M720 594V642" class="shared"/>
+  <rect x="24" y="654" width="1392" height="143" rx="12" class="support"/>
+  <text x="52" y="702" class="number">04</text>
+  <text x="104" y="702" class="title">Scientific Agents and Autonomous Research</text>
+  <text x="1388" y="699" text-anchor="end" class="small muted">Supports all directions</text>
+  <text x="52" y="744" class="muted">Developing tools to connect evidence, hypotheses and the next study.</text>
+  <text x="52" y="780" class="small muted">Literature extraction · Knowledge graphs · Multimodal analysis · Study planning</text>
+</svg>

@@ -15,9 +15,9 @@
   <meta property="og:image:alt" content="Build the materials we need: societal needs, material targets, synthesis pathways and functional validation connected by AI, physical mechanisms and experimental feedback">
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
   <link rel="stylesheet" href="group.css?v=9">
-  <link rel="stylesheet" href="home.css?v=22">
+  <link rel="stylesheet" href="home.css?v=23">
   <script src="group.js?v=6" defer></script>
-  <script src="home.js?v=3" defer></script>
+  <script src="home.js?v=4" defer></script>
 </head>
 <body class="group-page home-page" data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -120,7 +120,7 @@
             </ol>
             <p class="pathway-feedback"><strong>What progress means:</strong> predictive accuracy under new conditions, reproducible target formation, and experimentally verified function.</p>
           </div>
-          <figure class="strategy-figure synthesis-figure" aria-labelledby="synthesis-figure-caption" data-artwork-title="Predict and guide how materials form" data-artwork-caption="Observations inform models; predictions guide synthesis decisions. All curves and diffraction patterns are illustrative.">
+          <figure class="strategy-figure synthesis-figure" aria-labelledby="synthesis-figure-caption" data-artwork-theme="light" data-artwork-title="Predict and guide how materials form" data-artwork-caption="Observations inform models; predictions guide synthesis decisions. All curves and diffraction patterns are illustrative.">
             <a class="synthesis-preview" href="../assets/synthesis-science-transparent.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our synthesis science diagram">
               <picture>
                 <source media="(max-width: 540px)" srcset="../assets/synthesis-science-transparent-mobile.svg" width="600" height="960">
@@ -133,31 +133,23 @@
         </div>
       </div>
 
-      <div class="focus-heading"><h3>One core question. Three connected directions.</h3><span>OUR RESEARCH</span></div>
-      <article class="focus-item focus-core">
-        <div><span class="focus-number">01 · CORE SCIENTIFIC QUESTION</span><h4>Synthesizability and Synthesis Design</h4></div>
-        <div><p>Model the evolution from precursors to products to predict synthesizability under specified conditions and design routes to target materials.</p><p class="focus-systems">Research systems: metal nanoclusters · sulfide solid electrolytes · mesoporous materials</p><a class="home-inline-link" href="research.html#synthesis">Explore synthesis research <span aria-hidden="true">↗</span></a></div>
-      </article>
-      <div class="focus-grid">
-        <article class="focus-item">
-          <span class="focus-number">02 · CONNECT STRUCTURE WITH FUNCTION</span>
-          <h4>Structure Evolution and Functional Design</h4>
-          <p>Connect evolving material structures with the properties we want to achieve, with research settings in ferroelectric domains and magnetic storage.</p>
-          <a class="home-inline-link" href="research.html#structure-function">Structure &amp; function <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="focus-item">
-          <span class="focus-number">03 · DEFINE NEEDS AND VALIDATE</span>
-          <h4>Materials for Energy Storage and Conversion</h4>
-          <p>Use energy applications to define material targets and validate function. Our current work emphasizes electrolytes, cathodes and battery interfaces.</p>
-          <a class="home-inline-link" href="research.html#energy-materials">Energy applications <span aria-hidden="true">↗</span></a>
-        </article>
-        <article class="focus-item">
-          <span class="focus-number">04 · ENABLE THE RESEARCH CYCLE</span>
-          <h4>Scientific Agents and Autonomous Research</h4>
-          <p>Connect literature, knowledge graphs and multimodal analysis with hypothesis testing and experiment planning across the research cycle.</p>
-          <a class="home-inline-link" href="research.html#autonomous-lab">Scientific agents <span aria-hidden="true">↗</span></a>
-        </article>
-      </div>
+      <div class="focus-heading" id="our-research"><h3 id="research-map-title">One core question. Three connected directions.</h3><span>OUR RESEARCH</span></div>
+      <figure class="research-relationships" aria-labelledby="research-map-title" aria-describedby="research-map-caption" data-artwork-theme="light" data-artwork-title="How our research connects" data-artwork-caption="A research framework. Arrows show information shared between directions; they do not imply that every example has been demonstrated in a complete experimental loop.">
+        <a class="research-map-preview" href="../assets/research-directions-map.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the research directions relationship map">
+          <picture>
+            <source media="(max-width: 760px)" srcset="../assets/research-directions-map-mobile.svg" width="600" height="1300">
+            <img src="../assets/research-directions-map.svg" width="1440" height="820" alt="Synthesizability and Synthesis Design is our core. Structure and function research provides structural targets and studies material states. Energy research defines performance requirements and evaluates candidate materials. Scientific agents support the research cycle across all directions." loading="lazy" decoding="async">
+          </picture>
+          <span class="diagram-enlarge" aria-hidden="true">View map <span>↗</span></span>
+        </a>
+        <figcaption class="home-visually-hidden" id="research-map-caption">We model formation pathways to predict synthesizability under specified conditions and guide synthesis. Our research systems include metal nanoclusters, sulfide solid electrolytes and mesoporous materials. Structure evolution connects material states with desired properties, with research settings in ferroelectric domains and magnetic storage. Energy applications define needs and test performance, with current work on electrolytes, cathodes and battery interfaces. We are developing scientific agents that connect literature extraction, knowledge graphs, multimodal analysis and study planning across all directions.</figcaption>
+      </figure>
+      <nav class="research-map-links" aria-label="Explore each research direction">
+        <a href="research.html#synthesis"><span class="research-link-number">01 · CORE QUESTION</span>Synthesis design <span aria-hidden="true">↗</span></a>
+        <a href="research.html#structure-function"><span class="research-link-number">02 · CONNECT</span>Structure &amp; function <span aria-hidden="true">↗</span></a>
+        <a href="research.html#energy-materials"><span class="research-link-number">03 · VALIDATE</span>Energy applications <span aria-hidden="true">↗</span></a>
+        <a href="research.html#autonomous-lab"><span class="research-link-number">04 · ENABLE</span>Scientific agents <span aria-hidden="true">↗</span></a>
+      </nav>
       </div>
     </section>
   </main>

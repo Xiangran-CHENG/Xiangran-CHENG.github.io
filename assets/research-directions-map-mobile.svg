@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1300" viewBox="0 0 600 1300" role="img" aria-labelledby="title desc">
+  <title id="title">Four research directions centered on predictive synthesis</title>
+  <desc id="desc">The core is Synthesizability and Synthesis Design: modeling formation pathways to predict and guide synthesis. Structure Evolution and Functional Design provides structural targets and studies material states. Materials for Energy Storage and Conversion provides performance requirements and validates candidate materials. Scientific Agents and Autonomous Research develops enabling tools across these directions. Textual arrows distinguish each relationship. Dotted support connections do not imply a demonstrated autonomous pipeline.</desc>
+  <defs>
+    <style>
+      text{font-family:"Segoe UI",Arial,sans-serif;fill:#20333f;font-size:26px}
+      .title{font-size:32px;font-weight:600}.core-title{font-size:36px;font-weight:600}.muted{fill:#4b606b}
+      .meta{font-size:23px}.small{font-size:24px}.number{font-size:28px;font-weight:600;fill:#147d96}
+      .outward{fill:#147d96}.inward{fill:#93630d}
+      .node{fill:none;stroke:#9baeb8;stroke-width:1.5}.core{fill:none;stroke:#147d96;stroke-width:2.5}
+      .support{fill:none;stroke:#8ba9b5;stroke-width:1.5}.shared{fill:none;stroke:#7698a7;stroke-width:2;stroke-dasharray:5 7;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <!-- Transparent canvas. The narrow layout is recomposed, not scaled down. -->
+  <rect x="24" y="20" width="552" height="395" rx="12" class="core"/>
+  <text x="48" y="57" class="number">01</text>
+  <text x="98" y="56" class="meta" style="fill:#147d96;font-weight:600">CORE SCIENTIFIC QUESTION</text>
+  <text x="48" y="102" class="core-title">Synthesizability and</text>
+  <text x="48" y="145" class="core-title">Synthesis Design</text>
+  <text x="48" y="191">Which pathways form the target</text>
+  <text x="48" y="222">under specified conditions?</text>
+  <text x="48" y="264" class="muted">Model formation pathways to</text>
+  <text x="48" y="295" class="muted">predict and guide synthesis.</text>
+  <text x="48" y="335" class="small muted">Metal nanoclusters</text>
+  <text x="48" y="366" class="small muted">Sulfide solid electrolytes</text>
+  <text x="48" y="397" class="small muted">Mesoporous materials</text>
+
+  <rect x="24" y="448" width="552" height="264" rx="12" class="node"/>
+  <text x="48" y="487" class="number">02</text>
+  <text x="96" y="487" class="title">Structure Evolution</text>
+  <text x="96" y="525" class="title">and Functional Design</text>
+  <text x="48" y="562" class="muted">Connect material states</text>
+  <text x="48" y="592" class="muted">with desired properties.</text>
+  <text x="48" y="629" class="small muted">Ferroelectric domains · Magnetic storage</text>
+  <text x="48" y="662" class="small inward">Structural targets → synthesis</text>
+  <text x="48" y="691" class="small outward">Synthesis → material states</text>
+
+  <rect x="24" y="728" width="552" height="242" rx="12" class="node"/>
+  <text x="48" y="767" class="number">03</text>
+  <text x="96" y="767" class="title">Materials for Energy</text>
+  <text x="96" y="805" class="title">Storage and Conversion</text>
+  <text x="48" y="845" class="muted">Define targets and validate performance.</text>
+  <text x="48" y="884" class="small muted">Electrolytes · Cathodes · Battery interfaces</text>
+  <text x="48" y="921" class="small inward">Performance requirements → synthesis</text>
+  <text x="48" y="953" class="small outward">Synthesis → candidate materials</text>
+
+  <!-- This dotted rail makes the enabling layer's shared scope explicit. -->
+  <path d="M22 220H10V1140H22M10 573H22M10 849H22" class="shared"/>
+  <rect x="24" y="1013" width="552" height="266" rx="12" class="support"/>
+  <text x="48" y="1052" class="number">04</text>
+  <text x="96" y="1052" class="title">Scientific Agents and</text>
+  <text x="96" y="1090" class="title">Autonomous Research</text>
+  <text x="48" y="1127" class="small muted">Supports all directions</text>
+  <text x="48" y="1164" class="small muted">Developing tools to connect evidence,</text>
+  <text x="48" y="1194" class="small muted">hypotheses and the next study.</text>
+  <text x="48" y="1233" class="small muted">Literature extraction · Knowledge graphs</text>
+  <text x="48" y="1263" class="small muted">Multimodal analysis · Study planning</text>
+</svg>

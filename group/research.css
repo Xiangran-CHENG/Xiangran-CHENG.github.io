@@ -1,9 +1,13 @@
 /* Research uses the shared page title and type scale in group.css. */
 .research-main { padding-bottom: var(--space-section); }
-.research-intro { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px clamp(32px, 4.5vw, 80px); }
-.research-intro h1, .research-intro .research-lead { grid-column: 1 / -1; }
+.research-intro { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); align-items: center; gap: 32px clamp(32px, 4.5vw, 80px); }
+.research-heading-copy { min-width: 0; }
 .research-intro > p { margin-top: 0; max-width: 68ch; }
-.research-intro .research-lead { max-width: none; margin-bottom: 4px; }
+.research-intro .research-lead { max-width: 32ch; margin-top: 20px; line-height: 1.6; }
+.research-overview { grid-column: 1 / -1; min-width: 0; margin-top: 8px; padding: clamp(16px, 1.5vw, 24px); background: #edf4f7; border: 1px solid #d4e1e7; }
+.research-overview a { display: block; width: min(100%, 1440px); margin-inline: auto; cursor: zoom-in; }
+.research-overview a:focus-visible { outline-color: #147d96; }
+.research-overview picture, .research-overview img { display: block; width: 100%; height: auto; }
 .research-index { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 16px 32px; padding: 24px 0; border-block: 1px solid var(--line); font-size: var(--font-small); }
 .research-index a { padding-block: 4px; line-height: 1.6; }
 .research-index a:hover { text-decoration: underline; text-underline-offset: 5px; }
@@ -28,9 +32,14 @@
 .project-list h4 { max-width: 44ch; font-size: var(--font-card); font-weight: 600; line-height: 1.4; }
 .project-list p { max-width: 68ch; color: var(--muted); font-size: var(--font-body); line-height: var(--leading-body); margin-top: 14px; }
 .research-connection { border-top: 1px solid var(--line); padding-top: 32px; color: var(--muted); font-size: var(--font-lead); line-height: 1.65; max-width: 76ch; }
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   .research-intro { grid-template-columns: 1fr; gap: 20px; }
   .research-intro > p { max-width: 72ch; }
+  .research-intro .research-lead { max-width: none; }
+  .research-overview { padding: 16px 0; }
+  .research-overview a { width: min(100%, 520px); }
+}
+@media (max-width: 1000px) {
   .research-area { grid-template-columns: 1fr; gap: 40px; }
   .area-summary > p:not(.area-number), .project-list p { max-width: 72ch; }
   .area-summary > p.research-question { max-width: 58ch; }

@@ -15,7 +15,7 @@
   <meta property="og:image:alt" content="Build the materials we need: societal needs, material targets, synthesis pathways and functional validation connected by AI, physical mechanisms and experimental feedback">
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
   <link rel="stylesheet" href="group.css?v=9">
-  <link rel="stylesheet" href="home.css?v=11">
+  <link rel="stylesheet" href="home.css?v=12">
   <script src="group.js?v=6" defer></script>
   <script src="home.js?v=2" defer></script>
 </head>
@@ -50,15 +50,14 @@
             <a class="home-text-link" href="research.html">Explore our research <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <figure class="vision-figure synthesis-figure" aria-labelledby="synthesis-figure-caption" data-artwork-title="Predict and guide how materials form" data-artwork-caption="Observations inform models; predictions guide synthesis decisions. All curves and diffraction patterns are illustrative.">
-          <a class="synthesis-preview" href="../assets/synthesis-science-hero.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our synthesis science diagram">
-            <picture>
-              <source media="(max-width: 540px)" srcset="../assets/synthesis-science-hero-mobile.svg" width="600" height="960">
-              <img src="../assets/synthesis-science-hero.svg" width="1100" height="850" alt="Synthesis conditions shape the path from precursors through reacting interfaces and intermediates to target or competing phases. Time-resolved observations inform AI and physical models; predicted phase evolution is compared with measurements to guide the next synthesis decision." fetchpriority="high" decoding="async">
-            </picture>
-            <span class="diagram-enlarge" aria-hidden="true">View diagram <span>↗</span></span>
+        <figure class="vision-figure philosophy-figure" id="core-philosophy" aria-labelledby="philosophy-caption-title" data-artwork-title="Build the materials we need." data-artwork-caption="Societal needs → material targets → synthesis pathways → functional validation. Conceptual illustration.">
+          <a class="philosophy-image" href="../assets/materials-core-philosophy-2026.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our research philosophy illustration">
+            <img src="../assets/materials-core-philosophy-2026.png" width="1672" height="941" alt="Build the materials we need. Societal needs guide material targets; the central synthesis pathway links precursors, intermediate states and a target material, with a competing-phase branch. Functional validation and experimental feedback connect AI, physical mechanisms and experiments to new research decisions." fetchpriority="high" decoding="async">
           </a>
-          <figcaption id="synthesis-figure-caption"><strong>Observe formation. Model pathways. Guide synthesis.</strong><span>Schematic workflow; curves and diffraction patterns are illustrative.</span></figcaption>
+          <figcaption>
+            <div><h3 id="philosophy-caption-title">From material targets to experimental reality.</h3><p>Our focus is the formation pathway. AI, physical mechanisms and experimental feedback connect each synthesis decision with what we learn.</p><small>Conceptual illustration of our research vision.</small></div>
+            <div class="philosophy-actions"><a href="../assets/materials-core-philosophy-2026.png" data-artwork-preview aria-haspopup="dialog">Enlarge image <span aria-hidden="true">↗</span></a><a href="../assets/materials-core-philosophy-2026.png" download="Cheng-Group-Research-Philosophy.png">Download PNG <span aria-hidden="true">↓</span></a></div>
+          </figcaption>
         </figure>
       </div>
     </section>
@@ -94,21 +93,10 @@
           <p>Many established materials already have workable recipes. The gap arises when we cannot yet predict how a target will form under new routes or conditions. Thermodynamic stability alone does not determine the outcome: intermediates, competing reactions, kinetics and transport shape what is actually made.</p>
         </div>
 
-        <div class="supporting-illustrations">
-        <figure class="philosophy-figure" id="core-philosophy" aria-labelledby="philosophy-caption-title" data-artwork-title="Build the materials we need." data-artwork-caption="Societal needs → material targets → synthesis pathways → functional validation. Conceptual illustration.">
-          <a class="philosophy-image" href="../assets/materials-core-philosophy-2026.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our research philosophy illustration">
-            <img src="../assets/materials-core-philosophy-2026.png" width="1672" height="941" alt="Build the materials we need. Societal needs guide material targets; the central synthesis pathway links precursors, intermediate states and a target material, with a competing-phase branch. Functional validation and experimental feedback connect AI, physical mechanisms and experiments to new research decisions." loading="lazy" decoding="async">
-          </a>
-          <figcaption>
-            <div><h3 id="philosophy-caption-title">From material targets to experimental reality.</h3><p>Our focus is the formation pathway. AI, physical mechanisms and experimental feedback connect each synthesis decision with what we learn.</p><small>Conceptual illustration of our research vision.</small></div>
-            <div class="philosophy-actions"><a href="../assets/materials-core-philosophy-2026.png" data-artwork-preview aria-haspopup="dialog">Enlarge image <span aria-hidden="true">↗</span></a><a href="../assets/materials-core-philosophy-2026.png" download="Cheng-Group-Research-Philosophy.png">Download PNG <span aria-hidden="true">↓</span></a></div>
-          </figcaption>
+        <figure class="synthesis-framework">
+          <a href="gallery.html#synthesis-framework" aria-label="Explore the materials synthesis framework in the gallery"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Three questions connect computational design with synthesis: is the target thermodynamically competitive, is there a viable reaction route, and will it form under the chosen processing conditions?" loading="lazy" decoding="async"></a>
+          <figcaption><span>Target, route and conditions: three connected levels of synthesis prediction.</span><a class="home-inline-link" href="gallery.html#synthesis-framework">Explore the figure <span aria-hidden="true">↗</span></a><small>AI-assisted conceptual illustration. Curves, numbers and reaction routes are schematic, not measured data.</small></figcaption>
         </figure>
-      <figure class="synthesis-framework">
-        <a href="gallery.html#synthesis-framework" aria-label="Explore the materials synthesis framework in the gallery"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Three questions connect computational design with synthesis: is the target thermodynamically competitive, is there a viable reaction route, and will it form under the chosen processing conditions?" loading="lazy" decoding="async"></a>
-        <figcaption><span>Target, route and conditions: three connected levels of synthesis prediction.</span><a class="home-inline-link" href="gallery.html#synthesis-framework">Explore the figure <span aria-hidden="true">↗</span></a><small>AI-assisted conceptual illustration. Curves, numbers and reaction routes are schematic, not measured data.</small></figcaption>
-      </figure>
-        </div>
 
         <div class="positioning-statement" id="our-position">
           <p class="home-kicker narrative-step">03 · OUR POSITION</p>
@@ -127,15 +115,29 @@
         </div>
       </div>
 
-      <div class="synthesis-question">
+      <div class="synthesis-question" id="research-strategy">
         <p class="home-kicker">OUR RESEARCH STRATEGY</p>
         <h3>Observe. Model. Test and guide.</h3>
-        <ol class="pathway-strip" aria-label="Our strategy for predictive synthesis science">
-          <li><strong>Observe formation</strong><span>Infer evolving material states from synthesis records and time-resolved, multimodal measurements.</span></li>
-          <li><strong>Model and predict</strong><span>Combine AI with thermodynamics, kinetics and transport to predict evolving states and competing pathways.</span></li>
-          <li><strong>Test and guide</strong><span>Test predictions, distinguish competing explanations and choose the next route or processing conditions.</span></li>
-        </ol>
-        <p class="pathway-feedback"><strong>What progress means:</strong> predictive accuracy under new conditions, reproducible target formation, and experimentally verified function.</p>
+        <div class="strategy-layout">
+          <figure class="strategy-figure synthesis-figure" aria-labelledby="synthesis-figure-caption" data-artwork-title="Predict and guide how materials form" data-artwork-caption="Observations inform models; predictions guide synthesis decisions. All curves and diffraction patterns are illustrative.">
+            <a class="synthesis-preview" href="../assets/synthesis-science-hero.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our synthesis science diagram">
+              <picture>
+                <source media="(max-width: 540px)" srcset="../assets/synthesis-science-hero-mobile.svg" width="600" height="960">
+                <img src="../assets/synthesis-science-hero.svg" width="1100" height="850" alt="Synthesis conditions shape the path from precursors through reacting interfaces and intermediates to target or competing phases. Time-resolved observations inform AI and physical models; predicted phase evolution is compared with measurements to guide the next synthesis decision." loading="lazy" decoding="async">
+              </picture>
+              <span class="diagram-enlarge" aria-hidden="true">View diagram <span>↗</span></span>
+            </a>
+            <figcaption id="synthesis-figure-caption"><strong>Observe formation. Model pathways. Guide synthesis.</strong><span>Schematic workflow; curves and diffraction patterns are illustrative.</span></figcaption>
+          </figure>
+          <div class="strategy-copy">
+            <ol class="pathway-strip" aria-label="Our strategy for predictive synthesis science">
+              <li><strong>Observe formation</strong><span>Infer evolving material states from synthesis records and time-resolved, multimodal measurements.</span></li>
+              <li><strong>Model and predict</strong><span>Combine AI with thermodynamics, kinetics and transport to predict evolving states and competing pathways.</span></li>
+              <li><strong>Test and guide</strong><span>Test predictions, distinguish competing explanations and choose the next route or processing conditions.</span></li>
+            </ol>
+            <p class="pathway-feedback"><strong>What progress means:</strong> predictive accuracy under new conditions, reproducible target formation, and experimentally verified function.</p>
+          </div>
+        </div>
       </div>
 
       <div class="focus-heading"><h3>One core question. Three connected directions.</h3><span>OUR RESEARCH</span></div>

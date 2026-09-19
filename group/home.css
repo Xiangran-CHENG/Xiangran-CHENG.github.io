@@ -111,9 +111,6 @@
 .research-map-preview picture { display: block; }
 .research-map-preview img { width: 100%; height: auto; }
 .research-map-preview:hover .diagram-enlarge { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
-@media (min-width: 1121px) {
-  .home-page .header-inner { min-height: 92px; }
-}
 @media (max-width: 1200px) {
   .strategy-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .strategy-copy { max-width: 68ch; }

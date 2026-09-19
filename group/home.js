@@ -1,13 +1,15 @@
 (() => {
   "use strict";
   const dialog = document.querySelector(".artwork-viewer");
-  const source = document.querySelector(".philosophy-image");
-  if (!dialog || !source || typeof dialog.showModal !== "function") return;
+  if (!dialog || typeof dialog.showModal !== "function") return;
 
   const stage = dialog.querySelector(".artwork-stage");
   const image = stage.querySelector("img");
   const close = dialog.querySelector(".artwork-close");
   const zoom = dialog.querySelector(".artwork-zoom");
+  const title = dialog.querySelector("#artwork-viewer-title");
+  const caption = dialog.querySelector("#artwork-viewer-caption");
+  const original = dialog.querySelector(".artwork-viewer-footer a");
   let opener = null;
 
   function setZoom(enabled) {
@@ -17,13 +19,22 @@
     stage.scrollLeft = 0;
   }
 
-  document.querySelectorAll("[data-philosophy-preview]").forEach((link) => {
+  document.querySelectorAll("[data-artwork-preview]").forEach((link) => {
     link.addEventListener("click", (event) => {
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const figure = link.closest("figure");
+      const source = figure?.querySelector("img");
+      if (!source) return;
       event.preventDefault();
       opener = link;
-      image.src = source.href;
-      image.alt = source.querySelector("img").alt;
+      image.src = source.currentSrc || source.src;
+      image.alt = source.alt;
+      image.width = source.naturalWidth || source.width;
+      image.height = source.naturalHeight || source.height;
+      stage.style.setProperty("--artwork-zoom-width", `${Math.max(image.width, 1100)}px`);
+      title.textContent = figure.dataset.artworkTitle;
+      caption.textContent = figure.dataset.artworkCaption;
+      original.href = image.src;
       setZoom(false);
       dialog.showModal();
       document.body.classList.add("artwork-open");

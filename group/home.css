@@ -65,8 +65,7 @@
 .map-focus .map-tag { color: #344854; }
 .map-focus p { color: var(--muted); }
 .map-focus a { display: inline-block; color: var(--ink); margin-top: 16px; font-size: var(--font-caption); text-decoration: underline; text-underline-offset: 4px; }
-.map-inverse { margin-top: 0; padding-block: 15px; border-bottom: 1px solid var(--line); }
-.materials-map figcaption { font-size: var(--font-caption); line-height: 1.75; color: #606060; margin-top: 17px; max-width: 100ch; }
+.map-inverse { margin-top: 0; padding-block: 15px; }
 .synthesis-question { margin-top: 44px; padding-top: 30px; background: transparent; border-top: 1px solid var(--line); }
 .synthesis-question > .home-kicker { color: #606060; font-size: var(--font-label); }
 .synthesis-question h3 { font-size: var(--font-card); font-weight: 600; letter-spacing: -.02em; margin-top: 12px; }

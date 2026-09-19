@@ -17,7 +17,7 @@
   <link rel="preload" href="../assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="group.css?v=13">
-  <link rel="stylesheet" href="home.css?v=41">
+  <link rel="stylesheet" href="home.css?v=42">
   <script src="group.js?v=6" defer></script>
   <script src="home.js?v=4" defer></script>
 </head>
@@ -85,10 +85,10 @@
         <div class="gap-intro" id="synthesis-gap">
           <div class="gap-layout">
             <figure class="synthesis-framework">
-              <a href="gallery.html#synthesis-framework" aria-label="Explore the materials synthesis framework in the gallery"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Three questions connect computational design with synthesis: is the target thermodynamically competitive, is there a viable reaction route, and will it form under the chosen processing conditions?" loading="lazy" decoding="async"></a>
+              <a href="gallery.html#synthesis-framework" aria-label="Explore the materials synthesis framework in the gallery"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Phase diagrams, competing reaction pathways and processing controls illustrate the thermodynamic and kinetic factors that shape materials synthesis." loading="lazy" decoding="async"></a>
             </figure>
             <div class="gap-copy">
-              <p class="gap-question">Three connected questions link a candidate material to its experimental realization.</p>
+              <p class="gap-question">Thermodynamics and kinetics explain material formation. Process control uses this understanding to guide synthesis.</p>
               <dl class="gap-levels">
                 <div>
                   <dt>01 · Thermodynamics</dt>
@@ -109,52 +109,64 @@
       </div>
     </section>
 
-    <section class="mission-section" id="mission" aria-labelledby="mission-title">
+    <section class="mission-section approach-section" id="mission" aria-labelledby="approach-title">
       <div class="home-section container">
-      <div class="home-section-intro" id="about">
-        <p class="home-kicker">OUR MISSION</p>
-        <div>
-          <h2 id="mission-title">Understand formation. Guide synthesis.</h2>
-          <p class="home-lead">Develop experimentally grounded models of material formation to predict competing pathways and guide synthesis toward desired materials.</p>
+        <div class="home-section-intro" id="about">
+          <p class="home-kicker">OUR APPROACH</p>
+          <h2 id="approach-title">Connecting data, models and experiments.</h2>
+          <p class="approach-intro">Three complementary approaches address thermodynamics, kinetics and process control together, connecting an understanding of material formation with synthesis decisions.</p>
         </div>
-      </div>
 
-      <div class="synthesis-question" id="research-strategy">
-        <p class="home-kicker">OUR RESEARCH STRATEGY</p>
-        <h3>Observe. Model. Test and guide.</h3>
-        <div class="strategy-layout">
-          <div class="strategy-copy">
-            <ol class="pathway-strip" aria-label="Our strategy for predictive synthesis science">
-              <li><strong>Observe formation</strong><span>Infer evolving material states from synthesis records and time-resolved, multimodal measurements.</span></li>
-              <li><strong>Model and predict</strong><span>Combine AI with thermodynamics, kinetics and transport to predict evolving states and competing pathways.</span></li>
-              <li><strong>Test and guide</strong><span>Test predictions, distinguish competing explanations and choose the next route or processing conditions.</span></li>
+        <div class="approach-methods" id="our-research" role="group" aria-label="Three complementary research approaches">
+          <article class="approach-method" aria-labelledby="data-science-title">
+            <p class="method-role">LEARN FROM EVIDENCE</p>
+            <h3 id="data-science-title">Data science</h3>
+            <p>Extract knowledge from literature, computation and experiments. Identify material states, learn synthesis relationships and generate predictions that can be tested.</p>
+          </article>
+          <article class="approach-method" aria-labelledby="modeling-title">
+            <p class="method-role">EXPLAIN AND PREDICT</p>
+            <h3 id="modeling-title">Computational modeling</h3>
+            <p>Build thermodynamic and kinetic models to explain reaction driving forces, mass transport and structural evolution, and predict how materials form under different conditions.</p>
+          </article>
+          <article class="approach-method" aria-labelledby="characterization-title">
+            <p class="method-role">OBSERVE AND TEST</p>
+            <h3 id="characterization-title">In situ characterization &amp; experimental validation</h3>
+            <p>Observe changes during synthesis, distinguish competing mechanisms and test predictions. Verify that the target material forms and exhibits the intended properties.</p>
+          </article>
+        </div>
+
+        <div class="approach-cycle" id="research-strategy" aria-labelledby="cycle-title">
+          <div class="cycle-copy">
+            <p class="home-kicker">A CONNECTED RESEARCH CYCLE</p>
+            <h3 id="cycle-title">From observations to synthesis decisions.</h3>
+            <ol class="cycle-steps" aria-label="Feedback between evidence, predictions and experiments">
+              <li><strong>Evidence constrains models.</strong><p>Connect literature knowledge, computed data and time-resolved measurements to identify material states and test assumptions.</p></li>
+              <li><strong>Models make testable predictions.</strong><p>Predict competing pathways and phase evolution, and identify synthesis conditions for experimental evaluation.</p></li>
+              <li><strong>Experiments refine the next decision.</strong><p>Compare predictions with measurements, distinguish competing explanations and use the results to update models and guide the next experiment.</p></li>
             </ol>
-            <p class="pathway-feedback"><strong>What progress means:</strong> predictive accuracy under new conditions, reproducible target formation, and experimentally verified function.</p>
+            <p class="cycle-feedback"><span aria-hidden="true">↺</span> New evidence updates models and synthesis decisions.</p>
           </div>
-          <figure class="strategy-figure synthesis-figure" aria-labelledby="synthesis-figure-caption" data-artwork-theme="light" data-artwork-title="Predict and guide how materials form" data-artwork-caption="Observations inform models; predictions guide synthesis decisions. All curves and diffraction patterns are illustrative.">
+          <figure class="strategy-figure synthesis-figure" aria-label="Feedback between observations, models and synthesis decisions" data-artwork-theme="light" data-artwork-title="Connecting observations, models and synthesis decisions" data-artwork-caption="Illustrative research workflow. Observations inform models; predictions guide experiments; new evidence updates models and synthesis decisions. Curves and diffraction patterns are schematic.">
             <a class="synthesis-preview" href="../assets/synthesis-science-transparent.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our synthesis science diagram">
               <picture>
                 <source media="(max-width: 760px)" srcset="../assets/synthesis-science-transparent-mobile.svg" width="600" height="960">
-                <img src="../assets/synthesis-science-transparent.svg" width="1100" height="850" alt="Synthesis conditions shape the path from precursors through reacting interfaces and intermediates to target or competing phases. Time-resolved observations inform AI and physical models; predicted phase evolution is compared with measurements to guide the next synthesis decision." loading="lazy" decoding="async">
+                <img src="../assets/synthesis-science-transparent.svg" width="1100" height="850" alt="Synthesis conditions shape competing formation pathways. Time-resolved observations constrain AI and physical models, whose predictions guide further synthesis conditions. The curves and diffraction patterns are illustrative." loading="lazy" decoding="async">
               </picture>
               <span class="diagram-enlarge" aria-hidden="true">View diagram <span>↗</span></span>
             </a>
-            <figcaption id="synthesis-figure-caption">Schematic workflow; curves and diffraction patterns are illustrative.</figcaption>
           </figure>
         </div>
-      </div>
 
-      <div class="focus-heading" id="our-research"><h3 id="research-map-title">One core question. Three connected directions.</h3><span>OUR RESEARCH</span></div>
-      <figure class="research-relationships" aria-labelledby="research-map-title" aria-describedby="research-map-caption" data-artwork-theme="light" data-artwork-title="How our research connects" data-artwork-caption="A research framework. Arrows show how the directions inform one another; scientific agents support the research cycle.">
-        <a class="research-map-preview" href="../assets/research-directions-map.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the research directions relationship map">
-          <picture>
-            <source media="(max-width: 1000px)" srcset="../assets/research-directions-map-mobile.svg" width="600" height="1180">
-            <img src="../assets/research-directions-map.svg" width="1440" height="650" alt="Synthesizability and Synthesis Design is our core. Structure and function research provides structural targets and studies material states. Energy research defines performance requirements and evaluates candidate materials. Scientific agents support the research cycle across all directions." loading="lazy" decoding="async">
-          </picture>
-          <span class="diagram-enlarge" aria-hidden="true">View map <span>↗</span></span>
-        </a>
-        <figcaption class="home-visually-hidden" id="research-map-caption">We model formation pathways to predict synthesizability under specified conditions and guide synthesis. Structure evolution connects material states with desired properties. Energy applications define targets and validate performance. Scientific agents connect literature extraction, knowledge graphs, multimodal analysis and study planning across all directions.</figcaption>
-      </figure>
+        <div class="approach-context">
+          <div>
+            <h3>Measuring progress</h3>
+            <p>Predictive accuracy under new conditions, reproducible target formation and experimentally verified function. Energy storage and conversion provide application contexts for defining targets and testing performance.</p>
+          </div>
+          <div>
+            <h3>Scientific agents as research tools</h3>
+            <p>We are developing tools that connect literature evidence, multimodal analysis and study planning across the research cycle.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

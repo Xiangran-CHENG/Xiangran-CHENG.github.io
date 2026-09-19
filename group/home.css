@@ -33,14 +33,12 @@
 .synthesis-preview:hover .diagram-enlarge { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 .diagram-enlarge { display: flex; align-items: center; gap: 14px; position: absolute; right: 0; bottom: 0; color: #4b606b; font-size: var(--font-small); line-height: 1.5; }
 .diagram-enlarge > span { font-size: 1rem; }
-.synthesis-figure figcaption { color: var(--muted); font-size: var(--font-caption); line-height: 1.7; margin-top: 14px; }
 .home-section { padding-block: var(--home-space); }
 .home-section-intro > .home-kicker { margin-bottom: 18px; color: #5c5c5c; }
 .home-section h2 { font-size: var(--font-section); font-weight: 600; letter-spacing: -.025em; line-height: 1.25; }
 .home-lead { font-size: var(--font-lead); line-height: 1.65; max-width: 66ch; margin-top: 24px; }
 .big-picture { background: var(--picture-background); --line: #d9d4c8; border-bottom: 1px solid var(--line); }
 .mission-section { background: var(--mission-background); --line: #cbd8de; }
-.mission-section .home-lead { max-width: none; font-size: clamp(1rem, .4rem + .75vw, 1.25rem); line-height: 1.65; }
 .philosophy-image { position: relative; display: block; background: transparent; cursor: zoom-in; }
 .philosophy-image img { width: 100%; height: auto; }
 .vision-figure .philosophy-image img { object-fit: contain; }
@@ -81,16 +79,6 @@
 .map-focus p { color: var(--muted); }
 .map-focus a { display: inline-block; color: var(--ink); margin-top: 20px; font-size: var(--font-small); text-decoration: underline; text-underline-offset: 4px; }
 .map-inverse { margin-top: 0; padding: 16px 0 0; }
-.synthesis-question { margin-top: clamp(40px, 4vw, 64px); padding-top: clamp(28px, 2.5vw, 40px); background: transparent; border-top: 1px solid var(--line); }
-.synthesis-question > .home-kicker { color: #606060; font-size: var(--font-label); }
-.synthesis-question h3 { font-size: var(--font-subsection); font-weight: 600; letter-spacing: -.02em; margin-top: 14px; }
-.strategy-layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: var(--home-column-gap); margin-top: 32px; }
-.strategy-copy { min-width: 0; max-width: 62ch; }
-.pathway-strip { display: grid; gap: 24px; padding: 0; list-style: none; margin: 0; }
-.pathway-strip li { padding-top: 20px; border-top: 1px solid var(--line); }
-.pathway-strip strong { display: block; font-size: var(--font-lead); font-weight: 600; line-height: 1.6; }
-.pathway-strip span { display: block; color: #606060; font-size: var(--font-body); line-height: 1.65; margin-top: 5px; }
-.pathway-feedback { font-size: var(--font-small); line-height: 1.65; color: #606060; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
 .gap-intro { margin-top: clamp(40px, 4vw, 72px); }
 .gap-layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); align-items: center; gap: clamp(28px, 4vw, 64px); }
 .gap-copy { min-width: 0; max-width: 64ch; }
@@ -102,18 +90,37 @@
 .synthesis-framework { min-width: 0; width: min(100%, 880px); justify-self: center; }
 .synthesis-framework > a { display: block; background: transparent; }
 .synthesis-framework img { width: 100%; height: auto; }
-.focus-heading { display: flex; justify-content: space-between; gap: 16px; margin-top: clamp(48px, 5vw, 80px); align-items: baseline; }
-.focus-heading h3 { font-size: var(--font-subsection); font-weight: 600; }
-.focus-heading > span { font-size: var(--font-caption); color: #666; }
 .home-inline-link { font-size: var(--font-small); font-weight: 600; line-height: 1.65; display: inline-block; padding-block: 5px; }
-.research-relationships { width: min(100%, 1440px); margin: 32px auto 0; }
-.research-map-preview { display: block; position: relative; padding-bottom: 30px; cursor: zoom-in; }
-.research-map-preview picture { display: block; }
-.research-map-preview img { width: 100%; height: auto; }
-.research-map-preview:hover .diagram-enlarge { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
-@media (max-width: 1200px) {
-  .strategy-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .strategy-copy { max-width: 68ch; }
+/* Complementary methods share the same scientific questions and feedback cycle. */
+.approach-intro { max-width: 88ch; margin-top: 22px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+.approach-methods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 56px); margin-top: clamp(32px, 3vw, 48px); }
+.approach-method { min-width: 0; padding-top: 22px; border-top: 2px solid #568596; }
+.method-role { color: #326579; font-size: var(--font-label); font-weight: 600; line-height: 1.6; letter-spacing: .065em; }
+.approach-method h3 { min-height: 2.7em; margin-top: 14px; font-size: var(--font-card); font-weight: 600; line-height: 1.35; }
+.approach-method > p:last-child { margin-top: 18px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+.approach-cycle { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: var(--home-column-gap); margin-top: clamp(44px, 4vw, 72px); padding-top: clamp(32px, 3vw, 48px); border-top: 1px solid var(--line); }
+.cycle-copy { min-width: 0; }
+.cycle-copy > h3 { margin-top: 14px; font-size: var(--font-subsection); line-height: 1.35; font-weight: 600; }
+.cycle-steps { list-style: none; counter-reset: cycle; padding: 0; margin: 28px 0 0; }
+.cycle-steps li { counter-increment: cycle; position: relative; padding-left: 44px; }
+.cycle-steps li + li { margin-top: 24px; }
+.cycle-steps li::before { content: counter(cycle, decimal-leading-zero); position: absolute; top: 1px; left: 0; color: #326579; font-size: var(--font-small); font-weight: 600; }
+.cycle-steps strong { display: block; font-size: var(--font-body); font-weight: 600; line-height: 1.6; }
+.cycle-steps p { margin-top: 5px; font-size: var(--font-body); line-height: 1.75; color: #4b606b; }
+.cycle-feedback { display: flex; gap: 12px; align-items: baseline; margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); font-size: var(--font-small); line-height: 1.7; color: #326579; }
+.cycle-feedback > span { font-size: 1.3rem; }
+.approach-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--home-column-gap); margin-top: clamp(32px, 3vw, 48px); padding-top: 28px; border-top: 1px solid var(--line); }
+.approach-context h3 { font-size: var(--font-body); font-weight: 600; line-height: 1.6; }
+.approach-context p { margin-top: 8px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+@media (max-width: 1100px) {
+  .approach-cycle { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .cycle-copy { max-width: 76ch; }
+}
+@media (max-width: 900px) {
+  .approach-methods { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .approach-method h3 { min-height: 0; }
+  .approach-method > p:last-child { margin-top: 12px; }
+  .approach-context { grid-template-columns: minmax(0, 1fr); gap: 26px; }
 }
 @media (max-width: 1120px) {
   .home-page .primary-nav { font-size: .875rem; }
@@ -136,9 +143,8 @@
   .vision-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .vision-text { max-width: 760px; }
   .vision-figure.philosophy-figure { width: min(100%, 800px); }
-  .strategy-layout, .gap-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .strategy-copy, .gap-copy { max-width: 68ch; }
-  .research-relationships { width: min(100%, 520px); }
+  .gap-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .gap-copy { max-width: 68ch; }
 }
 @media (max-width: 760px) {
   .home-page { --home-space: 48px; }
@@ -156,12 +162,8 @@
 @media (max-width: 540px) {
   .artwork-viewer { width: calc(100% - 16px); }
   .vision-statement { font-size: 1.0625rem; }
-  .strategy-layout { margin-top: 28px; }
   .gap-levels { margin-top: 24px; }
-  .synthesis-question { padding-top: 25px; margin-top: 30px; }
   .materials-map { padding: 22px 18px; margin-top: 28px; }
-  .focus-heading { display: block; margin-top: 35px; }
-  .focus-heading > span { display: block; margin-top: 5px; }
 }
 @media print {
   .home-page .site-header { --ink: #202020; --accent: #111; --line: #dededb; background: #fff; color: var(--ink); border-bottom-color: var(--line); }

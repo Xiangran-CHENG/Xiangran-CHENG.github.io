@@ -9,7 +9,7 @@
   --font-small: .9375rem; --font-caption: .875rem; --font-label: .8125rem;
   --home-space: clamp(48px, 5vw, 88px); --home-content-width: 1760px;
   --home-column-gap: clamp(32px, 4vw, 80px); --page-gutter: clamp(20px, 3vw, 80px);
-  --vision-background: #080808; --picture-background: #fff; --mission-background: #edf4f7;
+  --vision-background: #080808; --picture-background: #fff; --mission-background: #0b1f33;
 }
 .home-page .container { width: min(var(--home-content-width), calc(100% - var(--page-gutter) * 2)); }
 .home-page .site-header { --ink: #fff; --accent: #fff; --line: #2b2b2b; background: var(--vision-background); color: #d0d3d6; border-bottom-color: transparent; }
@@ -38,7 +38,9 @@
 .home-section h2 { font-size: var(--font-section); font-weight: 600; letter-spacing: -.025em; line-height: 1.25; }
 .home-lead { font-size: var(--font-lead); line-height: 1.65; max-width: 66ch; margin-top: 24px; }
 .big-picture { background: var(--picture-background); --line: #d9d4c8; border-bottom: 1px solid var(--line); }
-.mission-section { background: var(--mission-background); --line: #cbd8de; }
+.mission-section { --ink: #fff; --muted: #d3dfea; --accent: #93c9f0; --line: #3b546b; --method-line: #5581a6; background: var(--mission-background); color: var(--ink); }
+.mission-section .home-kicker, .mission-section .diagram-enlarge { color: var(--accent); }
+.mission-section a:focus-visible { outline-color: var(--accent); }
 .philosophy-image { position: relative; display: block; background: transparent; cursor: zoom-in; }
 .philosophy-image img { width: 100%; height: auto; }
 .vision-figure .philosophy-image img { object-fit: contain; }
@@ -55,7 +57,8 @@
 .artwork-viewer button { border: 1px solid #ccc; background: #fff; color: #202020; padding: 8px 13px; min-height: 42px; font-size: var(--font-caption); cursor: pointer; }
 .artwork-viewer button:hover { border-color: #666; background: #f4f4f2; }
 .artwork-stage { overflow: auto; max-height: 68dvh; background: #061421; overscroll-behavior: contain; }
-.artwork-stage.is-light { background: var(--mission-background); }
+.artwork-stage.is-light { background: #edf4f7; }
+.artwork-stage.is-navy { background: var(--mission-background); }
 .artwork-stage img { display: block; width: 100%; height: auto; max-height: 68dvh; object-fit: contain; }
 .artwork-stage.is-zoomed img { width: max(var(--artwork-zoom-width, 1672px), 150%); max-width: none; max-height: none; }
 .artwork-stage:focus-visible { outline: 3px solid #ccc; outline-offset: -4px; }
@@ -92,26 +95,26 @@
 .synthesis-framework img { width: 100%; height: auto; }
 .home-inline-link { font-size: var(--font-small); font-weight: 600; line-height: 1.65; display: inline-block; padding-block: 5px; }
 /* Complementary methods share the same scientific questions and feedback cycle. */
-.approach-intro { max-width: 88ch; margin-top: 22px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+.approach-intro { max-width: 88ch; margin-top: 22px; color: var(--muted); font-size: var(--font-body); line-height: 1.75; }
 .approach-methods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 3vw, 56px); margin-top: clamp(32px, 3vw, 48px); }
-.approach-method { min-width: 0; padding-top: 22px; border-top: 2px solid #568596; }
-.method-role { color: #326579; font-size: var(--font-label); font-weight: 600; line-height: 1.6; letter-spacing: .065em; }
+.approach-method { min-width: 0; padding-top: 22px; border-top: 2px solid var(--method-line); }
+.method-role { color: var(--accent); font-size: var(--font-label); font-weight: 600; line-height: 1.6; letter-spacing: .065em; }
 .approach-method h3 { min-height: 2.7em; margin-top: 14px; font-size: var(--font-card); font-weight: 600; line-height: 1.35; }
-.approach-method > p:last-child { margin-top: 18px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+.approach-method > p:last-child { margin-top: 18px; color: var(--muted); font-size: var(--font-body); line-height: 1.75; }
 .approach-cycle { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: var(--home-column-gap); margin-top: clamp(44px, 4vw, 72px); padding-top: clamp(32px, 3vw, 48px); border-top: 1px solid var(--line); }
 .cycle-copy { min-width: 0; }
 .cycle-copy > h3 { margin-top: 14px; font-size: var(--font-subsection); line-height: 1.35; font-weight: 600; }
 .cycle-steps { list-style: none; counter-reset: cycle; padding: 0; margin: 28px 0 0; }
 .cycle-steps li { counter-increment: cycle; position: relative; padding-left: 44px; }
 .cycle-steps li + li { margin-top: 24px; }
-.cycle-steps li::before { content: counter(cycle, decimal-leading-zero); position: absolute; top: 1px; left: 0; color: #326579; font-size: var(--font-small); font-weight: 600; }
+.cycle-steps li::before { content: counter(cycle, decimal-leading-zero); position: absolute; top: 1px; left: 0; color: var(--accent); font-size: var(--font-small); font-weight: 600; }
 .cycle-steps strong { display: block; font-size: var(--font-body); font-weight: 600; line-height: 1.6; }
-.cycle-steps p { margin-top: 5px; font-size: var(--font-body); line-height: 1.75; color: #4b606b; }
-.cycle-feedback { display: flex; gap: 12px; align-items: baseline; margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); font-size: var(--font-small); line-height: 1.7; color: #326579; }
+.cycle-steps p { margin-top: 5px; font-size: var(--font-body); line-height: 1.75; color: var(--muted); }
+.cycle-feedback { display: flex; gap: 12px; align-items: baseline; margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); font-size: var(--font-small); line-height: 1.7; color: var(--accent); }
 .cycle-feedback > span { font-size: 1.3rem; }
 .approach-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--home-column-gap); margin-top: clamp(32px, 3vw, 48px); padding-top: 28px; border-top: 1px solid var(--line); }
 .approach-context h3 { font-size: var(--font-body); font-weight: 600; line-height: 1.6; }
-.approach-context p { margin-top: 8px; color: #4b606b; font-size: var(--font-body); line-height: 1.75; }
+.approach-context p { margin-top: 8px; color: var(--muted); font-size: var(--font-body); line-height: 1.75; }
 @media (max-width: 1100px) {
   .approach-cycle { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .cycle-copy { max-width: 76ch; }
@@ -176,5 +179,6 @@
   .vision-heading h1 { font-size: 2.5rem; }
   .home-section { padding-block: 26px; }
   .big-picture, .mission-section { background: white; }
+  .mission-section { --ink: #202020; --muted: #606060; --accent: #174a72; --line: #dededb; --method-line: #568596; }
   .materials-map { break-inside: avoid; }
 }

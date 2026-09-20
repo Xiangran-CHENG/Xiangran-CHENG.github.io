@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="960" viewBox="0 0 600 960" role="img" aria-labelledby="title desc" style="background: #0b1f33">
+  <title id="title">Observe, model and guide material formation</title>
+  <desc id="desc">Mobile layout of a schematic research workflow. A controlled temperature history influences precursor contact, intermediate reaction layers and branching formation of target or competing phases. Time-resolved diffraction observations constrain a model combining AI and physics. Predicted phase evolution guides the next synthesis conditions. All particles, curves and observations are schematic, not measured results.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#A8BDCE" stroke-width="1.5"/></marker>
+    <marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#67D6E0" stroke-width="1.5"/></marker>
+    <marker id="gold-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 9 5 1 9" fill="none" stroke="#F2C767" stroke-width="1.5"/></marker>
+    <pattern id="a-atoms" x="0" y="0" width="19" height="19" patternUnits="userSpaceOnUse"><circle cx="9.5" cy="9.5" r="3" fill="#87bfd3"/></pattern>
+    <pattern id="b-atoms" x="0" y="0" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="8.5" cy="8.5" r="3" fill="#63c6cb"/></pattern>
+    <pattern id="target-atoms" x="0" y="0" width="19" height="19" patternUnits="userSpaceOnUse"><path d="M0 9.5H19M9.5 0V19" stroke="#B69A5A" stroke-width="1"/><circle cx="9.5" cy="9.5" r="3.5" fill="#f2c767"/></pattern>
+    <pattern id="competing-atoms" x="0" y="0" width="20" height="18" patternUnits="userSpaceOnUse"><path d="M0 0 10 18 20 0" fill="none" stroke="#737e89" stroke-width="1"/><circle cx="0" cy="0" r="3" fill="#bbc4cc"/><circle cx="10" cy="18" r="3" fill="#bbc4cc"/></pattern>
+    <linearGradient id="peak" x1="0" x2="1"><stop stop-color="#7acde2" stop-opacity="0"/><stop offset=".5" stop-color="#a5e9f0"/><stop offset="1" stop-color="#7acde2" stop-opacity="0"/></linearGradient>
+    <style>
+      text{font-family:"Segoe UI",Arial,sans-serif;fill:#FFFFFF;font-size:26px}
+      .muted{fill:#D3DFEA}.small{font-size:24px}.label{font-size:28px;font-weight:600}.axis{fill:none;stroke:#9EB3C5;stroke-width:2}
+      .flow{fill:none;stroke:#A8BDCE;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .blue-flow{stroke:#67D6E0;marker-end:url(#blue-arrow)}.gold-flow{stroke:#F2C767;marker-end:url(#gold-arrow)}
+      .panel{fill:none;stroke:#496277;stroke-width:1.5}.grid{stroke:#304B62;stroke-width:1}
+    </style>
+  </defs>
+  <text x="30" y="45" class="label">Synthesis conditions</text>
+  <text x="30" y="104" class="small muted">Temperature</text>
+  <path d="M145 125V201H528" class="axis"/>
+  <path d="M158 187H215L286 137H399L460 178H517" fill="none" stroke="#67D6E0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="286" cy="137" r="5" fill="#0B1F33" stroke="#67D6E0" stroke-width="2.5"/>
+  <text x="399" y="231" text-anchor="middle" class="small muted">Time</text>
+  <path d="M299 215V291" class="flow blue-flow"/>
+  <text x="285" y="264" text-anchor="end" class="small muted">Control</text>
+
+  <g aria-label="Contacting precursor particles">
+    <circle cx="72" cy="353" r="39" fill="#234354" stroke="#8CCEE3" stroke-width="2.5"/>
+    <circle cx="72" cy="353" r="37" fill="url(#a-atoms)"/>
+    <circle cx="127" cy="353" r="35" fill="#20515b" stroke="#74ccd1" stroke-width="2.5"/>
+    <circle cx="127" cy="353" r="33" fill="url(#b-atoms)"/>
+  </g>
+  <text x="99" y="427" text-anchor="middle" class="label">Precursors</text>
+  <path d="M178 353H220" class="flow"/>
+  <g aria-label="Intermediate reaction layer at a particle interface">
+    <circle cx="273" cy="353" r="41" fill="#234354" stroke="#8CCEE3" stroke-width="2.5"/>
+    <circle cx="273" cy="353" r="39" fill="url(#a-atoms)"/>
+    <circle cx="325" cy="353" r="37" fill="#20515b" stroke="#74ccd1" stroke-width="2.5"/>
+    <circle cx="325" cy="353" r="35" fill="url(#b-atoms)"/>
+    <path d="M294 320C284 338 284 367 295 387C309 372 313 337 302 319Z" fill="#88dce0" stroke="#c3f0ee" stroke-width="1.5"/>
+    <path d="M295 326C291 341 291 367 295 381" fill="none" stroke="#3e8e99" stroke-width="2" stroke-dasharray="4 4"/>
+  </g>
+  <text x="299" y="427" text-anchor="middle" class="label">Intermediates</text>
+  <text x="299" y="458" text-anchor="middle" class="small muted">Interfaces evolve</text>
+  <path d="M375 353H401" class="flow"/>
+  <path d="M405 349C424 335 428 314 453 314" class="flow gold-flow"/>
+  <path d="M405 359C427 384 428 446 459 446" class="flow"/>
+  <g aria-label="Target phase">
+    <circle cx="507" cy="314" r="41" fill="#44351c" stroke="#F2C767" stroke-width="2.5"/>
+    <circle cx="507" cy="314" r="38" fill="url(#target-atoms)"/>
+  </g>
+  <text x="507" y="261" text-anchor="middle" class="label" style="fill:#FFFFFF">Target</text>
+  <g aria-label="Competing phase">
+    <circle cx="507" cy="445" r="32" fill="#28333d" stroke="#B3C3D2" stroke-width="2.5"/>
+    <circle cx="507" cy="445" r="29" fill="url(#competing-atoms)"/>
+  </g>
+  <text x="501" y="511" text-anchor="middle" class="small muted">Competing</text>
+  <text x="501" y="538" text-anchor="middle" class="small muted">phases</text>
+  <circle cx="199" cy="353" r="3.5" fill="#67D6E0"/>
+  <path d="M199 363V490H105V556" class="flow blue-flow"/>
+  <text x="121" y="517" class="small muted">Observe</text>
+
+  <rect x="30" y="576" width="535" height="154" rx="8" class="panel"/>
+  <text x="48" y="612" class="label">Observations</text>
+  <text x="48" y="651" class="small muted">Time-resolved</text>
+  <text x="48" y="680" class="small muted">diffraction</text>
+  <path d="M272 610V692" class="axis" marker-end="url(#arrow)"/>
+  <path d="M272 698H532" class="axis"/>
+  <text x="248" y="656" transform="rotate(-90 248 656)" text-anchor="middle" class="small muted">Time</text>
+  <text x="533" y="720" text-anchor="end" class="small muted">q</text>
+  <g aria-label="Schematic diffraction intensity at successive times">
+    <path d="M280 618H527M280 632H527M280 646H527M280 660H527M280 674H527M280 688H527" stroke="#28485E" stroke-width="10"/>
+    <g fill="url(#peak)">
+      <path d="M295 613h14v10h-14zM339 613h13v10h-13z" opacity=".95"/><path d="M295 627h14v10h-14zM339 627h13v10h-13z" opacity=".75"/>
+      <path d="M295 641h14v10h-14zM339 641h13v10h-13z" opacity=".40"/><path d="M295 655h14v10h-14zM339 655h13v10h-13z" opacity=".15"/>
+      <path d="M382 627h14v10h-14zM420 627h12v10h-12z" opacity=".36"/><path d="M382 641h14v10h-14zM420 641h12v10h-12z" opacity=".94"/>
+      <path d="M382 655h14v10h-14zM420 655h12v10h-12z" opacity=".58"/><path d="M382 669h14v10h-14zM420 669h12v10h-12z" opacity=".15"/>
+      <path d="M462 641h14v10h-14zM505 641h14v10h-14z" opacity=".16"/><path d="M462 655h14v10h-14zM505 655h14v10h-14z" opacity=".40"/>
+      <path d="M462 669h14v10h-14zM505 669h14v10h-14z" opacity=".78"/><path d="M462 683h14v10h-14zM505 683h14v10h-14z" opacity="1"/>
+    </g>
+  </g>
+  <path d="M298 735V760" class="flow blue-flow"/>
+  <text x="321" y="753" class="small muted">Constrain model</text>
+
+  <rect x="30" y="771" width="535" height="155" rx="8" class="panel"/>
+  <text x="48" y="807" class="label">AI + physics</text>
+  <text x="48" y="842" class="small muted">Target fraction</text>
+  <path d="M280 804V892H533" class="axis"/>
+  <path d="M280 824H533M280 862H533" class="grid"/>
+  <path d="M292 885C321 885 333 880 356 863S393 823 420 820S484 817 520 817" fill="none" stroke="#F2C767" stroke-width="3"/>
+  <g fill="#0B1F33" stroke="#F2C767" stroke-width="2.2"><circle cx="307" cy="881" r="4.5"/><circle cx="346" cy="875" r="4.5"/><circle cx="378" cy="835" r="4.5"/><circle cx="421" cy="825" r="4.5"/><circle cx="465" cy="813" r="4.5"/><circle cx="508" cy="821" r="4.5"/></g>
+  <text x="533" y="917" text-anchor="end" class="small muted">Time</text>
+  <path d="M49 866H71" stroke="#F2C767" stroke-width="3"/><text x="80" y="874" class="small muted">Model</text>
+  <circle cx="60" cy="900" r="4.5" fill="#0B1F33" stroke="#F2C767" stroke-width="2.2"/><text x="80" y="908" class="small muted">Observations</text>
+
+  <path d="M568 850H582V97H399V119" class="flow blue-flow" stroke-dasharray="6 6"/>
+  <text x="491" y="48" text-anchor="middle" class="small muted">Choose next</text>
+  <text x="491" y="77" text-anchor="middle" class="small muted">conditions</text>
+  <text x="300" y="954" text-anchor="middle" class="small muted">Schematic workflow · illustrative data</text>
+</svg>

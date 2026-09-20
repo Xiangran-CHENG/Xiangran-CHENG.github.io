@@ -2,15 +2,15 @@
 .people-page .member-list li > div { min-width: 0; }
 .member-list .member-research { margin-top: 12px; line-height: 1.6; }
 
-/* Six concise commitments, with a quiet editorial rhythm. */
-.group-culture { --culture-ink: #1c3653; margin-top: clamp(32px, 3vw, 48px); padding-bottom: clamp(36px, 3vw, 48px); border-bottom: 1px solid var(--line); }
+/* Shared culture follows the navy and white palette used on Home and Research. */
+.group-culture { --culture-ink: #fff; --culture-accent: #93c9f0; --muted: #d3dfea; --line: #3b546b; margin-top: clamp(32px, 3vw, 48px); padding: clamp(24px, 2.3vw, 36px); border: 1px solid var(--line); background: #0b1f33; color: var(--culture-ink); }
 .culture-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 4vw, 64px); }
-.culture-heading .eyebrow { margin-bottom: 12px; color: var(--culture-ink); }
+.culture-heading .eyebrow { margin-bottom: 12px; color: var(--culture-accent); }
 .culture-heading h2 { font-size: var(--font-section); line-height: 1.25; }
 .culture-heading > p { max-width: 44ch; justify-self: end; color: var(--muted); font-size: var(--font-body); line-height: 1.7; }
 .culture-values { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px clamp(24px, 3vw, 48px); margin: 32px 0 0; padding: 0; }
 .culture-values li { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 14px; min-width: 0; padding-top: 22px; border-top: 1px solid var(--line); }
-.culture-number { color: #6a7e92; font-size: var(--font-label); font-weight: 600; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.culture-number { color: var(--culture-accent); font-size: var(--font-label); font-weight: 600; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
 .culture-values h3 { color: var(--culture-ink); font-size: var(--font-card); font-weight: 600; line-height: 1.4; text-wrap: balance; }
 .culture-values p { max-width: 42ch; margin-top: 10px; color: var(--muted); font-size: var(--font-body); line-height: 1.7; }
 @media (max-width: 1120px) {
@@ -26,7 +26,7 @@
   .culture-values p { margin-top: 8px; }
 }
 @media print {
-  .group-culture { margin-top: 24px; padding-bottom: 24px; }
+  .group-culture { --culture-ink: #1c3653; --culture-accent: #174a72; --muted: #606060; --line: #dededb; margin-top: 24px; padding: 24px 0; border: 0; border-bottom: 1px solid var(--line); background: #fff; }
   .culture-heading { display: block; }
   .culture-heading > p { margin-top: 16px; }
   .culture-values { grid-template-columns: repeat(2, minmax(0, 1fr)); }

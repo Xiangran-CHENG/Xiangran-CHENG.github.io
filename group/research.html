@@ -10,9 +10,10 @@
   <link rel="preload" href="../assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="group.css?v=13">
-  <link rel="stylesheet" href="research.css?v=10">
+  <link rel="stylesheet" href="research.css?v=11">
   <link rel="stylesheet" href="research-framework.css?v=1">
   <script src="group.js?v=6" defer></script>
+  <script src="home.js?v=5" defer></script>
 </head>
 <body class="group-page research-page" data-page="research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -83,7 +84,17 @@
       <div class="ongoing-projects">
         <h3>Ongoing Projects</h3>
         <ul class="project-list">
-          <li><h4>Metal Nanocluster Design and Synthesis Planning</h4><p>Connecting literature evidence, chemical constraints and agent-assisted planning to propose nanocluster structures and synthesis routes for experimental evaluation.</p></li>
+          <li id="metal-nanoclusters">
+            <h4>Metal Nanocluster Design and Synthesis Planning</h4>
+            <p>Connecting literature evidence, chemical constraints and agent-assisted planning to propose nanocluster structures and synthesis routes for experimental evaluation.</p>
+            <figure class="research-project-figure" aria-labelledby="nanocluster-caption" data-artwork-theme="light" data-artwork-title="Metal Nanocluster Research Framework" data-artwork-caption="Ongoing research connecting structure generation, literature knowledge and synthesis planning.">
+              <a class="research-figure-link" href="../assets/metal-nanocluster-research-enhanced-20260920.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the metal nanocluster research framework">
+                <img src="../assets/metal-nanocluster-research-enhanced-20260920.png" width="1713" height="918" alt="Three-part metal nanocluster research framework: hierarchical generation of metal cores, surface motifs and ligand-protected structures; a literature knowledge graph linking structures, properties, applications and synthesis; and a proposed agent combining structural and language models for research questions and synthesis planning." loading="lazy" decoding="async">
+                <span class="research-figure-action" aria-hidden="true">View full size <span>↗</span></span>
+              </a>
+              <figcaption id="nanocluster-caption">Ongoing research connecting structure generation, literature knowledge and synthesis planning.</figcaption>
+            </figure>
+          </li>
           <li><h4>Mesoporous Materials: Synthesis and Formation Mechanisms</h4><p>Learning from synthesis records to recommend preparation conditions and test how competing formation mechanisms shape mesoporous structures.</p></li>
           <li><h4>In Situ Reaction and Phase-Evolution Modeling</h4><p>Combining time-resolved observations with thermodynamic and kinetic models to infer intermediates and predict phase evolution, with sulfide solid electrolytes as a research system.</p></li>
         </ul>
@@ -153,6 +164,11 @@
       </div>
     </section>
   </main>
+  <dialog class="artwork-viewer" aria-labelledby="artwork-viewer-title" aria-describedby="artwork-viewer-caption">
+    <div class="artwork-viewer-header"><h2 id="artwork-viewer-title">Metal Nanocluster Research Framework</h2><div><button class="artwork-zoom" type="button">Zoom in</button><button class="artwork-close" type="button" aria-label="Close illustration" autofocus>Close <span aria-hidden="true">×</span></button></div></div>
+    <div class="artwork-stage is-light" tabindex="0" role="region" aria-label="Illustration preview; scroll to explore when zoomed"><img width="1713" height="918" alt=""></div>
+    <div class="artwork-viewer-footer"><p id="artwork-viewer-caption">Ongoing research connecting structure generation, literature knowledge and synthesis planning.</p><a href="../assets/metal-nanocluster-research-enhanced-20260920.png" target="_blank" rel="noopener">Open original <span aria-hidden="true">↗</span></a></div>
+  </dialog>
   <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran@bza.edu.cn">chengxiangran@bza.edu.cn</a></div><div class="footer-links"><a href="../assets/Xiangran-Cheng-CV.docx" download>Download CV ↓</a><a href="./">Group homepage ↗</a><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
 </body>
 </html>

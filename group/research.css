@@ -47,6 +47,32 @@
 .project-list li:last-child { padding-bottom: 0; }
 .project-list h4 { max-width: 44ch; font-size: var(--font-card); font-weight: 600; line-height: 1.4; }
 .project-list p { max-width: 68ch; color: var(--muted); font-size: var(--font-body); line-height: var(--leading-body); margin-top: 14px; }
+.research-page .research-project-figure { min-width: 0; margin-top: 24px; }
+.research-page .research-figure-link { display: block; overflow: hidden; border: 1px solid #d4e1e7; border-radius: 6px; background: #fff; }
+.research-page .research-figure-link img { width: 100%; height: auto; }
+.research-page .research-figure-action { display: flex; justify-content: flex-end; align-items: center; gap: 10px; padding: 10px 14px; border-top: 1px solid #e2eaee; background: #f5f8fa; color: #345768; font-size: var(--font-caption); line-height: 1.5; }
+.research-page .research-figure-action > span { font-size: 1.15rem; line-height: 1; }
+.research-page .research-figure-link:hover { border-color: #7698a9; }
+.research-page .research-figure-link:hover .research-figure-action { background: #edf4f7; color: #203846; }
+.research-page .research-project-figure figcaption { margin-top: 12px; color: var(--muted); font-size: var(--font-caption); line-height: 1.65; }
+/* Reuse the shared artwork viewer script without loading homepage styles. */
+.research-page .artwork-viewer { width: min(1720px, calc(100% - 40px)); max-width: none; max-height: 94dvh; border: 0; border-radius: 6px; padding: 0; background: #fff; color: var(--ink); box-shadow: 0 20px 80px #0006; }
+.research-page .artwork-viewer[open] { display: flex; flex-direction: column; }
+.research-page .artwork-viewer:not([open]) { display: none; }
+.research-page .artwork-viewer::backdrop { background: #08151de6; }
+.research-page .artwork-viewer-header { display: flex; flex-shrink: 0; justify-content: space-between; align-items: center; gap: 16px 24px; padding: 16px 22px; }
+.research-page .artwork-viewer-header h2 { font-size: var(--font-lead); font-weight: 600; line-height: 1.4; }
+.research-page .artwork-viewer-header > div { display: flex; gap: 10px; flex-shrink: 0; }
+.research-page .artwork-viewer button { border: 1px solid #bdced6; border-radius: 4px; background: #fff; color: #203846; padding: 8px 13px; min-height: 44px; font-size: var(--font-caption); cursor: pointer; }
+.research-page .artwork-viewer button:hover { border-color: #7698a9; background: #edf4f7; }
+.research-page .artwork-stage { min-height: 0; height: 68dvh; flex: 1 1 auto; overflow: auto; background: #f5f8fa; overscroll-behavior: contain; }
+.research-page .artwork-stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.research-page .artwork-stage.is-zoomed img { width: max(var(--artwork-zoom-width, 1713px), 100%); height: auto; max-width: none; max-height: none; }
+.research-page .artwork-stage:focus-visible { outline: 3px solid #7698a9; outline-offset: -4px; }
+.research-page .artwork-viewer-footer { display: flex; flex-shrink: 0; justify-content: space-between; align-items: baseline; gap: 12px 28px; padding: 15px 22px 20px; font-size: var(--font-caption); line-height: 1.65; }
+.research-page .artwork-viewer-footer p { color: var(--muted); }
+.research-page .artwork-viewer-footer a { white-space: nowrap; text-decoration: underline; text-underline-offset: 4px; }
+.research-page.artwork-open { overflow: hidden; }
 .research-connection { border-top: 1px solid var(--line); padding-top: 32px; color: var(--muted); font-size: var(--font-lead); line-height: 1.65; max-width: 76ch; }
 @media (max-width: 1120px) {
   .research-intro { grid-template-columns: 1fr; gap: 20px; }
@@ -71,6 +97,11 @@
   .ongoing-projects h3 { padding-top: 24px; border-top: 1px solid var(--line); border-bottom: 0; padding-bottom: 0; }
 }
 @media (max-width: 760px) {
+  .research-page .artwork-viewer { width: calc(100% - 16px); }
+  .research-page .artwork-viewer-header { align-items: flex-start; flex-wrap: wrap; gap: 12px; padding: 14px 16px; }
+  .research-page .artwork-viewer-header h2 { font-size: 1rem; }
+  .research-page .artwork-stage { height: 57dvh; }
+  .research-page .artwork-viewer-footer { flex-wrap: wrap; gap: 8px; padding: 13px 16px 17px; }
   .research-area { gap: 32px; }
   .research-overview figcaption { margin-bottom: 20px; }
   .framework-node { padding: 18px; }
@@ -79,4 +110,5 @@
   .area-summary > p:not(.area-number) { margin-top: 20px; }
   .project-list li { padding-block: 24px; }
 }
+@media print { .research-page .research-project-figure { break-inside: avoid; } .research-page .research-figure-action, .research-page .artwork-viewer { display: none !important; } .research-page .research-figure-link { border: 0; } }
 @media print { .research-intro, .research-area { display: block; } .research-intro > p { margin-top: 16px; } .research-overview { margin-top: 24px; } .framework-node, .framework-agent { break-inside: avoid; } .research-area { padding: 24px 0; } .area-summary { margin-bottom: 24px; } .ongoing-projects { border-left: 0; padding-left: 0; } .project-list li, .research-focus li { break-inside: avoid; } }

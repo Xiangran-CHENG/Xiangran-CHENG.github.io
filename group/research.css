@@ -16,8 +16,6 @@
 .area-summary h2 { max-width: 25ch; font-size: var(--font-section); text-wrap: balance; }
 .area-summary > p:not(.area-number) { max-width: 64ch; color: var(--muted); font-size: var(--font-body); line-height: var(--leading-body); margin-top: 24px; }
 .area-summary > p.research-question { max-width: 48ch; color: var(--ink); font-size: var(--font-lead); line-height: 1.6; }
-.area-summary .research-systems { padding-top: 24px; border-top: 1px solid var(--line); }
-.research-systems strong { display: block; font-size: var(--font-small); color: var(--ink); font-weight: 600; margin-bottom: 8px; }
 .ongoing-projects { border-left: 1px solid var(--line); padding-left: clamp(28px, 3vw, 48px); }
 .ongoing-projects h3 { font-size: var(--font-small); font-weight: 600; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .ongoing-projects .supporting-projects-title { margin-top: 40px; }

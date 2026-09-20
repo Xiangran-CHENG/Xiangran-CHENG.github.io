@@ -1,3 +1,7 @@
+.people-page .member-list:not(.intern-list) li { align-items: flex-start; }
+.people-page .member-list li > div { min-width: 0; }
+.member-list .member-research { margin-top: 12px; line-height: 1.6; }
+
 /* Six concise commitments, with a quiet editorial rhythm. */
 .group-culture { --culture-ink: #1c3653; margin-top: clamp(32px, 3vw, 48px); padding-bottom: clamp(36px, 3vw, 48px); border-bottom: 1px solid var(--line); }
 .culture-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; gap: 20px clamp(32px, 4vw, 64px); }

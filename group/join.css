@@ -1,7 +1,7 @@
 /* Join us follows the shared title, body text and section spacing. */
 .join-section { padding-bottom: var(--space-section); }
-.join-section > .page-heading { max-width: 1280px; border-bottom: 1px solid var(--line); }
-.join-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 420px); max-width: 1280px; gap: clamp(40px, 5vw, 80px); align-items: start; padding-top: clamp(32px, 3.5vw, 48px); }
+.join-section > .page-heading { border-bottom: 1px solid var(--line); }
+.join-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 420px); gap: clamp(40px, 5vw, 80px); align-items: start; padding-top: clamp(32px, 3.5vw, 48px); }
 .join-copy { max-width: 62ch; min-width: 0; }
 .join-copy h2 { font-size: var(--font-section); max-width: 22ch; }
 .join-copy p { color: var(--muted); margin-top: 20px; }
@@ -14,6 +14,6 @@
 .join-note .poster-language { margin-top: 14px; color: var(--muted); font-size: var(--font-small); }
 .join-poster { max-width: 300px; margin: 24px auto 0; }
 .join-poster img { width: 100%; height: auto; }
-@media (max-width: 1000px) { .join-section > .page-heading, .join-grid { max-width: 760px; } .join-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; } .join-copy { max-width: none; } .join-note { max-width: 420px; justify-self: center; } }
+@media (max-width: 1000px) { .join-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; } .join-copy { max-width: none; } .join-note { max-width: 420px; justify-self: center; } }
 @media (max-width: 760px) { .join-grid { gap: 36px; padding-top: 28px; } .join-note { padding: 24px; } }
 @media print { .join-grid { display: block; } .join-note { margin-top: 24px; max-width: 340px; break-inside: avoid; } }

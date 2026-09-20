@@ -1,7 +1,19 @@
 /* Shared reading rows keep the research framework aligned as titles wrap. */
 .research-overview {
   --exchange-width: clamp(104px, 7.5vw, 120px);
+  --framework-background: #0b1f33;
+  --framework-surface: #102a43;
+  --framework-agent-surface: #14324c;
+  --framework-ink: #fff;
+  --framework-body: #d3dfea;
+  --framework-forward: #93c9f0;
+  --framework-return: #f2c767;
+  --framework-line: #3b546b;
+  --framework-connector: #7193ad;
   padding: clamp(20px, 2.3vw, 36px);
+  background: var(--framework-background);
+  border-color: var(--framework-line);
+  color: var(--framework-ink);
 }
 .research-overview > figcaption {
   margin-bottom: 28px;
@@ -20,11 +32,15 @@
   grid-row: span 4;
   align-items: start;
   padding: clamp(20px, 1.7vw, 28px);
+  background: var(--framework-surface);
+  border-color: var(--framework-line);
+  border-top-color: var(--framework-forward);
 }
 .framework-node-heading { align-items: baseline; gap: 12px; }
-.framework-number { font-size: 1.125rem; line-height: 1.5; }
-.framework-domain { font-size: .875rem; line-height: 1.5; color: #405967; }
+.framework-number { font-size: 1.125rem; line-height: 1.5; color: var(--framework-forward); }
+.framework-domain { font-size: .875rem; line-height: 1.5; color: var(--framework-body); }
 .framework-node h2, .framework-agent h2 {
+  color: var(--framework-ink);
   font-size: clamp(1.375rem, .9rem + .7vw, 1.625rem);
   line-height: 1.3;
   letter-spacing: -.02em;
@@ -35,14 +51,15 @@
   margin: 16px 0 24px;
   font-size: clamp(1.0625rem, .9rem + .2vw, 1.125rem);
   line-height: 1.6;
-  color: #405967;
+  color: var(--framework-body);
 }
 .framework-topics {
   margin-top: 0;
   padding-top: 16px;
   font-size: .9375rem;
   line-height: 1.6;
-  color: #405967;
+  color: var(--framework-body);
+  border-top-color: var(--framework-line);
 }
 .framework-exchange {
   grid-row: span 4;
@@ -54,32 +71,35 @@
   padding: 8px;
   font-size: .875rem;
   line-height: 1.5;
+  color: var(--framework-body);
 }
 .exchange-flow { display: grid; justify-items: center; gap: 6px; min-width: 0; }
-.exchange-forward { color: #236479; }
-.exchange-return { color: #785c2c; }
-.exchange-arrow { font-size: 2rem; line-height: 1; transform: none; }
-.exchange-return .exchange-arrow { color: #856322; }
+.exchange-forward { color: var(--framework-forward); }
+.exchange-return { color: var(--framework-return); }
+.exchange-arrow { font-size: 2rem; line-height: 1; transform: none; color: inherit; }
+.exchange-return .exchange-arrow { color: var(--framework-return); }
 .framework-support {
   margin: 0 0 24px;
   padding-top: 24px;
   font-size: 1rem;
   line-height: 1.6;
-  color: #405967;
+  color: var(--framework-body);
 }
 .framework-support::before {
   width: calc(66.666667% + var(--exchange-width) * .666667);
   height: 24px;
   margin: -24px auto 16px;
-  border: 1px dashed #8caab7;
+  border: 1px dashed var(--framework-connector);
   border-top: 0;
 }
-.framework-support::after { height: 24px; }
+.framework-support::after { height: 24px; border-left-color: var(--framework-connector); }
 .framework-agent {
   grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
   gap: 20px 36px;
   padding: clamp(22px, 1.8vw, 30px);
-  border-left: 3px solid #147d96;
+  background: var(--framework-agent-surface);
+  border-color: var(--framework-line);
+  border-left: 3px solid var(--framework-forward);
 }
 .framework-agent > div { min-width: 0; gap: 12px; }
 .framework-agent > div > div { min-width: 0; }
@@ -87,7 +107,7 @@
 .framework-agent p {
   font-size: clamp(1.0625rem, .9rem + .2vw, 1.125rem);
   line-height: 1.6;
-  color: #405967;
+  color: var(--framework-body);
 }
 @media (max-width: 1200px) {
   .framework-directions { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
@@ -125,6 +145,17 @@
   .framework-agent > div { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; }
 }
 @media print {
-  .research-overview { break-inside: avoid; }
+  .research-overview {
+    --framework-background: #fff;
+    --framework-surface: #fff;
+    --framework-agent-surface: #fff;
+    --framework-ink: #203846;
+    --framework-body: #405967;
+    --framework-forward: #236479;
+    --framework-return: #785c2c;
+    --framework-line: #b9cfd8;
+    --framework-connector: #8caab7;
+    break-inside: avoid;
+  }
   .framework-node, .framework-agent { break-inside: avoid; }
 }

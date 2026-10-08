@@ -4,12 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="Research on materials synthesizability, battery interfaces, multiphysics and spatiotemporal prediction, and autonomous scientific research in the Cheng Research Group.">
+  <meta name="description" content="From physical principles to energy materials and scientific tools: synthesis mechanisms, structure–property relationships, materials design and screening, and agentic scientific research.">
   <title>Research | Cheng Research Group</title>
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
-  <link rel="stylesheet" href="group.css?v=8">
-  <link rel="stylesheet" href="research.css?v=2">
+  <link rel="preload" href="../assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="group.css?v=13">
+  <link rel="stylesheet" href="research.css?v=11">
+  <link rel="stylesheet" href="research-framework.css?v=2">
   <script src="group.js?v=6" defer></script>
+  <script src="home.js?v=5" defer></script>
 </head>
 <body class="group-page research-page" data-page="research">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,90 +25,184 @@
         <a href="research.html" aria-current="page">Research</a>
         <a href="people.html">People</a>
         <a href="publications.html">Publications</a>
-        <a href="gallery.html">Portfolio &amp; Gallery</a>
         <a href="join.html">Join us</a>
       </nav>
     </div>
   </header>
 
   <main id="main" class="container research-main">
-    <header class="research-intro" id="research">
-      <h1>Research</h1>
-      <p>We study how materials form, how their structures and interfaces govern performance, and how their states evolve over time. Across these questions, we connect physical models, experimental evidence and AI to guide synthesis and develop increasingly autonomous research workflows.</p>
+    <header class="research-intro page-heading" id="research">
+      <div class="research-heading-copy">
+        <h1>Research</h1>
+        <p class="research-lead">From physical principles to materials applications, enabled by scientific tools.</p>
+      </div>
+      <p>Two fundamental questions guide our research: how do materials form, and how does structure determine their properties? We apply these principles to the design and screening of materials for energy storage and conversion, while developing scientific agents that connect evidence, models and experiments across all three directions.</p>
+      <figure class="research-overview" aria-labelledby="framework-title">
+        <figcaption id="framework-title">Physical principles → Materials applications</figcaption>
+        <div class="framework-directions">
+          <div class="framework-node">
+            <div class="framework-node-heading"><span class="framework-number">01</span><span class="framework-domain">Principles · Formation</span></div>
+            <h2>Synthesis Mechanisms and Prediction</h2>
+            <p>Understand how materials form and predict their synthesis pathways.</p>
+            <span class="framework-topics">Thermodynamics · Kinetics · Transport</span>
+          </div>
+          <div class="framework-exchange"><div class="exchange-flow exchange-forward"><span>Material structures</span><span class="exchange-arrow" aria-hidden="true">→</span></div><div class="exchange-flow exchange-return"><span class="exchange-arrow" aria-hidden="true">←</span><span>Structural targets</span></div></div>
+          <div class="framework-node">
+            <div class="framework-node-heading"><span class="framework-number">02</span><span class="framework-domain">Principles · Function</span></div>
+            <h2>Structure–Property Relationships and Prediction</h2>
+            <p>Explain material behavior and predict properties across scales.</p>
+            <span class="framework-topics">Structure · Mechanisms · Properties</span>
+          </div>
+          <div class="framework-exchange"><div class="exchange-flow exchange-forward"><span>Property predictions</span><span class="exchange-arrow" aria-hidden="true">→</span></div><div class="exchange-flow exchange-return"><span class="exchange-arrow" aria-hidden="true">←</span><span>Candidate materials</span></div></div>
+          <div class="framework-node">
+            <div class="framework-node-heading"><span class="framework-number">03</span><span class="framework-domain">Applications · Energy</span></div>
+            <h2>Energy Materials Design &amp; Screening</h2>
+            <p>Prioritize materials for energy storage and conversion.</p>
+            <span class="framework-topics">Design · Screening · Validation</span>
+          </div>
+        </div>
+        <div class="framework-support"><span>Evidence, models and research decisions across all three directions</span></div>
+        <div class="framework-agent">
+          <div><span class="framework-number">04</span><div><span class="framework-domain">Tools for scientific research</span><h2>Agentic Scientific Research</h2></div></div>
+          <p>Connect literature, hypotheses, computational and experimental tools, and feedback to guide the next study.</p>
+        </div>
+      </figure>
     </header>
-    <nav class="research-index" aria-label="Research directions">
-      <a href="#synthesis"><span class="area-index">01</span>Synthesizability</a>
-      <a href="#energy-materials"><span class="area-index">02</span>Battery materials</a>
-      <a href="#multiphysics"><span class="area-index">03</span>Modeling &amp; prediction</a>
-      <a href="#autonomous-lab"><span class="area-index">04</span>Autonomous research</a>
-    </nav>
     <section class="research-area" id="synthesis" aria-labelledby="synthesis-title">
       <div class="area-summary">
-        <p class="area-number">RESEARCH 01</p>
-        <h2 id="synthesis-title">Materials Synthesizability and Reaction Mechanisms</h2>
-        <p class="research-question">What makes a material accessible through a particular synthesis route?</p>
-        <p>We study how thermodynamics, kinetics and interfacial reactions govern the path from precursors through intermediates to target materials. Literature mining, AI prediction and process characterization help us identify competing pathways and design experiments that distinguish between mechanistic explanations.</p>
+        <p class="area-number">01 / PRINCIPLES OF MATERIAL FORMATION</p>
+        <h2 id="synthesis-title">Synthesis Mechanisms and Prediction</h2>
+        <p class="research-question">How do thermodynamic driving forces, kinetic barriers and mass transport govern material formation?</p>
+        <p>We investigate why particular pathways emerge as precursors transform through intermediate states into target or competing products. Combining physical models, synthesis records and in situ observations, we aim to connect formation mechanisms with predictions of which material forms, through which pathway and under which conditions.</p>
+        <ul class="research-focus">
+          <li><strong>Thermodynamic driving forces</strong><span>Assess phase stability, reaction energetics and competition under synthesis conditions.</span></li>
+          <li><strong>Kinetics and transport</strong><span>Model nucleation, reactions, diffusion and growth to resolve pathways and timescales.</span></li>
+          <li><strong>Route and condition selection</strong><span>Recommend precursors and processing conditions, then refine predictions using experimental feedback.</span></li>
+        </ul>
       </div>
       <div class="ongoing-projects">
         <h3>Ongoing Projects</h3>
         <ul class="project-list">
-          <li><h4>Metal Nanocluster Design and Synthesis Agents</h4><p>Developing agents that connect literature evidence, nanocluster design and synthesis planning. Candidate structures and routes are assessed against chemical constraints and refined through experimental feedback.</p></li>
-          <li><h4>Mesoporous Materials: Synthesis Recommendation and Formation Mechanisms</h4><p>Learning from synthesis records to recommend preparation conditions and investigate how they influence mesoporous structure formation. Recommendations guide experiments that test competing formation mechanisms.</p></li>
-          <li><h4>In-Situ Reaction and Phase-Evolution Modeling</h4><p>Combining time-resolved observations with thermodynamic and kinetic models to infer intermediate states and predict phase evolution. Complementary measurements and controlled experiments constrain mechanistic explanations, including those involving interfacial reactions.</p></li>
+          <li id="metal-nanoclusters">
+            <h4>Metal Nanocluster Design and Synthesis Planning</h4>
+            <p>Connecting literature evidence, chemical constraints and agent-assisted planning to propose nanocluster structures and synthesis routes for experimental evaluation.</p>
+          </li>
+          <li id="mesoporous-materials">
+            <h4>Mesoporous Materials: Synthesis and Formation Mechanisms</h4>
+            <p>Learning from synthesis records to recommend preparation conditions and test how competing formation mechanisms shape mesoporous structures.</p>
+            <figure class="research-project-figure" aria-labelledby="mesoporous-caption" data-artwork-theme="light" data-artwork-title="Mesoporous Materials: Morphology Analysis" data-artwork-caption="Morphology descriptors and an interpretable two-stage optimization direction.">
+              <a class="research-figure-link" href="../assets/mesoporous-morphology-analysis-enhanced-20260920.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the mesoporous materials morphology analysis figure">
+                <img src="../assets/mesoporous-morphology-analysis-enhanced-20260920.png" width="3320" height="1202" alt="A montage of electron microscopy images alongside a scatter plot comparing sphere formation with network and layer morphology, illustrating morphology descriptors and a proposed two-stage optimization direction." loading="lazy" decoding="async">
+                <span class="research-figure-action" aria-hidden="true">View full size <span>↗</span></span>
+              </a>
+              <figcaption id="mesoporous-caption">Morphology descriptors and an interpretable two-stage optimization direction.</figcaption>
+            </figure>
+          </li>
+          <li><h4>In Situ Reaction and Phase-Evolution Modeling</h4><p>Combining time-resolved observations with thermodynamic and kinetic models to infer intermediates and predict phase evolution, with sulfide solid electrolytes as a research system.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="research-area" id="multiphysics" aria-labelledby="multiphysics-title">
+      <div class="area-summary" id="structure-function">
+        <p class="area-number">02 / PRINCIPLES OF MATERIAL FUNCTION</p>
+        <h2 id="multiphysics-title">Structure–Property Relationships and Prediction</h2>
+        <p class="research-question">How do composition and structure determine material properties, and how can we predict their response under working conditions?</p>
+        <p>We connect atomic arrangements, defects, interfaces and microstructures with functional behavior. Physics-based and data-driven models help us explain these relationships and predict how material properties change across length scales and operating conditions.</p>
+        <ul class="research-focus">
+          <li><strong>Represent material states</strong><span>Describe composition, local structure, domains and microstructure at the scales relevant to function.</span></li>
+          <li><strong>Connect mechanisms across scales</strong><span>Link structural evolution to transport, electrochemical response and mechanical behavior.</span></li>
+          <li><strong>Predict and evaluate properties</strong><span>Test predictions against calculations and measurements, including uncertainty and transfer to new conditions.</span></li>
+        </ul>
+      </div>
+      <div class="ongoing-projects">
+        <h3>Ongoing Projects</h3>
+        <ul class="project-list">
+          <li id="ferroelectric-domains">
+            <h4>Three-Dimensional Domain Structures and Functional Response</h4>
+            <p>Predicting ferroelectric domain structures using physical and data-driven models, and investigating how domain evolution relates to functional response.</p>
+          </li>
+          <li id="dynamic-battery-interfaces">
+            <h4>In Situ Characterization of Dynamic Battery Interfaces</h4>
+            <p>Tracking interfacial reactions and structural changes in polymer-electrolyte and solid-state batteries to test how interface evolution affects transport and stability.</p>
+            <figure class="research-project-figure" aria-labelledby="battery-interfaces-caption" data-artwork-theme="light" data-artwork-title="Dynamic Battery Interfaces: Spatial Maps and Raman Spectra" data-artwork-caption="Spatially resolved characterization of the LiCoO₂–gel interface and Raman spectra at different voltages.">
+              <a class="research-figure-link" href="../assets/dynamic-battery-interfaces-enhanced-20260920-v3.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the LiCoO₂–gel interface maps and Raman spectra">
+                <img src="../assets/dynamic-battery-interfaces-enhanced-20260920-v3.png" width="2788" height="1656" alt="Colored spatial maps of the LiCoO₂–gel interface alongside LiCoO₂ Raman spectra at 3.0, 3.9 and 4.4 V and a Raman spectrum of the gel." loading="lazy" decoding="async">
+                <span class="research-figure-action" aria-hidden="true">View full size <span>↗</span></span>
+              </a>
+              <figcaption id="battery-interfaces-caption">Spatially resolved characterization of the LiCoO₂–gel interface and Raman spectra at different voltages.</figcaption>
+            </figure>
+          </li>
+          <li><h4>Battery Degradation and Lifetime Prediction</h4><p>Using cycling histories to forecast device degradation and lifetime, and investigating how operating conditions affect predictive accuracy and transfer across test conditions.</p></li>
         </ul>
       </div>
     </section>
     <section class="research-area" id="energy-materials" aria-labelledby="energy-materials-title">
       <div class="area-summary">
-        <p class="area-number">RESEARCH 02</p>
-        <h2 id="energy-materials-title">Battery Materials and Interfaces</h2>
-        <p class="research-question">How do material chemistry and evolving interfaces determine battery behavior?</p>
-        <p>Our work connects polymer and solid electrolytes, cathode materials and electrode–electrolyte interfaces. We combine computation, high-throughput screening, synthesis validation and in-situ characterization to relate material structure and transport to stability and performance.</p>
+        <p class="area-number">03 / MATERIALS APPLICATIONS</p>
+        <h2 id="energy-materials-title">Energy Materials Design and High-Throughput Screening</h2>
+        <p class="research-question">Which materials can meet the combined performance, stability and synthesis requirements of energy storage and conversion?</p>
+        <p>We translate application needs into material design objectives and explore candidate compositions and structures. Drawing on synthesis and structure–property models, high-throughput workflows help prioritize candidates for synthesis and testing. Our ongoing projects focus on energy storage; extending these methods to energy conversion is a longer-term direction.</p>
       </div>
       <div class="ongoing-projects">
         <h3>Ongoing Projects</h3>
         <ul class="project-list">
-          <li><h4>Electrolyte Discovery: From Atomistic Screening to Synthesis</h4><p>Developing high-throughput workflows for polymer and solid electrolytes using density functional theory (DFT), machine-learning interatomic potentials (MLIPs) and property models. We assess structure, stability and ion transport, then test selected candidates through synthesis and characterization.</p></li>
-          <li><h4>Multiscale Modeling of Cathode Materials</h4><p>Connecting atomistic material behavior with particle- and electrode-scale models of transport, deformation and fracture. We investigate how composition and microstructure shape coupled electrochemical and mechanical responses.</p></li>
-          <li><h4>In-Situ Characterization of Dynamic Battery Interfaces</h4><p>Tracking interfacial reactions and structural changes in polymer-electrolyte and solid-state battery systems. In-situ measurements and complementary evidence help test how interface evolution affects transport and stability.</p></li>
+          <li id="electrolyte-discovery">
+            <h4>High-Throughput Electrolyte Discovery</h4>
+            <p>Screening polymer and solid electrolytes using density functional theory (DFT), machine-learning interatomic potentials (MLIPs) and property models, with selected candidates taken forward for synthesis and characterization.</p>
+            <figure class="research-project-figure" aria-labelledby="electrolyte-discovery-caption" data-artwork-theme="light" data-artwork-title="High-Throughput Electrolyte Discovery" data-artwork-caption="AI-guided screening and representative characterization of doped argyrodite electrolytes.">
+              <a class="research-figure-link" href="../assets/electrolyte-discovery-overview-20260920-v3.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the doped argyrodite electrolyte design, screening and characterization overview">
+                <img src="../assets/electrolyte-discovery-overview-20260920-v3.png" width="4800" height="2800" alt="Three-panel overview of doped argyrodite materials design, AI-guided multi-property screening, and representative diffraction and impedance characterization. Separate experimental results show ionic conductivity of 4.27 mS per centimetre at 25 °C for O/I co-doping and approximately 63 percent lower total hydrogen sulfide release for a reported Sn/Zn-modified sample comparison." loading="lazy" decoding="async">
+                <span class="research-figure-action" aria-hidden="true">View full size <span>↗</span></span>
+              </a>
+              <figcaption id="electrolyte-discovery-caption">AI-guided screening and representative characterization of doped argyrodite electrolytes.</figcaption>
+            </figure>
+          </li>
         </ul>
-      </div>
-    </section>
-    <section class="research-area" id="multiphysics" aria-labelledby="multiphysics-title">
-      <div class="area-summary">
-        <p class="area-number">RESEARCH 03</p>
-        <h2 id="multiphysics-title">Multiphysics Modeling and Spatiotemporal Prediction</h2>
-        <p class="research-question">How can physical models and time-resolved data predict evolving states?</p>
-        <p>We develop models of coupled physical fields, spatial structures and time-dependent signals across materials, devices and processing equipment. Physics-based simulation and data-driven prediction connect observed behavior with forecasts that can be tested under changing conditions.</p>
-      </div>
-      <div class="ongoing-projects">
-        <h3>Ongoing Projects</h3>
-        <ul class="project-list">
-          <li><h4>Semiconductor Equipment Digital Twins and Thermal Fields</h4><p>Developing thermal-field models and integrating them with equipment operating data toward digital twins of semiconductor processing systems. We aim to track equipment states and evaluate the effects of changes in operating conditions.</p></li>
-          <li><h4>Optical Emission Spectroscopy Forecasting</h4><p>Developing time-series models to predict the evolution of optical emission spectroscopy (OES) signals in semiconductor processing. We examine how operating conditions affect spectral dynamics and forecast reliability.</p></li>
-          <li><h4>Battery Degradation and Lifetime Prediction</h4><p>Learning from battery cycling histories to forecast degradation trajectories and lifetime. We investigate how operating conditions influence prediction accuracy and transfer across different test conditions.</p></li>
-          <li><h4>Three-Dimensional Domain-Structure Prediction</h4><p>Developing physics-based and data-driven models of three-dimensional domain structures. Predictions are evaluated against physical constraints and available observations.</p></li>
+        <h3 class="supporting-projects-title">From Design to Validation</h3>
+        <ul class="research-focus">
+          <li><strong>Define the design space</strong><span>Select candidate chemistries and structures around transport, stability and interfacial requirements.</span></li>
+          <li><strong>Screen and prioritize</strong><span>Combine first-principles calculations and learned models to assess multiple properties and synthesis constraints.</span></li>
+          <li><strong>Validate under working conditions</strong><span>Evaluate selected materials and interfaces experimentally, then use performance and degradation data to improve selection.</span></li>
         </ul>
       </div>
     </section>
     <section class="research-area" id="autonomous-lab" aria-labelledby="autonomous-lab-title">
       <div class="area-summary">
-        <p class="area-number">RESEARCH 04</p>
-        <h2 id="autonomous-lab-title">Autonomous Laboratories and Scientific Research</h2>
-        <p class="research-question">How can a research system choose, execute and learn from its next experiment?</p>
-        <p>We are working toward systems that connect laboratory execution, experimental decision-making and scientific reasoning. The goal is to make experiments useful for both improving materials and refining explanations, with researchers able to inspect the evidence behind each decision.</p>
+        <p class="area-number">04 / TOOLS FOR SCIENTIFIC RESEARCH</p>
+        <h2 id="autonomous-lab-title">Agentic Scientific Research</h2>
+        <p class="research-question">How can scientific agents use evidence and tools to plan, carry out and improve a research workflow?</p>
+        <p>We develop agents that connect literature, physical models, computational tools and experimental feedback. This direction supports the other three by turning research questions into traceable sequences of evidence gathering, hypothesis testing and study selection, with researcher oversight.</p>
+        <ul class="research-focus">
+          <li><strong>Build an evidence base</strong><span>Extract source-grounded information and connect literature, data and multimodal observations.</span></li>
+          <li><strong>Plan and coordinate studies</strong><span>Form testable hypotheses, select tools and organize computational or experimental steps.</span></li>
+          <li><strong>Learn from feedback</strong><span>Compare outcomes with expectations, revise explanations and choose the next informative study.</span></li>
+        </ul>
       </div>
       <div class="ongoing-projects">
         <h3>Ongoing Projects</h3>
         <ul class="project-list">
-          <li><h4>Integrated Autonomous Laboratory Workflows</h4><p>Developing workflows that connect synthesis equipment, characterization, data capture and analysis. Traceable links between experimental conditions and outcomes provide the basis for closed-loop operation.</p></li>
-          <li><h4>Closed-Loop Experimental Planning</h4><p>Using experimental feedback and active learning to select the next synthesis or characterization step. We study how to balance materials optimization with experiments that resolve uncertainty about reaction mechanisms.</p></li>
-          <li><h4>Research Agents for Hypothesis Testing</h4><p>Developing agents that connect literature retrieval, hypothesis formulation, experimental planning and evidence analysis. The aim is to compare alternative explanations and revise research plans as new results become available.</p></li>
+          <li><h4>Research Agents for Hypothesis Testing</h4><p>Connecting literature extraction, knowledge graphs and multimodal evidence with hypothesis formulation, alternative explanations and research planning.</p></li>
+          <li><h4>Closed-Loop Experimental Planning</h4><p>Using feedback and active learning to select synthesis or characterization steps that improve materials or resolve uncertainty about formation mechanisms.</p></li>
+          <li id="integrated-laboratory-workflows">
+            <h4>Integrated Laboratory Workflows</h4>
+            <p>Developing connections between synthesis equipment, characterization, data capture and analysis toward traceable, progressively more autonomous research workflows.</p>
+            <figure class="research-project-figure" aria-labelledby="laboratory-workflow-caption" data-artwork-theme="light" data-artwork-title="AI-guided Experimental Loop" data-artwork-caption="Conceptual workflow linking AI-assisted planning, modular experiments, data analysis and active learning under researcher oversight.">
+              <a class="research-figure-link" href="../assets/integrated-laboratory-workflow-20260920.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge the AI-guided experimental workflow illustration">
+                <img src="../assets/integrated-laboratory-workflow-20260920.png" width="1448" height="1086" alt="Conceptual clockwise loop: AI planning proposes synthesis routes and conditions; modular equipment prepares, heat-treats and characterizes samples; data analysis updates models and uncertainty; active learning selects the next experiment. Researcher oversight sits at the center." loading="lazy" decoding="async">
+                <span class="research-figure-action" aria-hidden="true">View full size <span>↗</span></span>
+              </a>
+              <figcaption id="laboratory-workflow-caption">Conceptual workflow linking AI-assisted planning, modular experiments, data analysis and active learning under researcher oversight.</figcaption>
+            </figure>
+          </li>
         </ul>
       </div>
     </section>
-    <p class="research-connection">Our projects connect across scales: reaction models inform synthesis decisions, interface studies test materials behavior, and predictive models help autonomous systems choose their next experiment.</p>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a></div><div class="footer-links"><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
+  <dialog class="artwork-viewer" aria-labelledby="artwork-viewer-title" aria-describedby="artwork-viewer-caption">
+    <div class="artwork-viewer-header"><h2 id="artwork-viewer-title">Research illustration</h2><div><button class="artwork-zoom" type="button">Zoom in</button><button class="artwork-close" type="button" aria-label="Close illustration" autofocus>Close <span aria-hidden="true">×</span></button></div></div>
+    <div class="artwork-stage is-light" tabindex="0" role="region" aria-label="Illustration preview; scroll to explore when zoomed"><img width="1713" height="918" alt=""></div>
+    <div class="artwork-viewer-footer"><p id="artwork-viewer-caption"></p><a target="_blank" rel="noopener">Open original <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran@bza.edu.cn">chengxiangran@bza.edu.cn</a></div><div class="footer-links"><a href="../assets/Xiangran-Cheng-CV.docx" download>Download CV ↓</a><a href="./">Group homepage ↗</a><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
 </body>
 </html>

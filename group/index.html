@@ -4,11 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="The Cheng Research Group studies materials synthesis pathways and reactivity at solid–liquid and solid–solid interfaces through characterization, computation, machine learning and kinetic modeling.">
+  <meta name="description" content="Build the materials we need. Cheng Research Group develops AI for predictive synthesis science, connecting material design with formation pathways, reliable synthesis and experimentally verified function.">
   <title>Cheng Research Group | AI for Materials Synthesis</title>
+  <link rel="canonical" href="https://xiangran-cheng.github.io/group/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cheng Research Group | AI for Materials Synthesis">
+  <meta property="og:description" content="Our place in materials science: connecting design with physical realization through AI, formation mechanisms and experimental feedback.">
+  <meta property="og:url" content="https://xiangran-cheng.github.io/group/">
+  <meta property="og:image" content="https://xiangran-cheng.github.io/assets/materials-core-philosophy-2026.png">
+  <meta property="og:image:alt" content="Build the materials we need: societal needs, material targets, synthesis pathways and functional validation connected by AI, physical mechanisms and experimental feedback">
   <link rel="icon" href="favicon.svg?v=5" type="image/svg+xml">
-  <link rel="stylesheet" href="group.css?v=8">
+  <link rel="preload" href="../assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="group.css?v=13">
+  <link rel="stylesheet" href="home.css?v=44">
   <script src="group.js?v=6" defer></script>
+  <script src="home.js?v=5" defer></script>
 </head>
 <body class="group-page home-page" data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,29 +31,150 @@
         <a href="research.html">Research</a>
         <a href="people.html">People</a>
         <a href="publications.html">Publications</a>
-        <a href="gallery.html">Portfolio &amp; Gallery</a>
         <a href="join.html">Join us</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-background" src="../assets/materials-builders-hero.webp" width="1672" height="941" alt="" fetchpriority="high">
-      <div class="container hero-copy">
-        <p class="eyebrow">REACTION MECHANISMS AND PATHWAYS</p>
-        <h1 id="hero-title">AI for Materials<br>Synthesis</h1>
+    <section class="home-hero" id="vision" aria-labelledby="vision-title">
+      <div class="container vision-layout">
+        <div class="vision-text">
+          <div class="vision-heading">
+            <h1 id="vision-title">Toward Predictive Materials Synthesis</h1>
+          </div>
+          <div class="vision-copy">
+            <p class="vision-statement">We study how energy landscapes and mass transport govern structural and chemical transformations across scales. By integrating data science, computational modeling and in situ characterization, we aim to understand and predict nonequilibrium synthesis pathways and guide the precise synthesis of target materials.</p>
+          </div>
+        </div>
+        <figure class="vision-figure philosophy-figure" id="core-philosophy" aria-labelledby="philosophy-caption-title" data-artwork-title="Build the materials we need." data-artwork-caption="Societal needs → material targets → synthesis pathways → functional validation. Conceptual illustration.">
+          <a class="philosophy-image" href="../assets/materials-vision-transparent-2026.png" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our research philosophy illustration">
+            <img src="../assets/materials-vision-transparent-2026.png" width="1672" height="941" alt="Societal needs guide material targets; the central synthesis pathway links precursors, intermediate states and a target material, with a competing-phase branch. Functional validation and experimental feedback connect AI, physical mechanisms and experiments to new research decisions." fetchpriority="high" decoding="async">
+            <span class="vision-enlarge" aria-hidden="true">↗</span>
+          </a>
+          <figcaption class="home-visually-hidden">
+            <h3 id="philosophy-caption-title">From material targets to experimental reality.</h3><p>Conceptual illustration of our research vision. AI, physical mechanisms and experimental feedback connect material targets with synthesis pathways and functional validation.</p>
+          </figcaption>
+        </figure>
       </div>
-      <p class="hero-caption">Conceptual illustration of competing reaction pathways</p>
     </section>
 
-    <section class="introduction reading-width" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Our mission</h2>
-      <p>Our mission is to understand how materials form and to establish principles for predicting and controlling their synthesis. We study how thermodynamic driving forces, reaction kinetics and the transport of energy and atoms across scales shape the pathways from precursors through intermediate phases to target materials, with particular emphasis on reactions at solid–liquid and solid–solid interfaces.</p>
-      <p>We develop AI methods that learn from synthesis processes to predict reaction pathways and guide experiments, grounded in physical principles and experimental evidence. We integrate in situ and ex situ characterization with physics-based computation and reaction-network modeling to identify rate-limiting processes, test competing mechanistic hypotheses and understand phase selection under nonequilibrium conditions. We are also developing autonomous experimentation methods to select informative experiments and refine predictions through feedback. Ultimately, we aim to guide the precise synthesis of materials with targeted compositions, structures and phases.</p>
-      <div class="research-principle"><span>Our approach</span><p>Observe transformations. Test mechanisms. Predict synthesis.</p></div>
+    <section class="big-picture" id="big-picture" aria-labelledby="big-picture-title">
+      <div class="container home-section">
+        <div class="home-section-intro">
+          <p class="home-kicker">THE BIG PICTURE</p>
+          <div>
+            <h2 id="big-picture-title">From material design to experimental reality.</h2>
+          </div>
+        </div>
+
+        <figure class="materials-map" aria-labelledby="materials-map-title">
+          <p class="home-kicker narrative-step">THE MATERIALS DEVELOPMENT PARADIGM</p>
+          <h3 class="home-visually-hidden" id="materials-map-title">Connect making, structure and function.</h3>
+          <div class="map-direction"><div class="map-direction-copy"><strong>Forward prediction</strong><span>From synthesis choices to material performance</span></div><span class="map-direction-arrow" aria-hidden="true">→</span></div>
+          <ol class="materials-chain" aria-label="Synthesis, structure, properties and performance relationships">
+            <li class="map-focus"><span class="map-tag">SYNTHESIS CHOICES</span><h4>Synthesis &amp; processing</h4><p>Precursors, reaction pathways and conditions</p><a href="#synthesis-gap">Can we make it reliably? <span aria-hidden="true">↓</span></a></li>
+            <li><span class="map-tag">MATERIAL STATE</span><h4>Composition &amp; structure</h4><p>Phases, defects, interfaces and microstructure</p></li>
+            <li><span class="map-tag">MATERIAL RESPONSE</span><h4>Properties</h4><p>Transport, stability and response to fields</p></li>
+            <li><span class="map-tag">APPLICATION NEEDS</span><h4>Performance in use</h4><p>Function, efficiency and reliability</p></li>
+          </ol>
+          <div class="map-direction map-inverse"><div class="map-direction-copy"><strong>Inverse design</strong><span>From desired performance to candidate materials and proposed routes</span></div><span class="map-direction-arrow" aria-hidden="true">←</span></div>
+        </figure>
+
+        <div class="gap-intro" id="synthesis-gap">
+          <div class="gap-layout">
+            <figure class="synthesis-framework">
+              <a href="../assets/synthesis-framework-2026.png" aria-label="View the materials synthesis framework"><img src="../assets/synthesis-framework-2026.png" width="1534" height="1025" alt="Phase diagrams, competing reaction pathways and processing controls illustrate the thermodynamic and kinetic factors that shape materials synthesis." loading="lazy" decoding="async"></a>
+            </figure>
+            <div class="gap-copy">
+              <p class="gap-question">Thermodynamics and kinetics explain material formation. Process control uses this understanding to guide synthesis.</p>
+              <dl class="gap-levels">
+                <div>
+                  <dt>01 · Thermodynamic accessibility</dt>
+                  <dd>Which phases and transformations are thermodynamically favored under synthesis conditions?</dd>
+                </div>
+                <div>
+                  <dt>02 · Kinetic selectivity</dt>
+                  <dd>How do kinetic barriers and transport shape the pathways and timescales of material formation?</dd>
+                </div>
+                <div>
+                  <dt>03 · Process control</dt>
+                  <dd>How can we design and control synthesis conditions to obtain materials with desired structures and properties?</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section approach-section" id="mission" aria-labelledby="approach-title">
+      <div class="home-section container">
+        <div class="home-section-intro" id="about">
+          <p class="home-kicker">OUR APPROACH</p>
+          <h2 id="approach-title">Connecting data, models and experiments.</h2>
+          <p class="approach-intro">Three complementary approaches address thermodynamics, kinetics and process control together, connecting an understanding of material formation with synthesis decisions.</p>
+        </div>
+
+        <div class="approach-methods" id="our-research" role="group" aria-label="Three complementary research approaches">
+          <article class="approach-method" aria-labelledby="data-science-title">
+            <p class="method-role">LEARN FROM EVIDENCE</p>
+            <h3 id="data-science-title">Data science</h3>
+            <p>Extract knowledge from literature, computation and experiments. Identify material states, learn synthesis relationships and generate predictions that can be tested.</p>
+          </article>
+          <article class="approach-method" aria-labelledby="modeling-title">
+            <p class="method-role">EXPLAIN AND PREDICT</p>
+            <h3 id="modeling-title">Computational modeling</h3>
+            <p>Build thermodynamic and kinetic models to explain reaction driving forces, mass transport and structural evolution, and predict how materials form under different conditions.</p>
+          </article>
+          <article class="approach-method" aria-labelledby="characterization-title">
+            <p class="method-role">OBSERVE AND TEST</p>
+            <h3 id="characterization-title">In situ characterization &amp; experimental validation</h3>
+            <p>Observe changes during synthesis, distinguish competing mechanisms and test predictions. Verify that the target material forms and exhibits the intended properties.</p>
+          </article>
+        </div>
+
+        <div class="approach-cycle" id="research-strategy" aria-labelledby="cycle-title">
+          <div class="cycle-copy">
+            <p class="home-kicker">A CONNECTED RESEARCH CYCLE</p>
+            <h3 id="cycle-title">From observations to synthesis decisions.</h3>
+            <ol class="cycle-steps" aria-label="Feedback between evidence, predictions and experiments">
+              <li><strong>Evidence constrains models.</strong><p>Connect literature knowledge, computed data and time-resolved measurements to identify material states and test assumptions.</p></li>
+              <li><strong>Models make testable predictions.</strong><p>Predict competing pathways and phase evolution, and identify synthesis conditions for experimental evaluation.</p></li>
+              <li><strong>Experiments refine the next decision.</strong><p>Compare predictions with measurements, distinguish competing explanations and use the results to update models and guide the next experiment.</p></li>
+            </ol>
+            <p class="cycle-feedback"><span aria-hidden="true">↺</span> New evidence updates models and synthesis decisions.</p>
+          </div>
+          <figure class="strategy-figure synthesis-figure" aria-label="Feedback between observations, models and synthesis decisions" data-artwork-theme="navy" data-artwork-title="Connecting observations, models and synthesis decisions" data-artwork-caption="Illustrative research workflow. Observations inform models; predictions guide experiments; new evidence updates models and synthesis decisions. Curves and diffraction patterns are schematic.">
+            <a class="synthesis-preview" href="../assets/synthesis-science-navy.svg" data-artwork-preview aria-haspopup="dialog" aria-label="Enlarge our synthesis science diagram">
+              <picture>
+                <source media="print" srcset="../assets/synthesis-science-transparent.svg" width="1100" height="850">
+                <source media="(max-width: 760px)" srcset="../assets/synthesis-science-navy-mobile.svg" width="600" height="960">
+                <img src="../assets/synthesis-science-navy.svg" width="1100" height="850" alt="Synthesis conditions shape competing formation pathways. Time-resolved observations constrain AI and physical models, whose predictions guide further synthesis conditions. The curves and diffraction patterns are illustrative." loading="lazy" decoding="async">
+              </picture>
+              <span class="diagram-enlarge" aria-hidden="true">View diagram <span>↗</span></span>
+            </a>
+          </figure>
+        </div>
+
+        <div class="approach-context">
+          <div>
+            <h3>Measuring progress</h3>
+            <p>Predictive accuracy under new conditions, reproducible target formation and experimentally verified function. Energy storage and conversion provide application contexts for defining targets and testing performance.</p>
+          </div>
+          <div>
+            <h3>Scientific agents as research tools</h3>
+            <p>We are developing tools that connect literature evidence, multimodal analysis and study planning across the research cycle.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran6@bza.edu.cn">chengxiangran6@bza.edu.cn</a></div><div class="footer-links"><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
+  <dialog class="artwork-viewer" aria-labelledby="artwork-viewer-title" aria-describedby="artwork-viewer-caption">
+    <div class="artwork-viewer-header"><h2 id="artwork-viewer-title">Build the materials we need.</h2><div><button class="artwork-zoom" type="button">Zoom in</button><button class="artwork-close" type="button" aria-label="Close illustration" autofocus>Close <span aria-hidden="true">×</span></button></div></div>
+    <div class="artwork-stage" tabindex="0" role="region" aria-label="Illustration preview; scroll to explore when zoomed"><img width="1672" height="941" alt=""></div>
+    <div class="artwork-viewer-footer"><p id="artwork-viewer-caption">Societal needs → material targets → synthesis pathways → functional validation. Conceptual illustration.</p><a href="../assets/materials-vision-transparent-2026.png" target="_blank" rel="noopener">Open original <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>Cheng Research Group</strong><span>AI for Materials Synthesis</span></div><div><span>Contact us</span><a href="mailto:chengxiangran@bza.edu.cn">chengxiangran@bza.edu.cn</a></div><div class="footer-links"><a href="../assets/Xiangran-Cheng-CV.docx" download>Download CV ↓</a><a href="../">Xiangran Cheng's personal website ↗</a><a href="#main">Back to top ↑</a></div></div></footer>
 </body>
 </html>

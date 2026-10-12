@@ -1,5 +1,7 @@
 .people-page .member-list:not(.intern-list) li { align-items: flex-start; }
 .people-page .member-list li > div { min-width: 0; }
+.member-list .member-email { margin-top: 8px; }
+.member-list .member-email a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
 .member-list .member-research { margin-top: 12px; line-height: 1.6; }
 
 /* Shared culture follows the navy and white palette used on Home and Research. */
